@@ -1,0 +1,3 @@
+org.elasticsearch.search.functionscore.FunctionScorePluginIT
+org.elasticsearch.search.geo.GeoPolygonIT
+org.elasticsearch.search.highlight.HighlighterSearchIT

@@ -1,0 +1,2 @@
+[2016-03-30 21:41:09,199][WARN ][org.elasticsearch.bootstrap] Unable to lock JVM Memory: error=78,reason=Function not implemented
+[2016-03-30 21:41:09,200][WARN ][org.elasticsearch.bootstrap] This can result in part of the JVM being swapped out.

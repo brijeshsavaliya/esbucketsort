@@ -1,0 +1,40 @@
+cluster.name: test_run
+http.port: 9600
+transport.tcp.port: 9300
+pidfile: es.pid
+discovery.zen.ping.unicast.hosts: 127.0.0.1:9300
+#path.repo: /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/distribution/build/cluster/run node0/elasticsearch-3.0.0-SNAPSHOT/repo
+#path.shared_data: /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/distribution/build/cluster/run node0/elasticsearch-3.0.0-SNAPSHOT/../
+path.home: /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/config/
+node.testattr: test
+repositories.url.allowed_urls: http://snapshot.test*
+
+
+script.engine.groovy.inline.aggs: on
+script.engine.groovy.inline.search: on
+#script.inline: true
+#script.indexed: true
+
+
+script.engine.groovy.file.aggs: true
+script.engine.groovy.file.mapping: true
+script.engine.groovy.file.search: true
+script.engine.groovy.file.update: true
+script.engine.groovy.file.plugin: true
+script.engine.groovy.indexed.aggs: true
+script.engine.groovy.indexed.mapping: true
+script.engine.groovy.indexed.search: true
+script.engine.groovy.indexed.update: false
+script.engine.groovy.indexed.plugin: false
+#script.engine.groovy.inline.aggs: true
+script.engine.groovy.inline.mapping: true
+#script.engine.groovy.inline.search: true
+script.engine.groovy.inline.update: false
+script.engine.groovy.inline.plugin: false
+
+
+script.inline: on
+#script.inline: sandbox
+#script.indexed: sandbox
+#script.file: true
+

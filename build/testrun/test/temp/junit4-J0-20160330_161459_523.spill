@@ -1,0 +1,5 @@
+[2016-03-30 16:15:01,028][WARN ][org.elasticsearch.bootstrap] Unable to lock JVM Memory: error=78,reason=Function not implemented
+[2016-03-30 16:15:01,030][WARN ][org.elasticsearch.bootstrap] This can result in part of the JVM being swapped out.
+[2016-03-30 16:15:40,241][WARN ][org.elasticsearch.index.shard] [foo][0] found shard on path: [/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J0/temp/org.elasticsearch.index.shard.ShardPathTests_DE8E7BF5E9626C72-001/tempDir-007/elasticsearch/nodes/0/indices/foo/0] with a different index UUID - this shard seems to be leftover from a different index with the same name. Remove the leftover shard in order to reuse the path with the current index
+[2016-03-30 16:15:48,453][WARN ][org.elasticsearch.index.shard] [node_s_0] [test][0] [index.merge.enabled] is set to false, this should only be used in tests and can cause serious problems in production environments
+[2016-03-30 16:15:50,905][WARN ][org.elasticsearch.index.shard] [node_s_0] [test][0] [index.merge.enabled] is set to false, this should only be used in tests and can cause serious problems in production environments

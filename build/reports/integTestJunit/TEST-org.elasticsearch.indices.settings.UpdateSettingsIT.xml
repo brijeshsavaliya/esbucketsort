@@ -1,0 +1,640 @@
+<testsuite errors="0" failures="0" tests="6" skipped="0" name="org.elasticsearch.indices.settings.UpdateSettingsIT" hostname="nohost.nodomain" time="23.822" timestamp="2016-03-30T14:03:59">
+   <properties class="java.util.ArrayList">
+      <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+      <property name="es.logger.level" value="WARN"/>
+      <property name="file.encoding" value="UTF-8"/>
+      <property name="file.encoding.pkg" value="sun.io"/>
+      <property name="file.separator" value="/"/>
+      <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="gopherProxySet" value="false"/>
+      <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+      <property name="java.awt.headless" value="true"/>
+      <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+      <property name="java.class.path" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/main:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/main:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.4.0-snapshot-1715952/84685d37a34b4d87e2928566ed266a7f005ca67d/lucene-core-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.4.0-snapshot-1715952/feaf885ed4155fb7202c1f90ac2eb40503961efc/lucene-analyzers-common-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.4.0-snapshot-1715952/5b5b5c950b4fcac38cf48fab911f75da61e780fa/lucene-backward-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/5.4.0-snapshot-1715952/ff92011208ed5c28f041acc37bd77728a89fc6a5/lucene-grouping-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/5.4.0-snapshot-1715952/5d46f26a6cb36aede89b8728b6fcbc427d4f9416/lucene-highlighter-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/5.4.0-snapshot-1715952/726ea07bbfdfbfbee80522353496fc6667dc33c9/lucene-join-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/5.4.0-snapshot-1715952/d8d7a7b573a4cfc54745a126e905ccfd523b7a24/lucene-memory-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/5.4.0-snapshot-1715952/cd9d4fb4492bd2680cea2f038a051311329f6443/lucene-misc-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/5.4.0-snapshot-1715952/a1a04d191443e51f992ed3dd02d0e14fd48493c9/lucene-queries-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.4.0-snapshot-1715952/c4d34b29b8b14ad3deb300a6d699e9d8965a3c2c/lucene-queryparser-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/5.4.0-snapshot-1715952/bf45dbd653d66ce9d2c3f19b69997b8098d8b416/lucene-sandbox-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/5.4.0-snapshot-1715952/2bddfda70f5c657064d12860b03c2cd8a5029bfc/lucene-spatial-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/5.4.0-snapshot-1715952/881b8cd571fb3ccdcc69f1316468d816812513fb/lucene-spatial3d-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/5.4.0-snapshot-1715952/466e2bc02f45f04cbf516e5df78b9c2ebd99e944/lucene-suggest-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.elasticsearch/securesm/1.0/c0c6cf986ba0057390bfcc80c366a0e3157f944b/securesm-1.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.7.1/8b5057f74ea378c0150a1860874a3ebdcb713767/hppc-0.7.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.joda/joda-convert/1.2/35ec554f0cd00c956cc69051514d9488b1374dec/joda-convert-1.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.2/123f29333b2c6b3516b14252b6e93226bfcd6e37/jackson-core-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.6.2/395d18c1a1dd730b8026ee59c4067e5d2b45ba6e/jackson-dataformat-smile-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.6.2/4ae23088dd3fae47c66843f2e4251d7255ee140e/jackson-dataformat-yaml-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.2/1e13c575f914c83761bb8e2aca7dfd9e4c647579/jackson-dataformat-cbor-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.0/84ccf145ac2215e6bfa63baa3101c0af41017cfc/t-digest-3.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.6/7495feb7f71ee124bd2a7e7d83590e296d71d80e/HdrHistogram-2.1.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.5/6e16edaf6b1ba76db7f08c2f3723fce3b358ecc3/spatial4j-0.5.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.2/8619e95939167fb37245b5670135e4feb0ec7d50/slf4j-api-1.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/test-framework/build/libs/test-framework-3.0.0-SNAPSHOT.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.2.0/60de504132241be049564a3a34fd7dcc296e2ef0/randomizedtesting-runner-2.2.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-test-framework/5.4.0-snapshot-1715952/ae3156d5a2526b1b48ca821765cf7cd53faecef5/lucene-test-framework-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.4.0-snapshot-1715952/7b94152f1c9fd7ecb384fc9602318f74a4463a65/lucene-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/junit4-ant/2.2.0/d401c9c729deccd5db8a5df3102eb18793c2224/junit4-ant-2.2.0.jar"/>
+      <property name="java.class.version" value="52.0"/>
+      <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+      <property name="java.ext.dirs" value="/Users/brijeshs/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+      <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre"/>
+      <property name="java.io.tmpdir" value="./temp"/>
+      <property name="java.library.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/brijeshs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+      <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+      <property name="java.runtime.version" value="1.8.0_40-b25"/>
+      <property name="java.specification.name" value="Java Platform API Specification"/>
+      <property name="java.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.specification.version" value="1.8"/>
+      <property name="java.vendor" value="Oracle Corporation"/>
+      <property name="java.vendor.url" value="http://java.oracle.com/"/>
+      <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+      <property name="java.version" value="1.8.0_40"/>
+      <property name="java.vm.info" value="mixed mode"/>
+      <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+      <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+      <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.specification.version" value="1.8"/>
+      <property name="java.vm.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.version" value="25.40-b25"/>
+      <property name="junit4.childvm.count" value="4"/>
+      <property name="junit4.childvm.cwd" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2"/>
+      <property name="junit4.childvm.id" value="2"/>
+      <property name="junit4.memory.total" value="514850816"/>
+      <property name="junit4.pidString" value="66626@BrijeshS-2.fios-router.home"/>
+      <property name="junit4.processors" value="8"/>
+      <property name="line.separator" value="
+"/>
+      <property name="os.arch" value="x86_64"/>
+      <property name="os.name" value="Mac OS X"/>
+      <property name="os.version" value="10.10.5"/>
+      <property name="path.separator" value=":"/>
+      <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="sun.arch.data.model" value="64"/>
+      <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes"/>
+      <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
+      <property name="sun.cpu.endian" value="little"/>
+      <property name="sun.cpu.isalist" value=""/>
+      <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+      <property name="sun.java.command" value="com.carrotsearch.ant.tasks.junit4.slave.SlaveMainSafe -eventsfile /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/temp/junit4-J2-20160330_135253_694.events @/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/temp/junit4-J2-20160330_135253_694.suites -stdin"/>
+      <property name="sun.java.launcher" value="SUN_STANDARD"/>
+      <property name="sun.jnu.encoding" value="UTF-8"/>
+      <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+      <property name="sun.os.patch.level" value="unknown"/>
+      <property name="tests.artifact" value="core"/>
+      <property name="tests.ifNoTests" value="fail"/>
+      <property name="tests.maven" value="true"/>
+      <property name="tests.prefix" value="tests"/>
+      <property name="tests.security.manager" value="true"/>
+      <property name="tests.seed" value="F7928424F380CF7C"/>
+      <property name="tests.task" value=":core:integTest"/>
+      <property name="user.country" value="US"/>
+      <property name="user.dir" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2"/>
+      <property name="user.home" value="/Users/brijeshs"/>
+      <property name="user.language" value="en"/>
+      <property name="user.name" value="brijeshs"/>
+      <property name="user.timezone" value="America/Los_Angeles"/>
+   </properties>
+   <testcase classname="org.elasticsearch.indices.settings.UpdateSettingsIT" name="testEngineGCDeletesSetting" time="1.086"/>
+   <testcase classname="org.elasticsearch.indices.settings.UpdateSettingsIT" name="testUpdateSettingsWithBlocks" time="0.612"/>
+   <testcase classname="org.elasticsearch.indices.settings.UpdateSettingsIT" name="testOpenCloseUpdateSettings" time="0.168"/>
+   <testcase classname="org.elasticsearch.indices.settings.UpdateSettingsIT" name="testUpdateMergeMaxThreadCount" time="0.134"/>
+   <testcase classname="org.elasticsearch.indices.settings.UpdateSettingsIT" name="testUpdateAutoThrottleSettings" time="0.125"/>
+   <testcase classname="org.elasticsearch.indices.settings.UpdateSettingsIT" name="testUpdateThrottleSettings" time="21.654"/>
+   <system-out><![CDATA[[2016-03-30 14:04:01,880][TRACE][org.elasticsearch.cluster.service] [node_s0] will process [create-index [test], cause [api]]
+[2016-03-30 14:04:01,880][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [create-index [test], cause [api]]: execute
+[2016-03-30 14:04:01,881][DEBUG][org.elasticsearch.indices] [node_s0] creating Index [test], shards [1]/[0]
+[2016-03-30 14:04:01,881][DEBUG][org.elasticsearch.test.store] [node_s0] [test] using index.store.throttle.type [none], with index.store.throttle.max_bytes_per_sec [0b]
+[2016-03-30 14:04:01,882][TRACE][org.elasticsearch.index.mapper] [node_s0] [test] using dynamic[true], default mapping source[{"_default_":{}}], default percolator mapping source[{
+"_default_":{
+"properties" : {
+"query" : {
+"type" : "object",
+"enabled" : false
+}
+}
+}
+}]
+[2016-03-30 14:04:01,883][INFO ][org.elasticsearch.cluster.metadata] [node_s0] [test] creating index, cause [api], templates [random_index_template], shards [1]/[0], mappings [_default_]
+[2016-03-30 14:04:01,883][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start balancing cluster
+[2016-03-30 14:04:01,883][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:01,883][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:01,883][TRACE][org.elasticsearch.cluster.routing.allocation.decider] [node_s0] only a single data node is present, allowing allocation
+[2016-03-30 14:04:01,884][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[null], [P], v[0], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]] to [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:01,884][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start assigning unassigned shards
+[2016-03-30 14:04:01,884][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:01,884][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]] to node [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:01,884][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:01,884][DEBUG][org.elasticsearch.indices] [node_s0] [test] closing ... (reason [cleaning up after validating index on master])
+[2016-03-30 14:04:01,884][DEBUG][org.elasticsearch.indices] [node_s0] [test] closing index service (reason [cleaning up after validating index on master])
+[2016-03-30 14:04:01,884][DEBUG][org.elasticsearch.index.cache.bitset] [node_s0] [test] clearing all bitsets because [close]
+[2016-03-30 14:04:01,884][DEBUG][org.elasticsearch.index.cache.query.index] [node_s0] [test] full cache clear, reason [close]
+[2016-03-30 14:04:01,884][DEBUG][org.elasticsearch.index.cache.bitset] [node_s0] [test] clearing all bitsets because [close]
+[2016-03-30 14:04:01,885][DEBUG][org.elasticsearch.indices] [node_s0] [test] closed... (reason [cleaning up after validating index on master])
+[2016-03-30 14:04:01,885][TRACE][org.elasticsearch.cluster.service] expecting 2 acknowledgements for cluster_state update (version: 40)
+[2016-03-30 14:04:01,885][TRACE][org.elasticsearch.cluster.service] [node_s0] cluster state updated, source [create-index [test], cause [api]]
+version: 40
+state uuid: EZovegcrQwyvBh_LkW2O2A
+from_diff: false
+meta data version: 38
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], local, master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]
+routing_table (version 30):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+---- unassigned
+
+[2016-03-30 14:04:01,885][DEBUG][org.elasticsearch.cluster.service] [node_s0] publishing cluster state version [40]
+[2016-03-30 14:04:01,886][TRACE][org.elasticsearch.discovery.local] [node_s0] sending diff cluster state version [40] with size 1136 to [node_s1]
+[2016-03-30 14:04:01,886][TRACE][org.elasticsearch.cluster.service] [node_s1] will process [local-disco-receive(from master)]
+[2016-03-30 14:04:01,886][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:04:01,886][TRACE][org.elasticsearch.cluster.service] [node_s1] cluster state updated, source [local-disco-receive(from master)]
+version: 40
+state uuid: EZovegcrQwyvBh_LkW2O2A
+from_diff: false
+meta data version: 38
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false], local
+routing_table (version 30):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+---- unassigned
+
+[2016-03-30 14:04:01,886][DEBUG][org.elasticsearch.cluster.service] [node_s1] set local cluster state to version 40
+[2016-03-30 14:04:01,887][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]], cluster_state update (version: 40)
+[2016-03-30 14:04:01,887][DEBUG][org.elasticsearch.cluster.service] [node_s0] set local cluster state to version 40
+[2016-03-30 14:04:01,887][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: took 0s done applying updated cluster_state (version: 40, uuid: EZovegcrQwyvBh_LkW2O2A)
+[2016-03-30 14:04:01,887][TRACE][org.elasticsearch.cluster.routing] [node_s0] no need to schedule reroute - no delayed unassigned shards, minDelaySetting [0], scheduled [9223372036854775807]
+[2016-03-30 14:04:01,887][DEBUG][org.elasticsearch.indices.cluster] [node_s0] [test] creating index
+[2016-03-30 14:04:01,888][DEBUG][org.elasticsearch.indices] [node_s0] creating Index [test], shards [1]/[0]
+[2016-03-30 14:04:01,888][DEBUG][org.elasticsearch.test.store] [node_s0] [test] using index.store.throttle.type [none], with index.store.throttle.max_bytes_per_sec [0b]
+[2016-03-30 14:04:01,889][TRACE][org.elasticsearch.index.mapper] [node_s0] [test] using dynamic[true], default mapping source[{"_default_":{}}], default percolator mapping source[{
+"_default_":{
+"properties" : {
+"query" : {
+"type" : "object",
+"enabled" : false
+}
+}
+}
+}]
+[2016-03-30 14:04:01,889][DEBUG][org.elasticsearch.indices.cluster] [node_s0] [test] adding mapping [_default_], source [{"_default_":{"dynamic_templates":[{"template-strings":{"mapping":{"fielddata":{"loading":"lazy"}},"match_mapping_type":"string"}},{"template-longs":{"mapping":{"fielddata":{"loading":"eager"}},"match_mapping_type":"long"}},{"template-doubles":{"mapping":{"fielddata":{"loading":"lazy"}},"match_mapping_type":"double"}},{"template-geo_points":{"mapping":{"fielddata":{"loading":"eager"}},"match_mapping_type":"geo_point"}},{"template-booleans":{"mapping":{"fielddata":{"loading":"eager"}},"match_mapping_type":"boolean"}}]}}]
+[2016-03-30 14:04:01,890][DEBUG][org.elasticsearch.indices.cluster] [node_s0] [test][0] creating shard
+[2016-03-30 14:04:01,890][TRACE][org.elasticsearch.env    ] [node_s0] acquiring node shardlock on [[test][0]], timeout [5000]
+[2016-03-30 14:04:01,890][TRACE][org.elasticsearch.env    ] [node_s0] successfully acquired shardlock for [[test][0]]
+[2016-03-30 14:04:01,891][DEBUG][org.elasticsearch.index  ] [node_s0] [test] [test][0] creating using a new path [ShardPath{path=/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2/temp/org.elasticsearch.indices.settings.UpdateSettingsIT_F7928424F380CF7C-001/tempDir-001/data/SUITE-CHILD_VM=[2]-CLUSTER_SEED=[685587905727822786]-HASH=[462DD9C7C370D]-cluster/nodes/0/indices/test/0, indexUUID='7qrFTtm6QsOhMu0fKyEMuw', shard=[test][0]}]
+[2016-03-30 14:04:01,891][DEBUG][org.elasticsearch.index  ] [node_s0] [test] creating shard_id [test][0]
+[2016-03-30 14:04:01,891][DEBUG][org.elasticsearch.test.store] [node_s0] [test][0] Using MockDirWrapper with seed [856DA0167A61E7FA] throttle: [NEVER] crashIndex: [true]
+[2016-03-30 14:04:01,896][DEBUG][org.elasticsearch.index.store] [node_s0] [test][0] store stats are refreshed with refresh_interval [10s]
+[2016-03-30 14:04:01,896][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[2], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[2.0], reclaim_deletes_weight[2.0]
+[2016-03-30 14:04:01,896][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] state: [CREATED]
+[2016-03-30 14:04:01,896][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] state: [CREATED]->[RECOVERING], reason [from store]
+[2016-03-30 14:04:01,896][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] starting recovery from store ...
+[2016-03-30 14:04:01,897][TRACE][org.elasticsearch.gateway] [node_s0] [test] writing state, reason [freshly created]
+[2016-03-30 14:04:01,900][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]], cluster_state update (version: 40)
+[2016-03-30 14:04:01,900][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 40)
+[2016-03-30 14:04:01,900][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [create-index [test], cause [api]]: took 20ms done applying updated cluster_state (version: 40, uuid: EZovegcrQwyvBh_LkW2O2A)
+[2016-03-30 14:04:01,901][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [33][indices:admin/settings/update] sent to [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]] (timeout: [null])
+[2016-03-30 14:04:01,901][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [33][indices:admin/settings/update] received request
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.service] [node_s0] will process [update-settings]
+[2016-03-30 14:04:01,902][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [update-settings]: execute
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start assigning unassigned shards
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]] to node [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.service] expecting 2 acknowledgements for cluster_state update (version: 41)
+[2016-03-30 14:04:01,902][TRACE][org.elasticsearch.cluster.service] [node_s0] cluster state updated, source [update-settings]
+version: 41
+state uuid: 3UXNoAuqREm2PZfWrHZvfQ
+from_diff: false
+meta data version: 39
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], local, master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]
+routing_table (version 31):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+---- unassigned
+
+[2016-03-30 14:04:01,903][DEBUG][org.elasticsearch.cluster.service] [node_s0] publishing cluster state version [41]
+[2016-03-30 14:04:01,903][TRACE][org.elasticsearch.discovery.local] [node_s0] sending diff cluster state version [41] with size 812 to [node_s1]
+[2016-03-30 14:04:01,903][TRACE][org.elasticsearch.cluster.service] [node_s1] will process [local-disco-receive(from master)]
+[2016-03-30 14:04:01,903][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:04:01,903][TRACE][org.elasticsearch.cluster.service] [node_s1] cluster state updated, source [local-disco-receive(from master)]
+version: 41
+state uuid: 3UXNoAuqREm2PZfWrHZvfQ
+from_diff: false
+meta data version: 39
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false], local
+routing_table (version 31):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]
+---- unassigned
+
+[2016-03-30 14:04:01,903][DEBUG][org.elasticsearch.cluster.service] [node_s1] set local cluster state to version 41
+[2016-03-30 14:04:01,904][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]], cluster_state update (version: 41)
+[2016-03-30 14:04:01,904][DEBUG][org.elasticsearch.cluster.service] [node_s0] set local cluster state to version 41
+[2016-03-30 14:04:01,904][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: took 0s done applying updated cluster_state (version: 41, uuid: 3UXNoAuqREm2PZfWrHZvfQ)
+[2016-03-30 14:04:01,904][TRACE][org.elasticsearch.cluster.routing] [node_s0] no need to schedule reroute - no delayed unassigned shards, minDelaySetting [0], scheduled [9223372036854775807]
+[2016-03-30 14:04:01,904][TRACE][org.elasticsearch.indices.cluster] [node_s0] ignoring recovery instruction for an existing shard [test][0] (shard state: [RECOVERING])
+[2016-03-30 14:04:01,906][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: init: current segments file is "segments"; deletionPolicy=org.apache.lucene.index.SnapshotDeletionPolicy@6694cc57
+[2016-03-30 14:04:01,906][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: now checkpoint "" [0 segments ; isCommit = false]
+[2016-03-30 14:04:01,906][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: 0 msec to checkpoint
+[2016-03-30 14:04:01,906][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: init: create=true
+[2016-03-30 14:04:01,907][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: 
+dir=store(ElasticsearchMockDirectoryWrapper(niofs(/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2/temp/org.elasticsearch.indices.settings.UpdateSettingsIT_F7928424F380CF7C-001/tempDir-001/data/SUITE-CHILD_VM=[2]-CLUSTER_SEED=[685587905727822786]-HASH=[462DD9C7C370D]-cluster/nodes/0/indices/test/0/index)))
+index=
+version=5.4.0
+analyzer=org.elasticsearch.index.mapper.MapperService$MapperAnalyzerWrapper
+ramBufferSizeMB=0.48828125
+maxBufferedDocs=-1
+maxBufferedDeleteTerms=-1
+mergedSegmentWarmer=org.elasticsearch.index.engine.InternalEngine$2@374a81f6
+delPolicy=org.apache.lucene.index.SnapshotDeletionPolicy
+commit=null
+openMode=CREATE
+similarity=org.elasticsearch.index.similarity.SimilarityService$PerFieldSimilarity
+mergeScheduler=EngineMergeScheduler: maxThreadCount=10000, maxMergeCount=10000, ioThrottle=true
+default WRITE_LOCK_TIMEOUT=0
+writeLockTimeout=5000
+codec=Asserting(Lucene54): {_field_names=PostingsFormat(name=Asserting), f=PostingsFormat(name=Asserting), _type=PostingsFormat(name=Asserting), _uid=PostingsFormat(name=Asserting), _all=PostingsFormat(name=Asserting)}, docValues:{f=DocValuesFormat(name=Lucene54), _type=DocValuesFormat(name=Asserting), _version=DocValuesFormat(name=Asserting)}
+infoStream=org.elasticsearch.common.lucene.LoggerInfoStream
+mergePolicy=ElasticsearchMergePolicy([TieredMergePolicy: maxMergeAtOnce=2, maxMergeAtOnceExplicit=30, maxMergedSegmentMB=5120.0, floorSegmentMB=2.0, forceMergeDeletesPctAllowed=10.0, segmentsPerTier=2.0, maxCFSSegmentSizeMB=8.796093022207999E12, noCFSRatio=0.9625459037315222)
+indexerThreadPool=org.apache.lucene.index.DocumentsWriterPerThreadPool@799e2c1c
+readerPooling=false
+perThreadHardLimitMB=1945
+useCompoundFile=true
+commitOnClose=false
+writer=org.apache.lucene.index.IndexWriter@4d0187e9
+
+[2016-03-30 14:04:01,907][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: MMapDirectory.UNMAP_SUPPORTED=true
+[2016-03-30 14:04:01,908][DEBUG][org.elasticsearch.index.translog] [node_s0] [test][0] wipe translog location - creating new translog
+[2016-03-30 14:04:01,910][DEBUG][org.elasticsearch.index.engine] [node_s0] [test][0] no translog ID present in the current generation - creating one
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine] [node_s0] [test][0] committing writer with translog id [1]  and sync id [null] 
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: start
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: enter lock
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: now prepare
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: prepareCommit: flush
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW:   index before flush 
+[2016-03-30 14:04:01,910][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: startFullFlush
+[2016-03-30 14:04:01,911][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: apply all deletes during flush
+[2016-03-30 14:04:01,911][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: now apply all deletes for all segments maxDoc=0
+[2016-03-30 14:04:01,911][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] BD: prune sis=segments:  minGen=9223372036854775807 packetCount=0
+[2016-03-30 14:04:01,911][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: elasticsearch[node_s0][generic][T#1] finishFullFlush success=true
+[2016-03-30 14:04:01,911][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: startCommit(): start
+[2016-03-30 14:04:01,911][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: startCommit index= changeCount=3
+[2016-03-30 14:04:01,913][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: startCommit: wrote pending segments file "pending_segments_1"
+[2016-03-30 14:04:01,913][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: done all syncs: []
+[2016-03-30 14:04:01,913][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: pendingCommit != null
+[2016-03-30 14:04:01,919][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: done writing segments file "segments_1"
+[2016-03-30 14:04:01,919][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: now checkpoint "" [0 segments ; isCommit = true]
+[2016-03-30 14:04:01,919][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: 0 msec to checkpoint
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: took 9.4 msec
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: done
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: flush at getReader
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: startFullFlush
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: apply all deletes during flush
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: now apply all deletes for all segments maxDoc=0
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] BD: prune sis=segments_1:  minGen=9223372036854775807 packetCount=0
+[2016-03-30 14:04:01,920][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: incRefDeleter for NRT reader version=3 segments=
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: return reader version=3 reader=StandardDirectoryReader(segments_1:3:nrt)
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: elasticsearch[node_s0][generic][T#1] finishFullFlush success=true
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: getReader took 1 msec
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.indices] [node_s0] [test][0] warming [ElasticsearchDirectoryReader()]
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.index.warmer] [node_s0] [test][0] warming took [52.3micros]
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.indices] [node_s0] [test][0] top warming [ElasticsearchDirectoryReader()]
+[2016-03-30 14:04:01,921][TRACE][org.elasticsearch.index.warmer] [node_s0] [test][0] top warming took [11.1micros]
+[2016-03-30 14:04:01,922][TRACE][org.elasticsearch.index.engine] [node_s0] [test][0] created new InternalEngine
+[2016-03-30 14:04:01,922][INFO ][org.elasticsearch.index.shard] [node_s0] [test][0] updating [index.merge.scheduler.max_thread_count] from [10000] to [1]
+[2016-03-30 14:04:01,922][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] scheduling refresher every 1s
+[2016-03-30 14:04:01,922][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from shard_store]
+[2016-03-30 14:04:01,923][TRACE][org.elasticsearch.gateway] [node_s0] [test] writing state, reason [version changed from [1] to [2]]
+[2016-03-30 14:04:01,923][TRACE][org.elasticsearch.index.shard] [node_s0] [test][0] recovery completed from shard_store, took [26ms]
+    index    : files           [0] with total_size [0b], took[5ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [0] with total_size [0b]
+    verify_index    : took [0s], check_index [0s]
+    translog : number_of_operations [0], took [19ms]
+[2016-03-30 14:04:01,924][DEBUG][org.elasticsearch.cluster.action.shard] [node_s0] [test][0] sending shard started for [test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]], indexUUID [7qrFTtm6QsOhMu0fKyEMuw], message [after recovery from store], failure [Unknown]
+[2016-03-30 14:04:01,924][DEBUG][org.elasticsearch.cluster.action.shard] [node_s0] received shard started for [test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]], indexUUID [7qrFTtm6QsOhMu0fKyEMuw], message [after recovery from store], failure [Unknown]
+[2016-03-30 14:04:01,924][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [33][internal:cluster/shard/started] received response from [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]]
+[2016-03-30 14:04:01,927][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]], cluster_state update (version: 41)
+[2016-03-30 14:04:01,927][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 41)
+[2016-03-30 14:04:01,927][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [33][indices:admin/settings/update] sent response
+[2016-03-30 14:04:01,927][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [33][indices:admin/settings/update] received response from [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]]
+[2016-03-30 14:04:01,927][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [update-settings]: took 25ms done applying updated cluster_state (version: 41, uuid: 3UXNoAuqREm2PZfWrHZvfQ)
+[2016-03-30 14:04:01,928][TRACE][org.elasticsearch.cluster.service] [node_s0] will process [shard-started ([test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]), reason [after recovery from store]]
+[2016-03-30 14:04:01,928][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [shard-started ([test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]]), reason [after recovery from store]]: execute
+[2016-03-30 14:04:01,928][TRACE][org.elasticsearch.cluster.routing.allocation] [node_s0] [test][0] marked shard as started (routing: [test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=kWIDRR5uRqKfce74z5o1VQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:01.883Z]])
+[2016-03-30 14:04:01,928][TRACE][org.elasticsearch.cluster.routing.allocation.decider] [node_s0] only a single data node is present, allowing allocation
+[2016-03-30 14:04:02,009][INFO ][org.elasticsearch.indices.settings] using custom data_path for index: [lWhuCVCkAe]
+[2016-03-30 14:04:02,010][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [41][indices:admin/create] sent to [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]] (timeout: [null])
+[2016-03-30 14:04:02,010][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [41][indices:admin/create] received request
+[2016-03-30 14:04:02,011][TRACE][org.elasticsearch.cluster.service] [node_s0] will process [create-index [test], cause [api]]
+[2016-03-30 14:04:02,011][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [create-index [test], cause [api]]: execute
+[2016-03-30 14:04:02,011][DEBUG][org.elasticsearch.indices] [node_s0] creating Index [test], shards [1]/[0]
+[2016-03-30 14:04:02,012][DEBUG][org.elasticsearch.test.store] [node_s0] [test] using index.store.throttle.type [none], with index.store.throttle.max_bytes_per_sec [0b]
+[2016-03-30 14:04:02,014][TRACE][org.elasticsearch.index.mapper] [node_s0] [test] using dynamic[true], default mapping source[{"_default_":{}}], default percolator mapping source[{
+"_default_":{
+"properties" : {
+"query" : {
+"type" : "object",
+"enabled" : false
+}
+}
+}
+}]
+[2016-03-30 14:04:02,015][INFO ][org.elasticsearch.cluster.metadata] [node_s0] [test] creating index, cause [api], templates [random_index_template], shards [1]/[0], mappings [_default_]
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start balancing cluster
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.decider] [node_s0] only a single data node is present, allowing allocation
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[null], [P], v[0], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]] to [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start assigning unassigned shards
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]] to node [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:02,015][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.indices] [node_s0] [test] closing ... (reason [cleaning up after validating index on master])
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.indices] [node_s0] [test] closing index service (reason [cleaning up after validating index on master])
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.index.cache.bitset] [node_s0] [test] clearing all bitsets because [close]
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.index.cache.query.index] [node_s0] [test] full cache clear, reason [close]
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.index.cache.bitset] [node_s0] [test] clearing all bitsets because [close]
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.indices] [node_s0] [test] closed... (reason [cleaning up after validating index on master])
+[2016-03-30 14:04:02,016][TRACE][org.elasticsearch.cluster.service] expecting 2 acknowledgements for cluster_state update (version: 46)
+[2016-03-30 14:04:02,016][TRACE][org.elasticsearch.cluster.service] [node_s0] cluster state updated, source [create-index [test], cause [api]]
+version: 46
+state uuid: JviPTcgxRCSFW0LnjLuabw
+from_diff: false
+meta data version: 44
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], local, master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]
+routing_table (version 34):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+---- unassigned
+
+[2016-03-30 14:04:02,016][DEBUG][org.elasticsearch.cluster.service] [node_s0] publishing cluster state version [46]
+[2016-03-30 14:04:02,017][TRACE][org.elasticsearch.discovery.local] [node_s0] sending diff cluster state version [46] with size 1162 to [node_s1]
+[2016-03-30 14:04:02,017][TRACE][org.elasticsearch.cluster.service] [node_s1] will process [local-disco-receive(from master)]
+[2016-03-30 14:04:02,017][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:04:02,017][TRACE][org.elasticsearch.cluster.service] [node_s1] cluster state updated, source [local-disco-receive(from master)]
+version: 46
+state uuid: JviPTcgxRCSFW0LnjLuabw
+from_diff: false
+meta data version: 44
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false], local
+routing_table (version 34):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+---- unassigned
+
+[2016-03-30 14:04:02,017][DEBUG][org.elasticsearch.cluster.service] [node_s1] set local cluster state to version 46
+[2016-03-30 14:04:02,018][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]], cluster_state update (version: 46)
+[2016-03-30 14:04:02,018][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: took 0s done applying updated cluster_state (version: 46, uuid: JviPTcgxRCSFW0LnjLuabw)
+[2016-03-30 14:04:02,018][DEBUG][org.elasticsearch.cluster.service] [node_s0] set local cluster state to version 46
+[2016-03-30 14:04:02,018][TRACE][org.elasticsearch.cluster.routing] [node_s0] no need to schedule reroute - no delayed unassigned shards, minDelaySetting [0], scheduled [9223372036854775807]
+[2016-03-30 14:04:02,018][DEBUG][org.elasticsearch.indices.cluster] [node_s0] [test] creating index
+[2016-03-30 14:04:02,018][DEBUG][org.elasticsearch.indices] [node_s0] creating Index [test], shards [1]/[0]
+[2016-03-30 14:04:02,019][DEBUG][org.elasticsearch.test.store] [node_s0] [test] using index.store.throttle.type [none], with index.store.throttle.max_bytes_per_sec [0b]
+[2016-03-30 14:04:02,019][TRACE][org.elasticsearch.index.mapper] [node_s0] [test] using dynamic[true], default mapping source[{"_default_":{}}], default percolator mapping source[{
+"_default_":{
+"properties" : {
+"query" : {
+"type" : "object",
+"enabled" : false
+}
+}
+}
+}]
+[2016-03-30 14:04:02,020][DEBUG][org.elasticsearch.indices.cluster] [node_s0] [test] adding mapping [_default_], source [{"_default_":{"_timestamp":{"enabled":true},"dynamic_templates":[{"template-strings":{"mapping":{"fielddata":{"loading":"lazy"}},"match_mapping_type":"string"}},{"template-longs":{"mapping":{"fielddata":{"loading":"lazy"}},"match_mapping_type":"long"}},{"template-doubles":{"mapping":{"fielddata":{"loading":"eager"}},"match_mapping_type":"double"}},{"template-geo_points":{"mapping":{"fielddata":{"loading":"lazy"}},"match_mapping_type":"geo_point"}},{"template-booleans":{"mapping":{"fielddata":{"loading":"lazy"}},"match_mapping_type":"boolean"}}]}}]
+[2016-03-30 14:04:02,020][DEBUG][org.elasticsearch.indices.cluster] [node_s0] [test][0] creating shard
+[2016-03-30 14:04:02,020][TRACE][org.elasticsearch.env    ] [node_s0] acquiring node shardlock on [[test][0]], timeout [5000]
+[2016-03-30 14:04:02,020][TRACE][org.elasticsearch.env    ] [node_s0] successfully acquired shardlock for [[test][0]]
+[2016-03-30 14:04:02,021][DEBUG][org.elasticsearch.index  ] [node_s0] [test] [test][0] creating using a new path [ShardPath{path=/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2/temp/org.elasticsearch.indices.settings.UpdateSettingsIT_F7928424F380CF7C-001/tempDir-001/data/SUITE-CHILD_VM=[2]-CLUSTER_SEED=[685587905727822786]-HASH=[462DD9C7C370D]-cluster/nodes/0/indices/test/0, indexUUID='ISepMlkfSlOnov0lmATriQ', shard=[test][0]}]
+[2016-03-30 14:04:02,021][DEBUG][org.elasticsearch.index  ] [node_s0] [test] creating shard_id [test][0]
+[2016-03-30 14:04:02,021][DEBUG][org.elasticsearch.test.store] [node_s0] [test][0] Using MockDirWrapper with seed [7A2CFC20B0A7B5BF] throttle: [NEVER] crashIndex: [true]
+[2016-03-30 14:04:02,027][DEBUG][org.elasticsearch.index.store] [node_s0] [test][0] store stats are refreshed with refresh_interval [10s]
+[2016-03-30 14:04:02,027][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] using [tiered] merge mergePolicy with expunge_deletes_allowed[10.0], floor_segment[2mb], max_merge_at_once[2], max_merge_at_once_explicit[30], max_merged_segment[5gb], segments_per_tier[2.0], reclaim_deletes_weight[2.0]
+[2016-03-30 14:04:02,027][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] state: [CREATED]
+[2016-03-30 14:04:02,027][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] state: [CREATED]->[RECOVERING], reason [from store]
+[2016-03-30 14:04:02,028][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] starting recovery from store ...
+[2016-03-30 14:04:02,028][TRACE][org.elasticsearch.gateway] [node_s0] [test] writing state, reason [freshly created]
+[2016-03-30 14:04:02,032][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]], cluster_state update (version: 46)
+[2016-03-30 14:04:02,032][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 46)
+[2016-03-30 14:04:02,032][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [create-index [test], cause [api]]: took 21ms done applying updated cluster_state (version: 46, uuid: JviPTcgxRCSFW0LnjLuabw)
+[2016-03-30 14:04:02,032][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [41][indices:admin/create] sent response
+[2016-03-30 14:04:02,032][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [41][indices:admin/create] received response from [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]]
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.service] [node_s0] will process [update-settings]
+[2016-03-30 14:04:02,033][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [update-settings]: execute
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start assigning unassigned shards
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]] to node [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.service] expecting 2 acknowledgements for cluster_state update (version: 47)
+[2016-03-30 14:04:02,033][TRACE][org.elasticsearch.cluster.service] [node_s0] cluster state updated, source [update-settings]
+version: 47
+state uuid: GDhgrQlkQJCfvWVpU1wg6w
+from_diff: false
+meta data version: 45
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], local, master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]
+routing_table (version 35):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+---- unassigned
+
+[2016-03-30 14:04:02,034][DEBUG][org.elasticsearch.cluster.service] [node_s0] publishing cluster state version [47]
+[2016-03-30 14:04:02,034][TRACE][org.elasticsearch.discovery.local] [node_s0] sending diff cluster state version [47] with size 825 to [node_s1]
+[2016-03-30 14:04:02,034][TRACE][org.elasticsearch.cluster.service] [node_s1] will process [local-disco-receive(from master)]
+[2016-03-30 14:04:02,034][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:04:02,034][TRACE][org.elasticsearch.cluster.service] [node_s1] cluster state updated, source [local-disco-receive(from master)]
+version: 47
+state uuid: GDhgrQlkQJCfvWVpU1wg6w
+from_diff: false
+meta data version: 45
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false], local
+routing_table (version 35):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]
+---- unassigned
+
+[2016-03-30 14:04:02,034][DEBUG][org.elasticsearch.cluster.service] [node_s1] set local cluster state to version 47
+[2016-03-30 14:04:02,035][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]], cluster_state update (version: 47)
+[2016-03-30 14:04:02,035][DEBUG][org.elasticsearch.cluster.service] [node_s0] set local cluster state to version 47
+[2016-03-30 14:04:02,035][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: took 0s done applying updated cluster_state (version: 47, uuid: GDhgrQlkQJCfvWVpU1wg6w)
+[2016-03-30 14:04:02,035][TRACE][org.elasticsearch.cluster.routing] [node_s0] no need to schedule reroute - no delayed unassigned shards, minDelaySetting [0], scheduled [9223372036854775807]
+[2016-03-30 14:04:02,035][TRACE][org.elasticsearch.indices.cluster] [node_s0] ignoring recovery instruction for an existing shard [test][0] (shard state: [RECOVERING])
+[2016-03-30 14:04:02,036][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: init: current segments file is "segments"; deletionPolicy=org.apache.lucene.index.SnapshotDeletionPolicy@152210f5
+[2016-03-30 14:04:02,036][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: now checkpoint "" [0 segments ; isCommit = false]
+[2016-03-30 14:04:02,036][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: 0 msec to checkpoint
+[2016-03-30 14:04:02,036][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: init: create=true
+[2016-03-30 14:04:02,036][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: 
+dir=store(ElasticsearchMockDirectoryWrapper(default(mmapfs(/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2/temp/org.elasticsearch.indices.settings.UpdateSettingsIT_F7928424F380CF7C-001/tempDir-001/data/SUITE-CHILD_VM=[2]-CLUSTER_SEED=[685587905727822786]-HASH=[462DD9C7C370D]-cluster/nodes/0/indices/test/0/index),niofs(/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2/temp/org.elasticsearch.indices.settings.UpdateSettingsIT_F7928424F380CF7C-001/tempDir-001/data/SUITE-CHILD_VM=[2]-CLUSTER_SEED=[685587905727822786]-HASH=[462DD9C7C370D]-cluster/nodes/0/indices/test/0/index))))
+index=
+version=5.4.0
+analyzer=org.elasticsearch.index.mapper.MapperService$MapperAnalyzerWrapper
+ramBufferSizeMB=0.48828125
+maxBufferedDocs=-1
+maxBufferedDeleteTerms=-1
+mergedSegmentWarmer=org.elasticsearch.index.engine.InternalEngine$2@352b79bd
+delPolicy=org.apache.lucene.index.SnapshotDeletionPolicy
+commit=null
+openMode=CREATE
+similarity=org.elasticsearch.index.similarity.SimilarityService$PerFieldSimilarity
+mergeScheduler=EngineMergeScheduler: maxThreadCount=1, maxMergeCount=2, ioThrottle=true
+default WRITE_LOCK_TIMEOUT=0
+writeLockTimeout=5000
+codec=Asserting(Lucene54): {_field_names=PostingsFormat(name=Asserting), f=PostingsFormat(name=Asserting), _type=PostingsFormat(name=Asserting), _uid=PostingsFormat(name=Asserting), _all=PostingsFormat(name=Asserting)}, docValues:{f=DocValuesFormat(name=Lucene54), _type=DocValuesFormat(name=Asserting), _version=DocValuesFormat(name=Asserting)}
+infoStream=org.elasticsearch.common.lucene.LoggerInfoStream
+mergePolicy=ElasticsearchMergePolicy([TieredMergePolicy: maxMergeAtOnce=2, maxMergeAtOnceExplicit=30, maxMergedSegmentMB=5120.0, floorSegmentMB=2.0, forceMergeDeletesPctAllowed=10.0, segmentsPerTier=2.0, maxCFSSegmentSizeMB=8.796093022207999E12, noCFSRatio=0.1)
+indexerThreadPool=org.apache.lucene.index.DocumentsWriterPerThreadPool@bcbea4b
+readerPooling=false
+perThreadHardLimitMB=1945
+useCompoundFile=true
+commitOnClose=false
+writer=org.apache.lucene.index.IndexWriter@428e4025
+
+[2016-03-30 14:04:02,037][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: MMapDirectory.UNMAP_SUPPORTED=true
+[2016-03-30 14:04:02,038][DEBUG][org.elasticsearch.index.translog] [node_s0] [test][0] wipe translog location - creating new translog
+[2016-03-30 14:04:02,039][DEBUG][org.elasticsearch.index.engine] [node_s0] [test][0] no translog ID present in the current generation - creating one
+[2016-03-30 14:04:02,039][TRACE][org.elasticsearch.index.engine] [node_s0] [test][0] committing writer with translog id [1]  and sync id [null] 
+[2016-03-30 14:04:02,039][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: start
+[2016-03-30 14:04:02,039][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: enter lock
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: now prepare
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: prepareCommit: flush
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW:   index before flush 
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: startFullFlush
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: apply all deletes during flush
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: now apply all deletes for all segments maxDoc=0
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] BD: prune sis=segments:  minGen=9223372036854775807 packetCount=0
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: elasticsearch[node_s0][generic][T#1] finishFullFlush success=true
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: startCommit(): start
+[2016-03-30 14:04:02,040][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: startCommit index= changeCount=3
+[2016-03-30 14:04:02,046][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: startCommit: wrote pending segments file "pending_segments_1"
+[2016-03-30 14:04:02,047][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: done all syncs: []
+[2016-03-30 14:04:02,047][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: pendingCommit != null
+[2016-03-30 14:04:02,048][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: done writing segments file "segments_1"
+[2016-03-30 14:04:02,048][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: now checkpoint "" [0 segments ; isCommit = true]
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw.ifd] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IFD: 0 msec to checkpoint
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: took 9.1 msec
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: commit: done
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: flush at getReader
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: startFullFlush
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: apply all deletes during flush
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: now apply all deletes for all segments maxDoc=0
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] BD: prune sis=segments_1:  minGen=9223372036854775807 packetCount=0
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: incRefDeleter for NRT reader version=3 segments=
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: return reader version=3 reader=StandardDirectoryReader(segments_1:3:nrt)
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] DW: elasticsearch[node_s0][generic][T#1] finishFullFlush success=true
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][generic][T#1] IW: getReader took 0 msec
+[2016-03-30 14:04:02,049][TRACE][org.elasticsearch.indices] [node_s0] [test][0] warming [ElasticsearchDirectoryReader()]
+[2016-03-30 14:04:02,050][TRACE][org.elasticsearch.index.warmer] [node_s0] [test][0] warming took [79micros]
+[2016-03-30 14:04:02,050][TRACE][org.elasticsearch.indices] [node_s0] [test][0] top warming [ElasticsearchDirectoryReader()]
+[2016-03-30 14:04:02,050][TRACE][org.elasticsearch.index.warmer] [node_s0] [test][0] top warming took [12.1micros]
+[2016-03-30 14:04:02,050][TRACE][org.elasticsearch.index.engine] [node_s0] [test][0] created new InternalEngine
+[2016-03-30 14:04:02,050][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] scheduling refresher every 1s
+[2016-03-30 14:04:02,051][INFO ][org.elasticsearch.index.shard] [node_s0] [test][0] updating [index.merge.scheduler.auto_throttle] from [true] to [false]
+[2016-03-30 14:04:02,051][DEBUG][org.elasticsearch.index.shard] [node_s0] [test][0] state: [RECOVERING]->[POST_RECOVERY], reason [post recovery from shard_store]
+[2016-03-30 14:04:02,051][TRACE][org.elasticsearch.index.shard] [node_s0] [test][0] recovery completed from shard_store, took [23ms]
+    index    : files           [0] with total_size [0b], took[2ms]
+             : recovered_files [0] with total_size [0b]
+             : reusing_files   [0] with total_size [0b]
+    verify_index    : took [0s], check_index [0s]
+    translog : number_of_operations [0], took [20ms]
+[2016-03-30 14:04:02,051][DEBUG][org.elasticsearch.cluster.action.shard] [node_s0] [test][0] sending shard started for [test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]], indexUUID [ISepMlkfSlOnov0lmATriQ], message [after recovery from store], failure [Unknown]
+[2016-03-30 14:04:02,052][DEBUG][org.elasticsearch.cluster.action.shard] [node_s0] received shard started for [test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]], indexUUID [ISepMlkfSlOnov0lmATriQ], message [after recovery from store], failure [Unknown]
+[2016-03-30 14:04:02,051][TRACE][org.elasticsearch.index.engine.lucene.iw] [node_s0] [test][0] elasticsearch[node_s0][clusterService#updateTask][T#1] MS: updateMergeThreads ioThrottle=false targetMBPerSec=20.0 MB/sec
+[2016-03-30 14:04:02,052][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [36][internal:cluster/shard/started] received response from [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]]
+[2016-03-30 14:04:02,052][TRACE][org.elasticsearch.gateway] [node_s0] [test] writing state, reason [version changed from [1] to [2]]
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]], cluster_state update (version: 47)
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 47)
+[2016-03-30 14:04:02,057][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [update-settings]: took 24ms done applying updated cluster_state (version: 47, uuid: GDhgrQlkQJCfvWVpU1wg6w)
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.cluster.service] [node_s0] will process [shard-started ([test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]), reason [after recovery from store]]
+[2016-03-30 14:04:02,057][DEBUG][org.elasticsearch.cluster.service] [node_s0] processing [shard-started ([test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]), reason [after recovery from store]]: execute
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.test   ] Using transport client for node [node_s1] sniff: [false]
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.cluster.routing.allocation] [node_s0] [test][0] marked shard as started (routing: [test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]])
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.transport.tracer] [transport_client_node_s1] [6][indices:monitor/settings/get] sent to [{node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]] (timeout: [null])
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.cluster.routing.allocation.decider] [node_s0] only a single data node is present, allowing allocation
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start assigning unassigned shards
+[2016-03-30 14:04:02,057][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [6][indices:monitor/settings/get] received request
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start distributing Shards
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Assigned shard [[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[2], s[STARTED], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ]] to node [jIhvIKYrReWlNFOW-kpf3A]
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.cluster.routing.allocation.allocator] [node_s0] Start allocating unassigned shards
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [42][indices:monitor/settings/get] sent to [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]] (timeout: [null])
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [42][indices:monitor/settings/get] received request
+[2016-03-30 14:04:02,058][INFO ][org.elasticsearch.cluster.routing.allocation] [node_s0] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[test][0]] ...]).
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.cluster.service] [node_s0] cluster state updated, source [shard-started ([test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[1], s[INITIALIZING], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:04:02.015Z]]), reason [after recovery from store]]
+version: 48
+state uuid: 0knD9vyHSOOdqwhR0TUpaQ
+from_diff: false
+meta data version: 46
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], local, master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]
+routing_table (version 36):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[2], s[STARTED], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[2], s[STARTED], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ]
+---- unassigned
+
+[2016-03-30 14:04:02,058][DEBUG][org.elasticsearch.cluster.service] [node_s0] publishing cluster state version [48]
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.test.transport.tracer] [node_s0] [42][indices:monitor/settings/get] sent response
+[2016-03-30 14:04:02,058][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [42][indices:monitor/settings/get] received response from [{node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local]]
+[2016-03-30 14:04:02,059][TRACE][org.elasticsearch.discovery.local] [node_s0] sending diff cluster state version [48] with size 927 to [node_s1]
+[2016-03-30 14:04:02,059][TRACE][org.elasticsearch.cluster.service] [node_s1] will process [local-disco-receive(from master)]
+[2016-03-30 14:04:02,059][DEBUG][org.elasticsearch.cluster.service] [node_s1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:04:02,059][TRACE][org.elasticsearch.test.transport.tracer] [node_s1] [6][indices:monitor/settings/get] sent response
+[2016-03-30 14:04:02,059][TRACE][org.elasticsearch.transport.tracer] [transport_client_node_s1] [6][indices:monitor/settings/get] received response from [{node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false]]
+[2016-03-30 14:04:02,059][TRACE][org.elasticsearch.cluster.service] [node_s1] cluster state updated, source [local-disco-receive(from master)]
+version: 48
+state uuid: 0knD9vyHSOOdqwhR0TUpaQ
+from_diff: false
+meta data version: 46
+nodes: 
+   {node_s0}{jIhvIKYrReWlNFOW-kpf3A}{local}{local[426]}[mode=>local], master
+   {node_s1}{RJrVu2YZQ12YVkVm858UEQ}{local}{local[427]}[client=>true, mode=>local, data=>false], local
+routing_table (version 36):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[2], s[STARTED], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ]
+
+routing_nodes:
+-----node_id[jIhvIKYrReWlNFOW-kpf3A][V]
+--------[test][0], node[jIhvIKYrReWlNFOW-kpf3A], [P], v[2], s[STARTED], a[id=Jf1Q6G1zTNKBrWLaXQlmvQ]
+---- unassigned
+
+[2016-03-30 14:04:02,059][DEBUG][org.elasticsearch.cluster.service] [node_s1] set local cluster state to version 48
+]]></system-out>
+   <system-err><![CDATA[]]></system-err>
+</testsuite>

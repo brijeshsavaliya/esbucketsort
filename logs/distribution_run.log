@@ -1,0 +1,2059 @@
+[2016-03-30 14:37:30,472][INFO ][node                     ] [Diamondback] version[3.0.0-SNAPSHOT], pid[70919], build[b0acc9e/2016-03-30T21:25:01.602Z]
+[2016-03-30 14:37:30,473][INFO ][node                     ] [Diamondback] initializing ...
+[2016-03-30 14:37:30,479][INFO ][plugins                  ] [Diamondback] modules [], plugins [], sites []
+[2016-03-30 14:37:30,510][INFO ][env                      ] [Diamondback] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.9gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 14:37:32,122][INFO ][node                     ] [Diamondback] initialized
+[2016-03-30 14:37:32,123][INFO ][node                     ] [Diamondback] starting ...
+[2016-03-30 14:37:32,191][INFO ][transport                ] [Diamondback] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 14:37:32,197][INFO ][discovery                ] [Diamondback] distribution_run/yg9gRJbbTgq7LNkOj9K5mw
+[2016-03-30 14:37:35,218][INFO ][cluster.service          ] [Diamondback] new_master {Diamondback}{yg9gRJbbTgq7LNkOj9K5mw}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 14:37:35,232][INFO ][http                     ] [Diamondback] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 14:37:35,232][INFO ][node                     ] [Diamondback] started
+[2016-03-30 14:37:35,254][INFO ][gateway                  ] [Diamondback] recovered [0] indices into cluster_state
+[2016-03-30 14:38:05,231][INFO ][cluster.routing.allocation.decider] [Diamondback] low disk watermark [85%] exceeded on [yg9gRJbbTgq7LNkOj9K5mw][Diamondback][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:38:35,231][INFO ][cluster.routing.allocation.decider] [Diamondback] low disk watermark [85%] exceeded on [yg9gRJbbTgq7LNkOj9K5mw][Diamondback][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:39:05,232][INFO ][cluster.routing.allocation.decider] [Diamondback] low disk watermark [85%] exceeded on [yg9gRJbbTgq7LNkOj9K5mw][Diamondback][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:39:35,234][INFO ][cluster.routing.allocation.decider] [Diamondback] low disk watermark [85%] exceeded on [yg9gRJbbTgq7LNkOj9K5mw][Diamondback][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:39:52,578][INFO ][node                     ] [Diamondback] stopping ...
+[2016-03-30 14:39:52,595][INFO ][node                     ] [Diamondback] stopped
+[2016-03-30 14:39:52,595][INFO ][node                     ] [Diamondback] closing ...
+[2016-03-30 14:39:52,601][INFO ][node                     ] [Diamondback] closed
+[2016-03-30 14:42:18,969][INFO ][node                     ] [Volstagg] version[3.0.0-SNAPSHOT], pid[71331], build[b0acc9e/2016-03-30T21:25:01.602Z]
+[2016-03-30 14:42:18,970][INFO ][node                     ] [Volstagg] initializing ...
+[2016-03-30 14:42:18,978][INFO ][plugins                  ] [Volstagg] modules [], plugins [], sites []
+[2016-03-30 14:42:19,007][INFO ][env                      ] [Volstagg] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.9gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 14:42:20,685][INFO ][node                     ] [Volstagg] initialized
+[2016-03-30 14:42:20,688][INFO ][node                     ] [Volstagg] starting ...
+[2016-03-30 14:42:20,751][INFO ][transport                ] [Volstagg] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 14:42:20,759][INFO ][discovery                ] [Volstagg] distribution_run/Rv847RIjQKadegDAPODArA
+[2016-03-30 14:42:23,786][INFO ][cluster.service          ] [Volstagg] new_master {Volstagg}{Rv847RIjQKadegDAPODArA}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 14:42:23,800][INFO ][http                     ] [Volstagg] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 14:42:23,800][INFO ][node                     ] [Volstagg] started
+[2016-03-30 14:42:23,815][INFO ][gateway                  ] [Volstagg] recovered [0] indices into cluster_state
+[2016-03-30 14:42:53,798][INFO ][cluster.routing.allocation.decider] [Volstagg] low disk watermark [85%] exceeded on [Rv847RIjQKadegDAPODArA][Volstagg][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:43:19,642][INFO ][node                     ] [Volstagg] stopping ...
+[2016-03-30 14:43:19,659][INFO ][node                     ] [Volstagg] stopped
+[2016-03-30 14:43:19,660][INFO ][node                     ] [Volstagg] closing ...
+[2016-03-30 14:43:19,665][INFO ][node                     ] [Volstagg] closed
+[2016-03-30 14:43:41,483][INFO ][node                     ] [Vegas] version[3.0.0-SNAPSHOT], pid[71443], build[b0acc9e/2016-03-30T21:25:01.602Z]
+[2016-03-30 14:43:41,483][INFO ][node                     ] [Vegas] initializing ...
+[2016-03-30 14:43:41,492][INFO ][plugins                  ] [Vegas] modules [], plugins [], sites []
+[2016-03-30 14:43:41,518][INFO ][env                      ] [Vegas] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.9gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 14:43:43,115][INFO ][node                     ] [Vegas] initialized
+[2016-03-30 14:43:43,118][INFO ][node                     ] [Vegas] starting ...
+[2016-03-30 14:43:43,186][INFO ][transport                ] [Vegas] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 14:43:43,193][INFO ][discovery                ] [Vegas] distribution_run/KUSVfw0eTXmqr2g3TR2R7Q
+[2016-03-30 14:43:46,210][INFO ][cluster.service          ] [Vegas] new_master {Vegas}{KUSVfw0eTXmqr2g3TR2R7Q}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 14:43:46,225][INFO ][http                     ] [Vegas] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 14:43:46,225][INFO ][node                     ] [Vegas] started
+[2016-03-30 14:43:46,243][INFO ][gateway                  ] [Vegas] recovered [0] indices into cluster_state
+[2016-03-30 14:44:04,859][INFO ][cluster.metadata         ] [Vegas] [hydra_metrics_raw_raj] creating index, cause [auto(bulk api)], templates [], shards [5]/[1], mappings [mtype]
+[2016-03-30 14:44:05,121][INFO ][cluster.routing.allocation] [Vegas] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][4], [hydra_metrics_raw_raj][4]] ...]).
+[2016-03-30 14:44:05,151][INFO ][cluster.metadata         ] [Vegas] [hydra_metrics_raw_raj] update_mapping [mtype]
+[2016-03-30 14:44:16,228][INFO ][cluster.routing.allocation.decider] [Vegas] low disk watermark [85%] exceeded on [KUSVfw0eTXmqr2g3TR2R7Q][Vegas][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:44:20,053][DEBUG][action.search.type       ] [Vegas] [hydra_metrics_raw_raj][2], node[KUSVfw0eTXmqr2g3TR2R7Q], [P], v[2], s[STARTED], a[id=S5lBzLkWQxaFwcWO3f7vug]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3d8630f3]
+RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:20,053][DEBUG][action.search.type       ] [Vegas] [hydra_metrics_raw_raj][0], node[KUSVfw0eTXmqr2g3TR2R7Q], [P], v[2], s[STARTED], a[id=aV8eozoNRUuo3NNean8kKw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3d8630f3] lastShard [true]
+RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:20,053][DEBUG][action.search.type       ] [Vegas] [hydra_metrics_raw_raj][4], node[KUSVfw0eTXmqr2g3TR2R7Q], [P], v[2], s[STARTED], a[id=b0BsE-4-TLqXhhewgKSuIg]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3d8630f3] lastShard [true]
+RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:20,053][DEBUG][action.search.type       ] [Vegas] [hydra_metrics_raw_raj][1], node[KUSVfw0eTXmqr2g3TR2R7Q], [P], v[2], s[STARTED], a[id=HiWZfF4VTB6bwyHcMm3Ouw]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3d8630f3] lastShard [true]
+RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:20,053][DEBUG][action.search.type       ] [Vegas] [hydra_metrics_raw_raj][3], node[KUSVfw0eTXmqr2g3TR2R7Q], [P], v[2], s[STARTED], a[id=eGIJQxQiTjmFUSI1Aaj6-A]: Failed to execute [org.elasticsearch.action.search.SearchRequest@3d8630f3] lastShard [true]
+RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:20,057][DEBUG][action.search.type       ] [Vegas] All shards failed for phase: [query]
+RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:20,065][INFO ][rest.suppressed          ] /hydra_metrics_raw_raj/_search Params: {pretty=, index=hydra_metrics_raw_raj}
+Failed to execute phase [query], all shards failed; shardFailures {[KUSVfw0eTXmqr2g3TR2R7Q][hydra_metrics_raw_raj][0]: RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]; }{[KUSVfw0eTXmqr2g3TR2R7Q][hydra_metrics_raw_raj][1]: RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]; }{[KUSVfw0eTXmqr2g3TR2R7Q][hydra_metrics_raw_raj][2]: RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]; }{[KUSVfw0eTXmqr2g3TR2R7Q][hydra_metrics_raw_raj][3]: RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]; }{[KUSVfw0eTXmqr2g3TR2R7Q][hydra_metrics_raw_raj][4]: RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]; }
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction.onFirstPhaseResult(TransportSearchTypeAction.java:230)
+	at org.elasticsearch.action.search.type.TransportSearchTypeAction$BaseAsyncAction$1.onFailure(TransportSearchTypeAction.java:174)
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:46)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:810)
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:788)
+	at org.elasticsearch.transport.TransportService$4.onFailure(TransportService.java:361)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[Vegas][127.0.0.1:9300][indices:data/read/search[phase/query]]]; nested: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+Caused by: SearchParseException[failed to parse rescore source [{
+  "size" : 0,
+  "aggregations" : {
+    "metric_names" : {
+      "terms" : {
+        "field" : "hydra_id",
+        "order" : {
+          "score" : "desc"
+        }
+      },
+      "aggs" : {
+        "pageview7day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-02-27T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        },
+        "pageview30day" : {
+          "filter" : {
+            "bool" : {
+              "must" : [ {
+                "term" : {
+                  "metric" : "pageview"
+                }
+              }, {
+                "range" : {
+                  "TIMESTAMP" : {
+                    "gte" : "2016-01-01T00:00:00.000-00:00"
+                  }
+                }
+              } ]
+            }
+          },
+          "aggs" : {
+            "total" : {
+              "sum" : {
+                "field" : "total"
+              }
+            },
+            "aav" : {
+              "avg" : {
+                "field" : "total"
+              }
+            }
+          }
+        }
+      },
+      "score" : {
+        "bucket_script" : {
+          "buckets_path" : {
+            "pageview7" : "pageview7day>total",
+            "pageview30" : "pageview30day>total"
+          },
+          "script" : "pageview7 / pageview30"
+        }
+      }
+    }
+  }
+}]]; nested: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]];
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:743)
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:570)
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:527)
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:278)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:346)
+	at org.elasticsearch.search.action.SearchServiceTransportAction$SearchQueryTransportHandler.messageReceived(SearchServiceTransportAction.java:343)
+	at org.elasticsearch.transport.TransportService$4.doRun(TransportService.java:350)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: SearchParseException[Found two aggregation type definitions in [metric_names]: [terms] and [score]]
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:181)
+	at org.elasticsearch.search.aggregations.AggregatorParsers.parseAggregators(AggregatorParsers.java:103)
+	at org.elasticsearch.search.aggregations.AggregationParseElement.parse(AggregationParseElement.java:60)
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:734)
+	... 10 more
+[2016-03-30 14:44:26,282][DEBUG][action.search.type       ] [Vegas] failed to reduce search
+Failed to execute phase [fetch], [reduce] 
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.onFailure(TransportSearchQueryThenFetchAction.java:162)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: script_lang not supported [groovy]
+	at org.elasticsearch.script.ScriptService.getScriptEngineServiceForLang(ScriptService.java:211)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:241)
+	at org.elasticsearch.search.aggregations.pipeline.bucketscript.BucketScriptPipelineAggregator.reduce(BucketScriptPipelineAggregator.java:93)
+	at org.elasticsearch.search.aggregations.InternalAggregation.reduce(InternalAggregation.java:155)
+	at org.elasticsearch.search.aggregations.InternalAggregations.reduce(InternalAggregations.java:160)
+	at org.elasticsearch.search.controller.SearchPhaseController.merge(SearchPhaseController.java:409)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.doRun(TransportSearchQueryThenFetchAction.java:149)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	... 3 more
+[2016-03-30 14:44:26,283][INFO ][rest.suppressed          ] /hydra_metrics_raw_raj/_search Params: {pretty=, index=hydra_metrics_raw_raj}
+Failed to execute phase [fetch], [reduce] 
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.onFailure(TransportSearchQueryThenFetchAction.java:162)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: script_lang not supported [groovy]
+	at org.elasticsearch.script.ScriptService.getScriptEngineServiceForLang(ScriptService.java:211)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:241)
+	at org.elasticsearch.search.aggregations.pipeline.bucketscript.BucketScriptPipelineAggregator.reduce(BucketScriptPipelineAggregator.java:93)
+	at org.elasticsearch.search.aggregations.InternalAggregation.reduce(InternalAggregation.java:155)
+	at org.elasticsearch.search.aggregations.InternalAggregations.reduce(InternalAggregations.java:160)
+	at org.elasticsearch.search.controller.SearchPhaseController.merge(SearchPhaseController.java:409)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.doRun(TransportSearchQueryThenFetchAction.java:149)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	... 3 more
+[2016-03-30 14:44:46,233][INFO ][cluster.routing.allocation.decider] [Vegas] low disk watermark [85%] exceeded on [KUSVfw0eTXmqr2g3TR2R7Q][Vegas][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:45:12,240][INFO ][node                     ] [Vegas] stopping ...
+[2016-03-30 14:45:12,293][INFO ][node                     ] [Vegas] stopped
+[2016-03-30 14:45:12,293][INFO ][node                     ] [Vegas] closing ...
+[2016-03-30 14:45:12,297][INFO ][node                     ] [Vegas] closed
+[2016-03-30 14:46:53,653][INFO ][node                     ] [Wildboys] version[3.0.0-SNAPSHOT], pid[71665], build[b0acc9e/2016-03-30T21:25:01.602Z]
+[2016-03-30 14:46:53,654][INFO ][node                     ] [Wildboys] initializing ...
+[2016-03-30 14:46:53,662][INFO ][plugins                  ] [Wildboys] modules [], plugins [], sites []
+[2016-03-30 14:46:53,695][INFO ][env                      ] [Wildboys] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.9gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 14:46:55,342][INFO ][node                     ] [Wildboys] initialized
+[2016-03-30 14:46:55,345][INFO ][node                     ] [Wildboys] starting ...
+[2016-03-30 14:46:55,413][INFO ][transport                ] [Wildboys] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 14:46:55,420][INFO ][discovery                ] [Wildboys] distribution_run/LOYAWBH3Q1m2N5flUS9onQ
+[2016-03-30 14:46:58,441][INFO ][cluster.service          ] [Wildboys] new_master {Wildboys}{LOYAWBH3Q1m2N5flUS9onQ}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 14:46:58,459][INFO ][http                     ] [Wildboys] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 14:46:58,460][INFO ][node                     ] [Wildboys] started
+[2016-03-30 14:46:58,496][INFO ][gateway                  ] [Wildboys] recovered [1] indices into cluster_state
+[2016-03-30 14:46:58,920][INFO ][cluster.routing.allocation] [Wildboys] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][2]] ...]).
+[2016-03-30 14:47:19,559][DEBUG][action.search.type       ] [Wildboys] failed to reduce search
+Failed to execute phase [fetch], [reduce] 
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.onFailure(TransportSearchQueryThenFetchAction.java:162)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: script_lang not supported [groovy]
+	at org.elasticsearch.script.ScriptService.getScriptEngineServiceForLang(ScriptService.java:211)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:241)
+	at org.elasticsearch.search.aggregations.pipeline.bucketscript.BucketScriptPipelineAggregator.reduce(BucketScriptPipelineAggregator.java:93)
+	at org.elasticsearch.search.aggregations.InternalAggregation.reduce(InternalAggregation.java:155)
+	at org.elasticsearch.search.aggregations.InternalAggregations.reduce(InternalAggregations.java:160)
+	at org.elasticsearch.search.controller.SearchPhaseController.merge(SearchPhaseController.java:409)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.doRun(TransportSearchQueryThenFetchAction.java:149)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	... 3 more
+[2016-03-30 14:47:19,563][INFO ][rest.suppressed          ] /hydra_metrics_raw_raj/_search Params: {pretty=, index=hydra_metrics_raw_raj}
+Failed to execute phase [fetch], [reduce] 
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.onFailure(TransportSearchQueryThenFetchAction.java:162)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: script_lang not supported [groovy]
+	at org.elasticsearch.script.ScriptService.getScriptEngineServiceForLang(ScriptService.java:211)
+	at org.elasticsearch.script.ScriptService.compile(ScriptService.java:241)
+	at org.elasticsearch.search.aggregations.pipeline.bucketscript.BucketScriptPipelineAggregator.reduce(BucketScriptPipelineAggregator.java:93)
+	at org.elasticsearch.search.aggregations.InternalAggregation.reduce(InternalAggregation.java:155)
+	at org.elasticsearch.search.aggregations.InternalAggregations.reduce(InternalAggregations.java:160)
+	at org.elasticsearch.search.controller.SearchPhaseController.merge(SearchPhaseController.java:409)
+	at org.elasticsearch.action.search.type.TransportSearchQueryThenFetchAction$AsyncAction$2.doRun(TransportSearchQueryThenFetchAction.java:149)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	... 3 more
+[2016-03-30 14:47:28,455][INFO ][cluster.routing.allocation.decider] [Wildboys] low disk watermark [85%] exceeded on [LOYAWBH3Q1m2N5flUS9onQ][Wildboys][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.9gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 14:47:54,531][INFO ][node                     ] [Wildboys] stopping ...
+[2016-03-30 14:47:54,569][INFO ][node                     ] [Wildboys] stopped
+[2016-03-30 14:47:54,569][INFO ][node                     ] [Wildboys] closing ...
+[2016-03-30 14:47:54,572][INFO ][node                     ] [Wildboys] closed
+[2016-03-30 22:09:14,500][INFO ][node                     ] [Dreamqueen] version[3.0.0-SNAPSHOT], pid[99186], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:09:14,501][INFO ][node                     ] [Dreamqueen] initializing ...
+[2016-03-30 22:09:14,563][INFO ][plugins                  ] [Dreamqueen] modules [], plugins [], sites []
+[2016-03-30 22:09:14,585][INFO ][env                      ] [Dreamqueen] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:09:16,265][INFO ][node                     ] [Dreamqueen] initialized
+[2016-03-30 22:09:16,265][INFO ][node                     ] [Dreamqueen] starting ...
+[2016-03-30 22:09:16,348][INFO ][transport                ] [Dreamqueen] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:09:16,356][INFO ][discovery                ] [Dreamqueen] distribution_run/GdnjBBZnRYmm6MTnQnIYXA
+[2016-03-30 22:09:19,385][INFO ][cluster.service          ] [Dreamqueen] new_master {Dreamqueen}{GdnjBBZnRYmm6MTnQnIYXA}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:09:19,401][INFO ][http                     ] [Dreamqueen] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:09:19,401][INFO ][node                     ] [Dreamqueen] started
+[2016-03-30 22:09:19,433][INFO ][gateway                  ] [Dreamqueen] recovered [1] indices into cluster_state
+[2016-03-30 22:09:19,864][INFO ][cluster.routing.allocation] [Dreamqueen] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][3]] ...]).
+[2016-03-30 22:09:49,403][INFO ][cluster.routing.allocation.decider] [Dreamqueen] low disk watermark [85%] exceeded on [GdnjBBZnRYmm6MTnQnIYXA][Dreamqueen][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:10:19,417][INFO ][cluster.routing.allocation.decider] [Dreamqueen] low disk watermark [85%] exceeded on [GdnjBBZnRYmm6MTnQnIYXA][Dreamqueen][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:10:22,373][INFO ][node                     ] [Dreamqueen] stopping ...
+[2016-03-30 22:10:22,416][INFO ][node                     ] [Dreamqueen] stopped
+[2016-03-30 22:10:22,416][INFO ][node                     ] [Dreamqueen] closing ...
+[2016-03-30 22:10:22,420][INFO ][node                     ] [Dreamqueen] closed
+[2016-03-30 22:11:01,661][INFO ][node                     ] [Diablo] version[3.0.0-SNAPSHOT], pid[99324], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:11:01,663][INFO ][node                     ] [Diablo] initializing ...
+[2016-03-30 22:11:01,726][INFO ][plugins                  ] [Diablo] modules [], plugins [], sites []
+[2016-03-30 22:11:01,747][INFO ][env                      ] [Diablo] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:11:03,401][INFO ][node                     ] [Diablo] initialized
+[2016-03-30 22:11:03,401][INFO ][node                     ] [Diablo] starting ...
+[2016-03-30 22:11:03,473][INFO ][transport                ] [Diablo] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:11:03,481][INFO ][discovery                ] [Diablo] distribution_run/T0bg8le1S4GaOLxdvnc4cw
+[2016-03-30 22:11:06,507][INFO ][cluster.service          ] [Diablo] new_master {Diablo}{T0bg8le1S4GaOLxdvnc4cw}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:11:06,520][INFO ][http                     ] [Diablo] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:11:06,521][INFO ][node                     ] [Diablo] started
+[2016-03-30 22:11:06,555][INFO ][gateway                  ] [Diablo] recovered [1] indices into cluster_state
+[2016-03-30 22:11:06,966][INFO ][cluster.routing.allocation] [Diablo] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][1]] ...]).
+[2016-03-30 22:11:36,522][INFO ][cluster.routing.allocation.decider] [Diablo] low disk watermark [85%] exceeded on [T0bg8le1S4GaOLxdvnc4cw][Diablo][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:11:37,365][INFO ][node                     ] [Diablo] stopping ...
+[2016-03-30 22:11:37,410][INFO ][node                     ] [Diablo] stopped
+[2016-03-30 22:11:37,411][INFO ][node                     ] [Diablo] closing ...
+[2016-03-30 22:11:37,415][INFO ][node                     ] [Diablo] closed
+[2016-03-30 22:12:02,233][INFO ][node                     ] [Al MacKenzie] version[3.0.0-SNAPSHOT], pid[99403], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:12:02,234][INFO ][node                     ] [Al MacKenzie] initializing ...
+[2016-03-30 22:12:02,299][INFO ][plugins                  ] [Al MacKenzie] modules [], plugins [], sites []
+[2016-03-30 22:12:02,320][INFO ][env                      ] [Al MacKenzie] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:12:03,999][INFO ][node                     ] [Al MacKenzie] initialized
+[2016-03-30 22:12:03,999][INFO ][node                     ] [Al MacKenzie] starting ...
+[2016-03-30 22:12:04,072][INFO ][transport                ] [Al MacKenzie] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:12:04,079][INFO ][discovery                ] [Al MacKenzie] distribution_run/eS0n5mTQTEiW1Po_YSW7Lg
+[2016-03-30 22:12:07,100][INFO ][cluster.service          ] [Al MacKenzie] new_master {Al MacKenzie}{eS0n5mTQTEiW1Po_YSW7Lg}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:12:07,118][INFO ][http                     ] [Al MacKenzie] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:12:07,118][INFO ][node                     ] [Al MacKenzie] started
+[2016-03-30 22:12:07,148][INFO ][gateway                  ] [Al MacKenzie] recovered [1] indices into cluster_state
+[2016-03-30 22:12:07,565][INFO ][cluster.routing.allocation] [Al MacKenzie] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][3]] ...]).
+[2016-03-30 22:12:36,104][INFO ][node                     ] [Al MacKenzie] stopping ...
+[2016-03-30 22:12:36,149][INFO ][node                     ] [Al MacKenzie] stopped
+[2016-03-30 22:12:36,149][INFO ][node                     ] [Al MacKenzie] closing ...
+[2016-03-30 22:12:36,153][INFO ][node                     ] [Al MacKenzie] closed
+[2016-03-30 22:13:04,085][INFO ][node                     ] [Conquistador] version[3.0.0-SNAPSHOT], pid[99483], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:13:04,086][INFO ][node                     ] [Conquistador] initializing ...
+[2016-03-30 22:13:04,151][INFO ][plugins                  ] [Conquistador] modules [], plugins [], sites []
+[2016-03-30 22:13:04,172][INFO ][env                      ] [Conquistador] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:13:05,865][INFO ][node                     ] [Conquistador] initialized
+[2016-03-30 22:13:05,866][INFO ][node                     ] [Conquistador] starting ...
+[2016-03-30 22:13:05,935][INFO ][transport                ] [Conquistador] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:13:05,943][INFO ][discovery                ] [Conquistador] distribution_run/ghI3FrizQy2vgm2PAyZO1Q
+[2016-03-30 22:13:08,967][INFO ][cluster.service          ] [Conquistador] new_master {Conquistador}{ghI3FrizQy2vgm2PAyZO1Q}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:13:08,983][INFO ][http                     ] [Conquistador] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:13:08,983][INFO ][node                     ] [Conquistador] started
+[2016-03-30 22:13:09,016][INFO ][gateway                  ] [Conquistador] recovered [1] indices into cluster_state
+[2016-03-30 22:13:09,425][INFO ][cluster.routing.allocation] [Conquistador] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][0]] ...]).
+[2016-03-30 22:13:38,989][INFO ][cluster.routing.allocation.decider] [Conquistador] low disk watermark [85%] exceeded on [ghI3FrizQy2vgm2PAyZO1Q][Conquistador][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:13:39,530][INFO ][node                     ] [Conquistador] stopping ...
+[2016-03-30 22:13:39,577][INFO ][node                     ] [Conquistador] stopped
+[2016-03-30 22:13:39,577][INFO ][node                     ] [Conquistador] closing ...
+[2016-03-30 22:13:39,581][INFO ][node                     ] [Conquistador] closed
+[2016-03-30 22:14:58,316][INFO ][node                     ] [Ronan the Accuser] version[3.0.0-SNAPSHOT], pid[99637], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:14:58,316][INFO ][node                     ] [Ronan the Accuser] initializing ...
+[2016-03-30 22:14:58,386][INFO ][plugins                  ] [Ronan the Accuser] modules [], plugins [], sites []
+[2016-03-30 22:14:58,407][INFO ][env                      ] [Ronan the Accuser] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:15:00,068][INFO ][node                     ] [Ronan the Accuser] initialized
+[2016-03-30 22:15:00,068][INFO ][node                     ] [Ronan the Accuser] starting ...
+[2016-03-30 22:15:00,140][INFO ][transport                ] [Ronan the Accuser] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:15:00,147][INFO ][discovery                ] [Ronan the Accuser] distribution_run/0XVCRofxSt6GGR5KNf13AA
+[2016-03-30 22:15:03,169][INFO ][cluster.service          ] [Ronan the Accuser] new_master {Ronan the Accuser}{0XVCRofxSt6GGR5KNf13AA}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:15:03,183][INFO ][http                     ] [Ronan the Accuser] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:15:03,184][INFO ][node                     ] [Ronan the Accuser] started
+[2016-03-30 22:15:03,218][INFO ][gateway                  ] [Ronan the Accuser] recovered [1] indices into cluster_state
+[2016-03-30 22:15:03,626][INFO ][cluster.routing.allocation] [Ronan the Accuser] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][1]] ...]).
+[2016-03-30 22:15:33,188][INFO ][cluster.routing.allocation.decider] [Ronan the Accuser] low disk watermark [85%] exceeded on [0XVCRofxSt6GGR5KNf13AA][Ronan the Accuser][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:15:36,366][INFO ][node                     ] [Ronan the Accuser] stopping ...
+[2016-03-30 22:15:36,411][INFO ][node                     ] [Ronan the Accuser] stopped
+[2016-03-30 22:15:36,411][INFO ][node                     ] [Ronan the Accuser] closing ...
+[2016-03-30 22:15:36,416][INFO ][node                     ] [Ronan the Accuser] closed
+[2016-03-30 22:16:10,969][INFO ][node                     ] [Devos the Devastator] version[3.0.0-SNAPSHOT], pid[99738], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:16:10,970][INFO ][node                     ] [Devos the Devastator] initializing ...
+[2016-03-30 22:16:11,041][INFO ][plugins                  ] [Devos the Devastator] modules [], plugins [], sites []
+[2016-03-30 22:16:11,062][INFO ][env                      ] [Devos the Devastator] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:16:12,732][INFO ][node                     ] [Devos the Devastator] initialized
+[2016-03-30 22:16:12,732][INFO ][node                     ] [Devos the Devastator] starting ...
+[2016-03-30 22:16:12,805][INFO ][transport                ] [Devos the Devastator] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:16:12,813][INFO ][discovery                ] [Devos the Devastator] distribution_run/EnaOCU14Q8mA0HD_-4Pzgg
+[2016-03-30 22:16:15,836][INFO ][cluster.service          ] [Devos the Devastator] new_master {Devos the Devastator}{EnaOCU14Q8mA0HD_-4Pzgg}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:16:15,850][INFO ][http                     ] [Devos the Devastator] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:16:15,850][INFO ][node                     ] [Devos the Devastator] started
+[2016-03-30 22:16:15,878][INFO ][gateway                  ] [Devos the Devastator] recovered [1] indices into cluster_state
+[2016-03-30 22:16:16,293][INFO ][cluster.routing.allocation] [Devos the Devastator] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][2]] ...]).
+[2016-03-30 22:16:45,858][INFO ][cluster.routing.allocation.decider] [Devos the Devastator] low disk watermark [85%] exceeded on [EnaOCU14Q8mA0HD_-4Pzgg][Devos the Devastator][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:16:48,805][INFO ][node                     ] [Devos the Devastator] stopping ...
+[2016-03-30 22:16:48,851][INFO ][node                     ] [Devos the Devastator] stopped
+[2016-03-30 22:16:48,852][INFO ][node                     ] [Devos the Devastator] closing ...
+[2016-03-30 22:16:48,855][INFO ][node                     ] [Devos the Devastator] closed
+[2016-03-30 22:20:02,080][INFO ][node                     ] [Bird-Man] version[3.0.0-SNAPSHOT], pid[161], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:20:02,080][INFO ][node                     ] [Bird-Man] initializing ...
+[2016-03-30 22:20:02,145][INFO ][plugins                  ] [Bird-Man] modules [], plugins [], sites []
+[2016-03-30 22:20:02,166][INFO ][env                      ] [Bird-Man] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:20:03,845][INFO ][node                     ] [Bird-Man] initialized
+[2016-03-30 22:20:03,845][INFO ][node                     ] [Bird-Man] starting ...
+[2016-03-30 22:20:03,923][INFO ][transport                ] [Bird-Man] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:20:03,932][INFO ][discovery                ] [Bird-Man] distribution_run/M-1DdMO4Slqk07DiOIGiPA
+[2016-03-30 22:20:06,953][INFO ][cluster.service          ] [Bird-Man] new_master {Bird-Man}{M-1DdMO4Slqk07DiOIGiPA}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:20:06,967][INFO ][http                     ] [Bird-Man] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:20:06,968][INFO ][node                     ] [Bird-Man] started
+[2016-03-30 22:20:07,001][INFO ][gateway                  ] [Bird-Man] recovered [1] indices into cluster_state
+[2016-03-30 22:20:07,408][INFO ][cluster.routing.allocation] [Bird-Man] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][1]] ...]).
+[2016-03-30 22:20:36,971][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:21:06,983][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:21:36,994][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:22:07,009][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:22:37,023][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:23:07,038][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:23:37,054][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.2%], replicas will not be assigned to this node
+[2016-03-30 22:24:07,068][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:24:37,079][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:25:07,093][INFO ][cluster.routing.allocation.decider] [Bird-Man] low disk watermark [85%] exceeded on [M-1DdMO4Slqk07DiOIGiPA][Bird-Man][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:25:19,067][INFO ][node                     ] [Bird-Man] stopping ...
+[2016-03-30 22:25:19,107][INFO ][node                     ] [Bird-Man] stopped
+[2016-03-30 22:25:19,108][INFO ][node                     ] [Bird-Man] closing ...
+[2016-03-30 22:25:19,111][INFO ][node                     ] [Bird-Man] closed
+[2016-03-30 22:27:26,450][INFO ][node                     ] [Adam X] version[3.0.0-SNAPSHOT], pid[830], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:27:26,450][INFO ][node                     ] [Adam X] initializing ...
+[2016-03-30 22:27:26,517][INFO ][plugins                  ] [Adam X] modules [], plugins [], sites []
+[2016-03-30 22:27:26,541][INFO ][env                      ] [Adam X] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:27:28,201][INFO ][node                     ] [Adam X] initialized
+[2016-03-30 22:27:28,201][INFO ][node                     ] [Adam X] starting ...
+[2016-03-30 22:27:28,278][INFO ][transport                ] [Adam X] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:27:28,286][INFO ][discovery                ] [Adam X] distribution_run/ZgcLmzfkT56uDMjWKDaatQ
+[2016-03-30 22:27:31,307][INFO ][cluster.service          ] [Adam X] new_master {Adam X}{ZgcLmzfkT56uDMjWKDaatQ}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:27:31,323][INFO ][http                     ] [Adam X] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:27:31,323][INFO ][node                     ] [Adam X] started
+[2016-03-30 22:27:31,356][INFO ][gateway                  ] [Adam X] recovered [1] indices into cluster_state
+[2016-03-30 22:27:31,767][INFO ][cluster.routing.allocation] [Adam X] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][0]] ...]).
+[2016-03-30 22:27:48,640][INFO ][node                     ] [Adam X] stopping ...
+[2016-03-30 22:27:48,685][INFO ][node                     ] [Adam X] stopped
+[2016-03-30 22:27:48,685][INFO ][node                     ] [Adam X] closing ...
+[2016-03-30 22:27:48,689][INFO ][node                     ] [Adam X] closed
+[2016-03-30 22:39:12,413][INFO ][node                     ] [Steel Spider] version[3.0.0-SNAPSHOT], pid[1702], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:39:12,414][INFO ][node                     ] [Steel Spider] initializing ...
+[2016-03-30 22:39:12,491][INFO ][plugins                  ] [Steel Spider] modules [], plugins [], sites []
+[2016-03-30 22:39:12,514][INFO ][env                      ] [Steel Spider] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:39:14,208][INFO ][node                     ] [Steel Spider] initialized
+[2016-03-30 22:39:14,209][INFO ][node                     ] [Steel Spider] starting ...
+[2016-03-30 22:39:14,280][INFO ][transport                ] [Steel Spider] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:39:14,289][INFO ][discovery                ] [Steel Spider] distribution_run/OdPaSMM5TGq-FivchbM_Fg
+[2016-03-30 22:39:17,312][INFO ][cluster.service          ] [Steel Spider] new_master {Steel Spider}{OdPaSMM5TGq-FivchbM_Fg}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:39:17,327][INFO ][http                     ] [Steel Spider] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:39:17,327][INFO ][node                     ] [Steel Spider] started
+[2016-03-30 22:39:17,361][INFO ][gateway                  ] [Steel Spider] recovered [1] indices into cluster_state
+[2016-03-30 22:39:17,792][INFO ][cluster.routing.allocation] [Steel Spider] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][4]] ...]).
+[2016-03-30 22:39:47,329][INFO ][cluster.routing.allocation.decider] [Steel Spider] low disk watermark [85%] exceeded on [OdPaSMM5TGq-FivchbM_Fg][Steel Spider][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:40:17,343][INFO ][cluster.routing.allocation.decider] [Steel Spider] low disk watermark [85%] exceeded on [OdPaSMM5TGq-FivchbM_Fg][Steel Spider][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:40:47,356][INFO ][cluster.routing.allocation.decider] [Steel Spider] low disk watermark [85%] exceeded on [OdPaSMM5TGq-FivchbM_Fg][Steel Spider][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:40:56,264][INFO ][node                     ] [Steel Spider] stopping ...
+[2016-03-30 22:40:56,315][INFO ][node                     ] [Steel Spider] stopped
+[2016-03-30 22:40:56,315][INFO ][node                     ] [Steel Spider] closing ...
+[2016-03-30 22:40:56,319][INFO ][node                     ] [Steel Spider] closed
+[2016-03-30 22:41:27,650][INFO ][node                     ] [Jonathan Richards] version[3.0.0-SNAPSHOT], pid[1868], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:41:27,650][INFO ][node                     ] [Jonathan Richards] initializing ...
+[2016-03-30 22:41:27,714][INFO ][plugins                  ] [Jonathan Richards] modules [], plugins [], sites []
+[2016-03-30 22:41:27,739][INFO ][env                      ] [Jonathan Richards] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:41:29,408][INFO ][node                     ] [Jonathan Richards] initialized
+[2016-03-30 22:41:29,409][INFO ][node                     ] [Jonathan Richards] starting ...
+[2016-03-30 22:41:29,487][INFO ][transport                ] [Jonathan Richards] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:41:29,494][INFO ][discovery                ] [Jonathan Richards] distribution_run/mMNNGKmuSJK8I1IX4aCfNA
+[2016-03-30 22:41:32,517][INFO ][cluster.service          ] [Jonathan Richards] new_master {Jonathan Richards}{mMNNGKmuSJK8I1IX4aCfNA}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:41:32,532][INFO ][http                     ] [Jonathan Richards] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:41:32,533][INFO ][node                     ] [Jonathan Richards] started
+[2016-03-30 22:41:32,571][INFO ][gateway                  ] [Jonathan Richards] recovered [1] indices into cluster_state
+[2016-03-30 22:41:32,992][INFO ][cluster.routing.allocation] [Jonathan Richards] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][3]] ...]).
+[2016-03-30 22:42:02,533][INFO ][cluster.routing.allocation.decider] [Jonathan Richards] low disk watermark [85%] exceeded on [mMNNGKmuSJK8I1IX4aCfNA][Jonathan Richards][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:42:05,632][INFO ][node                     ] [Jonathan Richards] stopping ...
+[2016-03-30 22:42:05,684][INFO ][node                     ] [Jonathan Richards] stopped
+[2016-03-30 22:42:05,684][INFO ][node                     ] [Jonathan Richards] closing ...
+[2016-03-30 22:42:05,688][INFO ][node                     ] [Jonathan Richards] closed
+[2016-03-30 22:43:12,958][INFO ][node                     ] [Louise Mason] version[3.0.0-SNAPSHOT], pid[2020], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:43:12,959][INFO ][node                     ] [Louise Mason] initializing ...
+[2016-03-30 22:43:13,027][INFO ][plugins                  ] [Louise Mason] modules [], plugins [], sites []
+[2016-03-30 22:43:13,054][INFO ][env                      ] [Louise Mason] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:43:14,703][INFO ][node                     ] [Louise Mason] initialized
+[2016-03-30 22:43:14,704][INFO ][node                     ] [Louise Mason] starting ...
+[2016-03-30 22:43:14,786][INFO ][transport                ] [Louise Mason] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:43:14,796][INFO ][discovery                ] [Louise Mason] distribution_run/chGothSwSrWhsOCu_efJmw
+[2016-03-30 22:43:17,822][INFO ][cluster.service          ] [Louise Mason] new_master {Louise Mason}{chGothSwSrWhsOCu_efJmw}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:43:17,839][INFO ][http                     ] [Louise Mason] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:43:17,839][INFO ][node                     ] [Louise Mason] started
+[2016-03-30 22:43:17,872][INFO ][gateway                  ] [Louise Mason] recovered [1] indices into cluster_state
+[2016-03-30 22:43:18,332][INFO ][cluster.routing.allocation] [Louise Mason] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][1]] ...]).
+[2016-03-30 22:43:47,842][INFO ][cluster.routing.allocation.decider] [Louise Mason] low disk watermark [85%] exceeded on [chGothSwSrWhsOCu_efJmw][Louise Mason][/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/data/distribution_run/nodes/0] free: 23.7gb[10.1%], replicas will not be assigned to this node
+[2016-03-30 22:43:59,967][INFO ][node                     ] [Louise Mason] stopping ...
+[2016-03-30 22:44:00,020][INFO ][node                     ] [Louise Mason] stopped
+[2016-03-30 22:44:00,020][INFO ][node                     ] [Louise Mason] closing ...
+[2016-03-30 22:44:00,025][INFO ][node                     ] [Louise Mason] closed
+[2016-03-30 22:44:23,906][INFO ][node                     ] [Ghost Rider] version[3.0.0-SNAPSHOT], pid[2135], build[b0acc9e/2016-03-30T22:55:42.999Z]
+[2016-03-30 22:44:23,907][INFO ][node                     ] [Ghost Rider] initializing ...
+[2016-03-30 22:44:23,976][INFO ][plugins                  ] [Ghost Rider] modules [], plugins [], sites []
+[2016-03-30 22:44:24,000][INFO ][env                      ] [Ghost Rider] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.7gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 22:44:25,803][INFO ][node                     ] [Ghost Rider] initialized
+[2016-03-30 22:44:25,803][INFO ][node                     ] [Ghost Rider] starting ...
+[2016-03-30 22:44:25,897][INFO ][transport                ] [Ghost Rider] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 22:44:25,908][INFO ][discovery                ] [Ghost Rider] distribution_run/NQ7AlQqTRl2Otqux0ohZkQ
+[2016-03-30 22:44:28,934][INFO ][cluster.service          ] [Ghost Rider] new_master {Ghost Rider}{NQ7AlQqTRl2Otqux0ohZkQ}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 22:44:28,950][INFO ][http                     ] [Ghost Rider] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 22:44:28,950][INFO ][node                     ] [Ghost Rider] started
+[2016-03-30 22:44:28,983][INFO ][gateway                  ] [Ghost Rider] recovered [1] indices into cluster_state
+[2016-03-30 22:44:29,414][INFO ][cluster.routing.allocation] [Ghost Rider] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[hydra_metrics_raw_raj][3]] ...]).
+[2016-03-30 22:44:45,161][INFO ][node                     ] [Ghost Rider] stopping ...
+[2016-03-30 22:44:45,218][INFO ][node                     ] [Ghost Rider] stopped
+[2016-03-30 22:44:45,218][INFO ][node                     ] [Ghost Rider] closing ...
+[2016-03-30 22:44:45,223][INFO ][node                     ] [Ghost Rider] closed

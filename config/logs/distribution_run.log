@@ -1,0 +1,16 @@
+[2016-03-30 14:40:58,222][INFO ][node                     ] [Vision] version[3.0.0-SNAPSHOT], pid[71220], build[b0acc9e/2016-03-30T21:25:01.602Z]
+[2016-03-30 14:40:58,223][INFO ][node                     ] [Vision] initializing ...
+[2016-03-30 14:40:58,230][INFO ][plugins                  ] [Vision] modules [], plugins [], sites []
+[2016-03-30 14:40:58,257][INFO ][env                      ] [Vision] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [23.9gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2016-03-30 14:40:59,853][INFO ][node                     ] [Vision] initialized
+[2016-03-30 14:40:59,853][INFO ][node                     ] [Vision] starting ...
+[2016-03-30 14:40:59,922][INFO ][transport                ] [Vision] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2016-03-30 14:40:59,930][INFO ][discovery                ] [Vision] distribution_run/hyKjD8KjRsCR3ozRpCc9Iw
+[2016-03-30 14:41:02,947][INFO ][cluster.service          ] [Vision] new_master {Vision}{hyKjD8KjRsCR3ozRpCc9Iw}{127.0.0.1}{127.0.0.1:9300}[testattr=>test], reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-03-30 14:41:02,961][INFO ][http                     ] [Vision] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2016-03-30 14:41:02,962][INFO ][node                     ] [Vision] started
+[2016-03-30 14:41:02,982][INFO ][gateway                  ] [Vision] recovered [0] indices into cluster_state
+[2016-03-30 14:41:27,041][INFO ][node                     ] [Vision] stopping ...
+[2016-03-30 14:41:27,057][INFO ][node                     ] [Vision] stopped
+[2016-03-30 14:41:27,057][INFO ][node                     ] [Vision] closing ...
+[2016-03-30 14:41:27,062][INFO ][node                     ] [Vision] closed

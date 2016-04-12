@@ -1,0 +1,15 @@
+[2016-03-30 21:41:09,333][WARN ][org.elasticsearch.bootstrap] Unable to lock JVM Memory: error=78,reason=Function not implemented
+[2016-03-30 21:41:09,334][WARN ][org.elasticsearch.bootstrap] This can result in part of the JVM being swapped out.
+[2016-03-30 21:41:17,621][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[5kd3NQkMR2a9MElxy_K4MQ], v[4], m[master2]]]. more than [13] pending states.
+[2016-03-30 21:41:17,622][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[u4hRDQFiRfeJREs5Ow_phw], v[1], m[master2]]]. more than [13] pending states.
+[2016-03-30 21:41:17,622][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[GDN_wk41Rh2ffJ5CywuqyA], v[4], m[master3]]]. more than [13] pending states.
+[2016-03-30 21:41:17,622][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[pxL2hmtpRiGeneAAKd797g], v[5], m[master4]]]. more than [13] pending states.
+[2016-03-30 21:41:17,623][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[-fC7d8ZkRBmuY9TI1ZURcQ], v[2], m[master4]]]. more than [13] pending states.
+[2016-03-30 21:41:17,623][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[bAjVdrfKQ2e8Ac7XCN5tsQ], v[3], m[master4]]]. more than [13] pending states.
+[2016-03-30 21:41:17,623][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[v856i0XSRy2ga80A51yb6A], v[1], m[master3]]]. more than [13] pending states.
+[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[Cv07yOJdQbK5I-sGMSgQSA], v[0], m[master3]]]. more than [13] pending states.
+[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[tg9yJPzNSc6drY7WtpDN5w], v[0], m[master2]]]. more than [13] pending states.
+[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[Pp7GJFnYQeGX1vab-MBzhQ], v[3], m[master2]]]. more than [13] pending states.
+[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[qoDo58U6TxizD5_StggPdg], v[2], m[master1]]]. more than [13] pending states.
+[2016-03-30 21:41:17,625][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[LX37Tzi_S9eqLajTwVIUoQ], v[6], m[master3]]]. more than [13] pending states.
+[2016-03-30 21:41:17,625][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[TFEqx6S5QsWzz2-BCyi-CQ], v[3], m[master3]]]. more than [13] pending states.

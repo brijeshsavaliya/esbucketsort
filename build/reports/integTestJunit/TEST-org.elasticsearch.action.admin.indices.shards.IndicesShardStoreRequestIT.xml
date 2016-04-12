@@ -1,0 +1,1342 @@
+<testsuite errors="0" failures="0" tests="4" skipped="1" name="org.elasticsearch.action.admin.indices.shards.IndicesShardStoreRequestIT" hostname="nohost.nodomain" time="7.121" timestamp="2016-03-30T14:02:36">
+   <properties class="java.util.ArrayList">
+      <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+      <property name="es.logger.level" value="WARN"/>
+      <property name="file.encoding" value="UTF-8"/>
+      <property name="file.encoding.pkg" value="sun.io"/>
+      <property name="file.separator" value="/"/>
+      <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="gopherProxySet" value="false"/>
+      <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+      <property name="java.awt.headless" value="true"/>
+      <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+      <property name="java.class.path" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/main:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/main:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.4.0-snapshot-1715952/84685d37a34b4d87e2928566ed266a7f005ca67d/lucene-core-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.4.0-snapshot-1715952/feaf885ed4155fb7202c1f90ac2eb40503961efc/lucene-analyzers-common-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.4.0-snapshot-1715952/5b5b5c950b4fcac38cf48fab911f75da61e780fa/lucene-backward-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/5.4.0-snapshot-1715952/ff92011208ed5c28f041acc37bd77728a89fc6a5/lucene-grouping-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/5.4.0-snapshot-1715952/5d46f26a6cb36aede89b8728b6fcbc427d4f9416/lucene-highlighter-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/5.4.0-snapshot-1715952/726ea07bbfdfbfbee80522353496fc6667dc33c9/lucene-join-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/5.4.0-snapshot-1715952/d8d7a7b573a4cfc54745a126e905ccfd523b7a24/lucene-memory-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/5.4.0-snapshot-1715952/cd9d4fb4492bd2680cea2f038a051311329f6443/lucene-misc-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/5.4.0-snapshot-1715952/a1a04d191443e51f992ed3dd02d0e14fd48493c9/lucene-queries-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.4.0-snapshot-1715952/c4d34b29b8b14ad3deb300a6d699e9d8965a3c2c/lucene-queryparser-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/5.4.0-snapshot-1715952/bf45dbd653d66ce9d2c3f19b69997b8098d8b416/lucene-sandbox-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/5.4.0-snapshot-1715952/2bddfda70f5c657064d12860b03c2cd8a5029bfc/lucene-spatial-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/5.4.0-snapshot-1715952/881b8cd571fb3ccdcc69f1316468d816812513fb/lucene-spatial3d-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/5.4.0-snapshot-1715952/466e2bc02f45f04cbf516e5df78b9c2ebd99e944/lucene-suggest-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.elasticsearch/securesm/1.0/c0c6cf986ba0057390bfcc80c366a0e3157f944b/securesm-1.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.7.1/8b5057f74ea378c0150a1860874a3ebdcb713767/hppc-0.7.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.joda/joda-convert/1.2/35ec554f0cd00c956cc69051514d9488b1374dec/joda-convert-1.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.2/123f29333b2c6b3516b14252b6e93226bfcd6e37/jackson-core-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.6.2/395d18c1a1dd730b8026ee59c4067e5d2b45ba6e/jackson-dataformat-smile-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.6.2/4ae23088dd3fae47c66843f2e4251d7255ee140e/jackson-dataformat-yaml-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.2/1e13c575f914c83761bb8e2aca7dfd9e4c647579/jackson-dataformat-cbor-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.0/84ccf145ac2215e6bfa63baa3101c0af41017cfc/t-digest-3.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.6/7495feb7f71ee124bd2a7e7d83590e296d71d80e/HdrHistogram-2.1.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.5/6e16edaf6b1ba76db7f08c2f3723fce3b358ecc3/spatial4j-0.5.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.2/8619e95939167fb37245b5670135e4feb0ec7d50/slf4j-api-1.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/test-framework/build/libs/test-framework-3.0.0-SNAPSHOT.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.2.0/60de504132241be049564a3a34fd7dcc296e2ef0/randomizedtesting-runner-2.2.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-test-framework/5.4.0-snapshot-1715952/ae3156d5a2526b1b48ca821765cf7cd53faecef5/lucene-test-framework-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.4.0-snapshot-1715952/7b94152f1c9fd7ecb384fc9602318f74a4463a65/lucene-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/junit4-ant/2.2.0/d401c9c729deccd5db8a5df3102eb18793c2224/junit4-ant-2.2.0.jar"/>
+      <property name="java.class.version" value="52.0"/>
+      <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+      <property name="java.ext.dirs" value="/Users/brijeshs/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+      <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre"/>
+      <property name="java.io.tmpdir" value="./temp"/>
+      <property name="java.library.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/brijeshs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+      <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+      <property name="java.runtime.version" value="1.8.0_40-b25"/>
+      <property name="java.specification.name" value="Java Platform API Specification"/>
+      <property name="java.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.specification.version" value="1.8"/>
+      <property name="java.vendor" value="Oracle Corporation"/>
+      <property name="java.vendor.url" value="http://java.oracle.com/"/>
+      <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+      <property name="java.version" value="1.8.0_40"/>
+      <property name="java.vm.info" value="mixed mode"/>
+      <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+      <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+      <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.specification.version" value="1.8"/>
+      <property name="java.vm.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.version" value="25.40-b25"/>
+      <property name="junit4.childvm.count" value="4"/>
+      <property name="junit4.childvm.cwd" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2"/>
+      <property name="junit4.childvm.id" value="2"/>
+      <property name="junit4.memory.total" value="514850816"/>
+      <property name="junit4.pidString" value="66626@BrijeshS-2.fios-router.home"/>
+      <property name="junit4.processors" value="8"/>
+      <property name="line.separator" value="
+"/>
+      <property name="os.arch" value="x86_64"/>
+      <property name="os.name" value="Mac OS X"/>
+      <property name="os.version" value="10.10.5"/>
+      <property name="path.separator" value=":"/>
+      <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="sun.arch.data.model" value="64"/>
+      <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes"/>
+      <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
+      <property name="sun.cpu.endian" value="little"/>
+      <property name="sun.cpu.isalist" value=""/>
+      <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+      <property name="sun.java.command" value="com.carrotsearch.ant.tasks.junit4.slave.SlaveMainSafe -eventsfile /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/temp/junit4-J2-20160330_135253_694.events @/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/temp/junit4-J2-20160330_135253_694.suites -stdin"/>
+      <property name="sun.java.launcher" value="SUN_STANDARD"/>
+      <property name="sun.jnu.encoding" value="UTF-8"/>
+      <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+      <property name="sun.os.patch.level" value="unknown"/>
+      <property name="tests.artifact" value="core"/>
+      <property name="tests.ifNoTests" value="fail"/>
+      <property name="tests.maven" value="true"/>
+      <property name="tests.prefix" value="tests"/>
+      <property name="tests.security.manager" value="true"/>
+      <property name="tests.seed" value="F7928424F380CF7C"/>
+      <property name="tests.task" value=":core:integTest"/>
+      <property name="user.country" value="US"/>
+      <property name="user.dir" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J2"/>
+      <property name="user.home" value="/Users/brijeshs"/>
+      <property name="user.language" value="en"/>
+      <property name="user.name" value="brijeshs"/>
+      <property name="user.timezone" value="America/Los_Angeles"/>
+   </properties>
+   <testcase classname="org.elasticsearch.action.admin.indices.shards.IndicesShardStoreRequestIT" name="testIndices" time="2.758"/>
+   <testcase classname="org.elasticsearch.action.admin.indices.shards.IndicesShardStoreRequestIT" name="testCorruptedShards" time="0.001">
+      <skipped></skipped>
+   </testcase>
+   <testcase classname="org.elasticsearch.action.admin.indices.shards.IndicesShardStoreRequestIT" name="testBasic" time="3.809"/>
+   <testcase classname="org.elasticsearch.action.admin.indices.shards.IndicesShardStoreRequestIT" name="testEmpty" time="0.443"/>
+   <system-out><![CDATA[[2016-03-30 14:02:39,258][INFO ][org.elasticsearch.action.admin.indices.shards] [IndicesShardStoreRequestIT#testBasic]: setup test
+[2016-03-30 14:02:39,338][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [local-disco-initial_connect(master)]
+[2016-03-30 14:02:39,338][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-initial_connect(master)]: execute
+[2016-03-30 14:02:39,338][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [local-disco-initial_connect(master)]
+version: 1
+state uuid: S_96axTwTMacL_JGzU5tAQ
+from_diff: false
+meta data version: 0
+blocks: 
+   _global_:
+      1,state not recovered / initialized, blocks READ,WRITE,METADATA_READ,METADATA_WRITE
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+routing_table (version 0):
+routing_nodes:
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,338][INFO ][org.elasticsearch.cluster.service] [node_t0] new_master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], reason: local-disco-initial_connect(master)
+[2016-03-30 14:02:39,338][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [1]
+[2016-03-30 14:02:39,339][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 1
+[2016-03-30 14:02:39,339][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-initial_connect(master)]: took 0s done applying updated cluster_state (version: 1, uuid: S_96axTwTMacL_JGzU5tAQ)
+[2016-03-30 14:02:39,339][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [gateway_initial_state_recovery]
+[2016-03-30 14:02:39,339][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [gateway_initial_state_recovery]: execute
+[2016-03-30 14:02:39,339][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [gateway_initial_state_recovery]: took 0s no change in cluster_state
+[2016-03-30 14:02:39,340][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [local-gateway-elected-state]
+[2016-03-30 14:02:39,340][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-gateway-elected-state]: execute
+[2016-03-30 14:02:39,341][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [local-gateway-elected-state]
+version: 2
+state uuid: crftSg_oS9KRj0uwvw_U4Q
+from_diff: false
+meta data version: 1
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+routing_table (version 1):
+routing_nodes:
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,341][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [2]
+[2016-03-30 14:02:39,341][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 2
+[2016-03-30 14:02:39,347][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-gateway-elected-state]: took 6ms done applying updated cluster_state (version: 2, uuid: crftSg_oS9KRj0uwvw_U4Q)
+[2016-03-30 14:02:39,403][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco(detected_master)]
+[2016-03-30 14:02:39,403][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [local-disco-receive(from node[{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]])]
+[2016-03-30 14:02:39,403][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco(detected_master)]: execute
+[2016-03-30 14:02:39,403][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-receive(from node[{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]])]: execute
+[2016-03-30 14:02:39,403][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco(detected_master)]
+version: 0
+state uuid: EozpBY7-S5quGVrcpiEWOQ
+from_diff: false
+meta data version: 1
+blocks: 
+   _global_:
+      1,state not recovered / initialized, blocks READ,WRITE,METADATA_READ,METADATA_WRITE      2,no master, blocks WRITE,METADATA_WRITE
+nodes: 
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+routing_table (version 0):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+---- unassigned
+
+[2016-03-30 14:02:39,403][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [local-disco-receive(from node[{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]])]
+version: 3
+state uuid: ssVm_GbhR8GmUUl7PdwrRQ
+from_diff: false
+meta data version: 1
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,403][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 0
+[2016-03-30 14:02:39,403][INFO ][org.elasticsearch.cluster.service] [node_t0] added {{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local],}, reason: local-disco-receive(from node[{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]])
+[2016-03-30 14:02:39,403][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco(detected_master)]: took 0s done applying updated cluster_state (version: 0, uuid: EozpBY7-S5quGVrcpiEWOQ)
+[2016-03-30 14:02:39,403][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [3]
+[2016-03-30 14:02:39,404][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,404][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,404][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 3
+state uuid: ssVm_GbhR8GmUUl7PdwrRQ
+from_diff: false
+meta data version: 1
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,404][INFO ][org.elasticsearch.cluster.service] [node_t1] detected_master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], added {{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local],}, reason: local-disco-receive(from master)
+[2016-03-30 14:02:39,404][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 3
+[2016-03-30 14:02:39,412][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 8ms done applying updated cluster_state (version: 3, uuid: ssVm_GbhR8GmUUl7PdwrRQ)
+[2016-03-30 14:02:39,412][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 3
+[2016-03-30 14:02:39,413][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-receive(from node[{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]])]: took 9ms done applying updated cluster_state (version: 3, uuid: ssVm_GbhR8GmUUl7PdwrRQ)
+[2016-03-30 14:02:39,413][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [cluster_reroute(post_node_add)]
+[2016-03-30 14:02:39,413][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [gateway_initial_state_recovery]
+[2016-03-30 14:02:39,413][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_reroute(post_node_add)]: execute
+[2016-03-30 14:02:39,413][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [gateway_initial_state_recovery]: execute
+[2016-03-30 14:02:39,413][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [gateway_initial_state_recovery]: took 0s no change in cluster_state
+[2016-03-30 14:02:39,413][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_reroute(post_node_add)]: took 0s no change in cluster_state
+[2016-03-30 14:02:39,500][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [local-disco-receive(from node[{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]])]
+[2016-03-30 14:02:39,500][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco(detected_master)]
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-receive(from node[{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]])]: execute
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco(detected_master)]: execute
+[2016-03-30 14:02:39,501][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [local-disco-receive(from node[{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]])]
+version: 4
+state uuid: xUttXTY6RCySgTNqxSwQfw
+from_diff: false
+meta data version: 1
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,501][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco(detected_master)]
+version: 0
+state uuid: SQDtgQjHRQ2ue__nswlXQg
+from_diff: false
+meta data version: 1
+blocks: 
+   _global_:
+      1,state not recovered / initialized, blocks READ,WRITE,METADATA_READ,METADATA_WRITE      2,no master, blocks WRITE,METADATA_WRITE
+nodes: 
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 0):
+routing_nodes:
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+---- unassigned
+
+[2016-03-30 14:02:39,501][INFO ][org.elasticsearch.cluster.service] [node_t0] added {{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local],}, reason: local-disco-receive(from node[{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]])
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 0
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [4]
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco(detected_master)]: took 0s done applying updated cluster_state (version: 0, uuid: SQDtgQjHRQ2ue__nswlXQg)
+[2016-03-30 14:02:39,501][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,501][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,501][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,501][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 4
+state uuid: xUttXTY6RCySgTNqxSwQfw
+from_diff: false
+meta data version: 1
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,502][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 4
+state uuid: xUttXTY6RCySgTNqxSwQfw
+from_diff: false
+meta data version: 1
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,502][INFO ][org.elasticsearch.cluster.service] [node_t1] added {{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local],}, reason: local-disco-receive(from master)
+[2016-03-30 14:02:39,502][INFO ][org.elasticsearch.cluster.service] [node_t2] detected_master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], added {{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local],{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local],}, reason: local-disco-receive(from master)
+[2016-03-30 14:02:39,502][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 4
+[2016-03-30 14:02:39,502][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 4
+[2016-03-30 14:02:39,502][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 0s done applying updated cluster_state (version: 4, uuid: xUttXTY6RCySgTNqxSwQfw)
+[2016-03-30 14:02:39,510][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 7ms done applying updated cluster_state (version: 4, uuid: xUttXTY6RCySgTNqxSwQfw)
+[2016-03-30 14:02:39,510][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 4
+[2016-03-30 14:02:39,510][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-receive(from node[{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]])]: took 9ms done applying updated cluster_state (version: 4, uuid: xUttXTY6RCySgTNqxSwQfw)
+[2016-03-30 14:02:39,510][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [cluster_reroute(post_node_add)]
+[2016-03-30 14:02:39,510][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_reroute(post_node_add)]: execute
+[2016-03-30 14:02:39,510][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_reroute(post_node_add)]: took 0s no change in cluster_state
+[2016-03-30 14:02:39,527][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [gateway_initial_state_recovery]
+[2016-03-30 14:02:39,527][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [gateway_initial_state_recovery]: execute
+[2016-03-30 14:02:39,527][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [gateway_initial_state_recovery]: took 0s no change in cluster_state
+[2016-03-30 14:02:39,540][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [delete_repository [*]]
+[2016-03-30 14:02:39,540][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [delete_repository [*]]: execute
+[2016-03-30 14:02:39,540][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [delete_repository [*]]: took 0s no change in cluster_state
+[2016-03-30 14:02:39,540][INFO ][org.elasticsearch.action.admin.indices.shards] test using _default_ mappings: [{"_default_":{"_timestamp":{"enabled":false},"dynamic_templates":[{"template-strings":{"match_mapping_type":"string","mapping":{"fielddata":{"loading":"eager"}}}},{"template-longs":{"match_mapping_type":"long","mapping":{"fielddata":{"loading":"lazy"}}}},{"template-doubles":{"match_mapping_type":"double","mapping":{"fielddata":{"loading":"lazy"}}}},{"template-geo_points":{"match_mapping_type":"geo_point","mapping":{"fielddata":{"loading":"eager"}}}},{"template-booleans":{"match_mapping_type":"boolean","mapping":{"fielddata":{"loading":"lazy"}}}}]}}]
+[2016-03-30 14:02:39,541][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [create-index-template [random_index_template], cause [api]]
+[2016-03-30 14:02:39,541][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [create-index-template [random_index_template], cause [api]]: execute
+[2016-03-30 14:02:39,541][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [create-index-template [random_index_template], cause [api]]
+version: 5
+state uuid: Y9RYMRumTBiaau1za_iKnQ
+from_diff: false
+meta data version: 2
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,541][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [5]
+[2016-03-30 14:02:39,542][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,542][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,542][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,542][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,542][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 5
+state uuid: Y9RYMRumTBiaau1za_iKnQ
+from_diff: false
+meta data version: 2
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,542][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 5
+[2016-03-30 14:02:39,542][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 5
+state uuid: Y9RYMRumTBiaau1za_iKnQ
+from_diff: false
+meta data version: 2
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 1):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:39,542][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 5
+[2016-03-30 14:02:39,550][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 8ms done applying updated cluster_state (version: 5, uuid: Y9RYMRumTBiaau1za_iKnQ)
+[2016-03-30 14:02:39,550][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 8ms done applying updated cluster_state (version: 5, uuid: Y9RYMRumTBiaau1za_iKnQ)
+[2016-03-30 14:02:39,550][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 5
+[2016-03-30 14:02:39,559][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [create-index-template [random_index_template], cause [api]]: took 17ms done applying updated cluster_state (version: 5, uuid: Y9RYMRumTBiaau1za_iKnQ)
+[2016-03-30 14:02:39,560][INFO ][org.elasticsearch.action.admin.indices.shards] [IndicesShardStoreRequestIT#testBasic]: starting test
+[2016-03-30 14:02:39,560][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [create-index [test], cause [api]]
+[2016-03-30 14:02:39,560][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [create-index [test], cause [api]]: execute
+[2016-03-30 14:02:39,564][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 6)
+[2016-03-30 14:02:39,564][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [create-index [test], cause [api]]
+version: 6
+state uuid: 1giAeBQBQYa_Yp4_DQTiLA
+from_diff: false
+meta data version: 3
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 2):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][1], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+--------[test][1], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+[2016-03-30 14:02:39,564][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [6]
+[2016-03-30 14:02:39,565][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,565][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,565][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 6
+state uuid: 1giAeBQBQYa_Yp4_DQTiLA
+from_diff: false
+meta data version: 3
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 2):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][1], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+--------[test][1], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+[2016-03-30 14:02:39,565][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 6
+[2016-03-30 14:02:39,565][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,566][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,566][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 6
+state uuid: 1giAeBQBQYa_Yp4_DQTiLA
+from_diff: false
+meta data version: 3
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 2):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][1], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+--------[test][1], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+[2016-03-30 14:02:39,566][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 6
+[2016-03-30 14:02:39,600][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 6)
+[2016-03-30 14:02:39,600][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 34ms done applying updated cluster_state (version: 6, uuid: 1giAeBQBQYa_Yp4_DQTiLA)
+[2016-03-30 14:02:39,601][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 6)
+[2016-03-30 14:02:39,601][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 6
+[2016-03-30 14:02:39,601][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 36ms done applying updated cluster_state (version: 6, uuid: 1giAeBQBQYa_Yp4_DQTiLA)
+[2016-03-30 14:02:39,614][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 6)
+[2016-03-30 14:02:39,614][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 6)
+[2016-03-30 14:02:39,614][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [create-index [test], cause [api]]: took 53ms done applying updated cluster_state (version: 6, uuid: 1giAeBQBQYa_Yp4_DQTiLA)
+[2016-03-30 14:02:39,614][INFO ][org.elasticsearch.action.admin.indices.shards] Index [16] docs async: [true] bulk: [false]
+[2016-03-30 14:02:39,619][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [shard-started ([test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]
+[2016-03-30 14:02:39,620][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]: execute
+[2016-03-30 14:02:39,620][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [shard-started ([test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]
+version: 7
+state uuid: TKX7GuucRYqzRHF3ALjsZQ
+from_diff: false
+meta data version: 4
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 3):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+[2016-03-30 14:02:39,621][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [7]
+[2016-03-30 14:02:39,621][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,621][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,621][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,621][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,622][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 7
+state uuid: TKX7GuucRYqzRHF3ALjsZQ
+from_diff: false
+meta data version: 4
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 3):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+[2016-03-30 14:02:39,622][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 7
+[2016-03-30 14:02:39,622][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 7
+state uuid: TKX7GuucRYqzRHF3ALjsZQ
+from_diff: false
+meta data version: 4
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 3):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+--------[test][0], node[null], [R], v[1], s[UNASSIGNED], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+[2016-03-30 14:02:39,622][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 7
+[2016-03-30 14:02:39,632][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 10ms done applying updated cluster_state (version: 7, uuid: TKX7GuucRYqzRHF3ALjsZQ)
+[2016-03-30 14:02:39,639][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 17ms done applying updated cluster_state (version: 7, uuid: TKX7GuucRYqzRHF3ALjsZQ)
+[2016-03-30 14:02:39,640][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 7
+[2016-03-30 14:02:39,670][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[1], s[INITIALIZING], a[id=05HLiF_CQL6qe6FtyI96Yw], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]: took 50ms done applying updated cluster_state (version: 7, uuid: TKX7GuucRYqzRHF3ALjsZQ)
+[2016-03-30 14:02:39,670][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [shard-started ([test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]
+[2016-03-30 14:02:39,671][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]: execute
+[2016-03-30 14:02:39,672][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [shard-started ([test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]
+version: 8
+state uuid: PBKNM-RVT3yhIhN2DMr57w
+from_diff: false
+meta data version: 5
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 4):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+
+[2016-03-30 14:02:39,672][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [8]
+[2016-03-30 14:02:39,672][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,673][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,673][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,673][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,673][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 8
+state uuid: PBKNM-RVT3yhIhN2DMr57w
+from_diff: false
+meta data version: 5
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 4):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+
+[2016-03-30 14:02:39,673][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 8
+state uuid: PBKNM-RVT3yhIhN2DMr57w
+from_diff: false
+meta data version: 5
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 4):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+
+[2016-03-30 14:02:39,673][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 8
+[2016-03-30 14:02:39,673][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 8
+[2016-03-30 14:02:39,692][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 19ms done applying updated cluster_state (version: 8, uuid: PBKNM-RVT3yhIhN2DMr57w)
+[2016-03-30 14:02:39,716][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 42ms done applying updated cluster_state (version: 8, uuid: PBKNM-RVT3yhIhN2DMr57w)
+[2016-03-30 14:02:39,716][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 8
+[2016-03-30 14:02:39,725][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[1], s[INITIALIZING], a[id=Hb89SmvURxqHl-ZoSyc-vQ], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery from store]]: took 53ms done applying updated cluster_state (version: 8, uuid: PBKNM-RVT3yhIhN2DMr57w)
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [put-mapping [type]]
+[2016-03-30 14:02:39,725][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type]]: execute
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,736][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 9)
+[2016-03-30 14:02:39,737][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type]]
+version: 9
+state uuid: 8e7CwrZES6CKW55m-Gxkmw
+from_diff: false
+meta data version: 6
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 4):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+
+[2016-03-30 14:02:39,737][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [9]
+[2016-03-30 14:02:39,738][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,738][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,738][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,738][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,738][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 9
+state uuid: 8e7CwrZES6CKW55m-Gxkmw
+from_diff: false
+meta data version: 6
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 4):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+
+[2016-03-30 14:02:39,738][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 9
+state uuid: 8e7CwrZES6CKW55m-Gxkmw
+from_diff: false
+meta data version: 6
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 4):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[2], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+---- unassigned
+
+[2016-03-30 14:02:39,738][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 9
+[2016-03-30 14:02:39,738][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 9
+[2016-03-30 14:02:39,747][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 9
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 10ms done applying updated cluster_state (version: 9, uuid: 8e7CwrZES6CKW55m-Gxkmw)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,748][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 10ms done applying updated cluster_state (version: 9, uuid: 8e7CwrZES6CKW55m-Gxkmw)
+[2016-03-30 14:02:39,785][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,785][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,786][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,786][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,786][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,786][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,786][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,790][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,790][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,790][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,790][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,790][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,791][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,792][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,792][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 9)
+[2016-03-30 14:02:39,792][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 9)
+[2016-03-30 14:02:39,792][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type],put-mapping [type]]: took 66ms done applying updated cluster_state (version: 9, uuid: 8e7CwrZES6CKW55m-Gxkmw)
+[2016-03-30 14:02:39,792][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [shard-started ([test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]]]]
+[2016-03-30 14:02:39,792][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]]]]: execute
+[2016-03-30 14:02:39,793][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [shard-started ([test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]]]]
+version: 10
+state uuid: co3QVKbuSVKGhfyOGXjV4g
+from_diff: false
+meta data version: 7
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 5):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:39,793][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [10]
+[2016-03-30 14:02:39,794][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,794][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:39,794][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,794][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:39,794][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 10
+state uuid: co3QVKbuSVKGhfyOGXjV4g
+from_diff: false
+meta data version: 7
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 5):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:39,794][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 10
+state uuid: co3QVKbuSVKGhfyOGXjV4g
+from_diff: false
+meta data version: 7
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 5):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[2], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:39,795][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 10
+[2016-03-30 14:02:39,795][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 10
+[2016-03-30 14:02:39,804][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 9ms done applying updated cluster_state (version: 10, uuid: co3QVKbuSVKGhfyOGXjV4g)
+[2016-03-30 14:02:39,813][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 18ms done applying updated cluster_state (version: 10, uuid: co3QVKbuSVKGhfyOGXjV4g)
+[2016-03-30 14:02:39,813][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 10
+[2016-03-30 14:02:40,126][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[2], s[INITIALIZING], a[id=YsOiQcuGS8mzhxjt4ax23A], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]]]]: took 334ms done applying updated cluster_state (version: 10, uuid: co3QVKbuSVKGhfyOGXjV4g)
+[2016-03-30 14:02:40,127][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]]]]
+[2016-03-30 14:02:40,127][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local] marked shard as initializing, but shard state is [POST_RECOVERY], mark shard as started]]
+[2016-03-30 14:02:40,127][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]]],shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local] marked shard as initializing, but shard state is [POST_RECOVERY], mark shard as started]]: execute
+[2016-03-30 14:02:40,128][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]]],shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local] marked shard as initializing, but shard state is [POST_RECOVERY], mark shard as started]]
+version: 11
+state uuid: WYV258VkTei6yEEwJzIuEg
+from_diff: false
+meta data version: 8
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 6):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:40,128][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [11]
+[2016-03-30 14:02:40,128][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:40,129][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:40,129][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 11
+state uuid: WYV258VkTei6yEEwJzIuEg
+from_diff: false
+meta data version: 8
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 6):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:40,129][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:40,129][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:40,129][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 11
+[2016-03-30 14:02:40,129][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 11
+state uuid: WYV258VkTei6yEEwJzIuEg
+from_diff: false
+meta data version: 8
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 6):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:40,129][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 11
+[2016-03-30 14:02:40,147][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 18ms done applying updated cluster_state (version: 11, uuid: WYV258VkTei6yEEwJzIuEg)
+[2016-03-30 14:02:40,147][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [indices_store ([[test][1]] active fully on other nodes)]
+[2016-03-30 14:02:40,147][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [indices_store ([[test][1]] active fully on other nodes)]: execute
+[2016-03-30 14:02:40,163][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [indices_store ([[test][1]] active fully on other nodes)]: took 15ms no change in cluster_state
+[2016-03-30 14:02:40,752][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 623ms done applying updated cluster_state (version: 11, uuid: WYV258VkTei6yEEwJzIuEg)
+[2016-03-30 14:02:40,752][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 11
+[2016-03-30 14:02:40,764][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [after recovery (replica) from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]]],shard-started ([test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[2], s[INITIALIZING], a[id=L7iTrVRfTAGJ2lrn9i1q5Q], unassigned_info[[reason=INDEX_CREATED], at[2016-03-30T21:02:39.563Z]]), reason [master {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local] marked shard as initializing, but shard state is [POST_RECOVERY], mark shard as started]]: took 637ms done applying updated cluster_state (version: 11, uuid: WYV258VkTei6yEEwJzIuEg)
+[2016-03-30 14:02:40,765][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [indices_store ([[test][0]] active fully on other nodes)]
+[2016-03-30 14:02:40,765][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [indices_store ([[test][0]] active fully on other nodes)]: execute
+[2016-03-30 14:02:40,777][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [indices_store ([[test][0]] active fully on other nodes)]: took 11ms no change in cluster_state
+[2016-03-30 14:02:42,325][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [cluster_health (wait_for_events [LANGUID])]
+[2016-03-30 14:02:42,325][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_health (wait_for_events [LANGUID])]: execute
+[2016-03-30 14:02:42,325][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_health (wait_for_events [LANGUID])]: took 0s no change in cluster_state
+[2016-03-30 14:02:42,326][DEBUG][org.elasticsearch.action.admin.indices.shards] indices [test] are green
+[2016-03-30 14:02:42,326][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] using cluster state version [11] to determine shards
+[2016-03-30 14:02:42,327][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] using cluster state version [11] to determine shards
+[2016-03-30 14:02:42,328][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] [test][0] fetching [shard_stores] from [u6i2NnmETkGGDNA1NOduEw, LOOH9RdTT5uHjEzRg5rgWg, o2skO7aRRee67QT4LyikiQ]
+[2016-03-30 14:02:42,328][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] [test][1] fetching [shard_stores] from [LOOH9RdTT5uHjEzRg5rgWg, o2skO7aRRee67QT4LyikiQ, u6i2NnmETkGGDNA1NOduEw]
+[2016-03-30 14:02:42,342][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [cluster_health (wait_for_events [LANGUID])]
+[2016-03-30 14:02:42,342][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_health (wait_for_events [LANGUID])]: execute
+[2016-03-30 14:02:42,343][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_health (wait_for_events [LANGUID])]: took 0s no change in cluster_state
+[2016-03-30 14:02:42,343][DEBUG][org.elasticsearch.action.admin.indices.shards] indices [test] are green
+[2016-03-30 14:02:42,343][INFO ][org.elasticsearch.action.admin.indices.shards] --> disable allocation
+[2016-03-30 14:02:42,343][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [update-settings]
+[2016-03-30 14:02:42,343][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [update-settings]: execute
+[2016-03-30 14:02:42,344][TRACE][org.elasticsearch.cluster.service] expecting 3 acknowledgements for cluster_state update (version: 12)
+[2016-03-30 14:02:42,344][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [update-settings]
+version: 12
+state uuid: tyLLlQD4QymI2R35bepriQ
+from_diff: false
+meta data version: 9
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 7):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:42,344][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [12]
+[2016-03-30 14:02:42,344][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:42,344][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:42,344][TRACE][org.elasticsearch.cluster.service] [node_t2] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:42,344][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:42,345][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 12
+state uuid: tyLLlQD4QymI2R35bepriQ
+from_diff: false
+meta data version: 9
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]
+routing_table (version 7):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:42,345][TRACE][org.elasticsearch.cluster.service] [node_t2] cluster state updated, source [local-disco-receive(from master)]
+version: 12
+state uuid: tyLLlQD4QymI2R35bepriQ
+from_diff: false
+meta data version: 9
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+   {node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local], local
+routing_table (version 7):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+----shard_id [test][1]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[3], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[LOOH9RdTT5uHjEzRg5rgWg][V]
+--------[test][1], node[LOOH9RdTT5uHjEzRg5rgWg], [P], v[3], s[STARTED], a[id=05HLiF_CQL6qe6FtyI96Yw]
+--------[test][0], node[LOOH9RdTT5uHjEzRg5rgWg], [R], v[3], s[STARTED], a[id=L7iTrVRfTAGJ2lrn9i1q5Q]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [R], v[3], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+
+[2016-03-30 14:02:42,345][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 12
+[2016-03-30 14:02:42,345][DEBUG][org.elasticsearch.cluster.service] [node_t2] set local cluster state to version 12
+[2016-03-30 14:02:42,360][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local]], cluster_state update (version: 12)
+[2016-03-30 14:02:42,360][DEBUG][org.elasticsearch.cluster.service] [node_t2] processing [local-disco-receive(from master)]: took 15ms done applying updated cluster_state (version: 12, uuid: tyLLlQD4QymI2R35bepriQ)
+[2016-03-30 14:02:42,360][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 12)
+[2016-03-30 14:02:42,360][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 15ms done applying updated cluster_state (version: 12, uuid: tyLLlQD4QymI2R35bepriQ)
+[2016-03-30 14:02:42,360][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 12
+[2016-03-30 14:02:42,360][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [indices_store ([[test][1]] active fully on other nodes)]
+[2016-03-30 14:02:42,360][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [indices_store ([[test][1]] active fully on other nodes)]: execute
+[2016-03-30 14:02:42,374][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 12)
+[2016-03-30 14:02:42,374][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 12)
+[2016-03-30 14:02:42,374][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [update-settings]: took 31ms done applying updated cluster_state (version: 12, uuid: tyLLlQD4QymI2R35bepriQ)
+[2016-03-30 14:02:42,374][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [indices_store ([[test][0]] active fully on other nodes)]
+[2016-03-30 14:02:42,374][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [indices_store ([[test][1]] active fully on other nodes)]: took 14ms no change in cluster_state
+[2016-03-30 14:02:42,374][INFO ][org.elasticsearch.action.admin.indices.shards] --> stop random node
+[2016-03-30 14:02:42,374][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [indices_store ([[test][0]] active fully on other nodes)]: execute
+[2016-03-30 14:02:42,389][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [indices_store ([[test][0]] active fully on other nodes)]: took 14ms no change in cluster_state
+[2016-03-30 14:02:42,389][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [local-disco-update]
+[2016-03-30 14:02:42,389][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-update]: execute
+[2016-03-30 14:02:42,390][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [local-disco-update]
+version: 13
+state uuid: zS7yZsESSfGklW2dxDVewQ
+from_diff: false
+meta data version: 10
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+routing_table (version 8):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+----shard_id [test][1]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+[2016-03-30 14:02:42,390][INFO ][org.elasticsearch.cluster.service] [node_t0] removed {{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local],}, reason: local-disco-update
+[2016-03-30 14:02:42,390][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [13]
+[2016-03-30 14:02:42,391][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:42,391][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:42,391][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 13
+state uuid: zS7yZsESSfGklW2dxDVewQ
+from_diff: false
+meta data version: 10
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+routing_table (version 8):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+----shard_id [test][1]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+[2016-03-30 14:02:42,391][INFO ][org.elasticsearch.cluster.service] [node_t1] removed {{node_t2}{LOOH9RdTT5uHjEzRg5rgWg}{local}{local[375]}[mode=>local],}, reason: local-disco-receive(from master)
+[2016-03-30 14:02:42,391][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 13
+[2016-03-30 14:02:42,407][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 15ms done applying updated cluster_state (version: 13, uuid: zS7yZsESSfGklW2dxDVewQ)
+[2016-03-30 14:02:42,407][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 13
+[2016-03-30 14:02:42,422][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [local-disco-update]: took 33ms done applying updated cluster_state (version: 13, uuid: zS7yZsESSfGklW2dxDVewQ)
+[2016-03-30 14:02:42,615][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] using cluster state version [13] to determine shards
+[2016-03-30 14:02:42,616][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] [test][0] fetching [shard_stores] from [u6i2NnmETkGGDNA1NOduEw, o2skO7aRRee67QT4LyikiQ]
+[2016-03-30 14:02:42,616][TRACE][org.elasticsearch.action.admin.indices.shards] [node_t0] [test][1] fetching [shard_stores] from [o2skO7aRRee67QT4LyikiQ, u6i2NnmETkGGDNA1NOduEw]
+[2016-03-30 14:02:42,626][INFO ][org.elasticsearch.action.admin.indices.shards] --> enable allocation
+[2016-03-30 14:02:42,626][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [update-settings]
+[2016-03-30 14:02:42,626][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [update-settings]: execute
+[2016-03-30 14:02:42,628][TRACE][org.elasticsearch.cluster.service] expecting 2 acknowledgements for cluster_state update (version: 14)
+[2016-03-30 14:02:42,628][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [update-settings]
+version: 14
+state uuid: EpcXng1BQ-229HMLhC0AjA
+from_diff: false
+meta data version: 11
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+routing_table (version 9):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+----shard_id [test][1]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+[2016-03-30 14:02:42,628][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [14]
+[2016-03-30 14:02:42,629][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:42,629][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:42,629][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 14
+state uuid: EpcXng1BQ-229HMLhC0AjA
+from_diff: false
+meta data version: 11
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+routing_table (version 9):
+-- index [test]
+----shard_id [test][0]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+----shard_id [test][1]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+--------[test][0], node[u6i2NnmETkGGDNA1NOduEw], [P], v[4], s[STARTED], a[id=Hb89SmvURxqHl-ZoSyc-vQ]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+--------[test][1], node[o2skO7aRRee67QT4LyikiQ], [P], v[5], s[STARTED], a[id=YsOiQcuGS8mzhxjt4ax23A]
+---- unassigned
+--------[test][1], node[null], [R], v[5], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+--------[test][0], node[null], [R], v[4], s[UNASSIGNED], unassigned_info[[reason=NODE_LEFT], at[2016-03-30T21:02:42.389Z], details[node_left[LOOH9RdTT5uHjEzRg5rgWg]]]
+
+[2016-03-30 14:02:42,629][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 14
+[2016-03-30 14:02:42,638][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]], cluster_state update (version: 14)
+[2016-03-30 14:02:42,638][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 9ms done applying updated cluster_state (version: 14, uuid: EpcXng1BQ-229HMLhC0AjA)
+[2016-03-30 14:02:42,638][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 14
+[2016-03-30 14:02:42,647][TRACE][org.elasticsearch.cluster.service] ack received from node [{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]], cluster_state update (version: 14)
+[2016-03-30 14:02:42,647][TRACE][org.elasticsearch.cluster.service] all expected nodes acknowledged cluster_state update (version: 14)
+[2016-03-30 14:02:42,647][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [update-settings]: took 20ms done applying updated cluster_state (version: 14, uuid: EpcXng1BQ-229HMLhC0AjA)
+[2016-03-30 14:02:42,647][INFO ][org.elasticsearch.action.admin.indices.shards] [IndicesShardStoreRequestIT#testBasic]: finished test
+[2016-03-30 14:02:42,647][INFO ][org.elasticsearch.action.admin.indices.shards] [IndicesShardStoreRequestIT#testBasic]: cleaning up after test
+[2016-03-30 14:02:42,648][TRACE][org.elasticsearch.action.admin.indices.shards] Check consistency for [2] nodes
+[2016-03-30 14:02:42,655][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [delete-index [test]]
+[2016-03-30 14:02:42,655][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [delete-index [test]]: execute
+[2016-03-30 14:02:42,656][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [delete-index [test]]
+version: 15
+state uuid: d7RSg41MTyy-h4sTtlo2fQ
+from_diff: false
+meta data version: 12
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+routing_table (version 10):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:42,656][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [15]
+[2016-03-30 14:02:42,656][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:42,656][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:42,656][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 15
+state uuid: d7RSg41MTyy-h4sTtlo2fQ
+from_diff: false
+meta data version: 12
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+routing_table (version 10):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:42,656][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 15
+[2016-03-30 14:02:42,919][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 262ms done applying updated cluster_state (version: 15, uuid: d7RSg41MTyy-h4sTtlo2fQ)
+[2016-03-30 14:02:42,919][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 15
+[2016-03-30 14:02:43,038][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [delete-index [test]]: took 382ms done applying updated cluster_state (version: 15, uuid: d7RSg41MTyy-h4sTtlo2fQ)
+[2016-03-30 14:02:43,038][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [cluster_reroute(async_shard_fetch)]
+[2016-03-30 14:02:43,038][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_reroute(async_shard_fetch)]: execute
+[2016-03-30 14:02:43,038][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [cluster_reroute(async_shard_fetch)]: took 0s no change in cluster_state
+[2016-03-30 14:02:43,038][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [remove-index-template [random_index_template]]
+[2016-03-30 14:02:43,038][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [remove-index-template [random_index_template]]: execute
+[2016-03-30 14:02:43,039][TRACE][org.elasticsearch.cluster.service] [node_t0] cluster state updated, source [remove-index-template [random_index_template]]
+version: 16
+state uuid: G90prV1US1iOCRH-dOFNJw
+from_diff: false
+meta data version: 13
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], local, master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local]
+routing_table (version 10):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:43,039][DEBUG][org.elasticsearch.cluster.service] [node_t0] publishing cluster state version [16]
+[2016-03-30 14:02:43,039][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-receive(from master)]
+[2016-03-30 14:02:43,039][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: execute
+[2016-03-30 14:02:43,039][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-receive(from master)]
+version: 16
+state uuid: G90prV1US1iOCRH-dOFNJw
+from_diff: false
+meta data version: 13
+nodes: 
+   {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local], master
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local
+routing_table (version 10):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+-----node_id[o2skO7aRRee67QT4LyikiQ][V]
+---- unassigned
+
+[2016-03-30 14:02:43,039][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 16
+[2016-03-30 14:02:43,048][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-receive(from master)]: took 8ms done applying updated cluster_state (version: 16, uuid: G90prV1US1iOCRH-dOFNJw)
+[2016-03-30 14:02:43,048][DEBUG][org.elasticsearch.cluster.service] [node_t0] set local cluster state to version 16
+[2016-03-30 14:02:43,056][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [remove-index-template [random_index_template]]: took 17ms done applying updated cluster_state (version: 16, uuid: G90prV1US1iOCRH-dOFNJw)
+[2016-03-30 14:02:43,056][TRACE][org.elasticsearch.cluster.service] [node_t0] will process [delete_repository [*]]
+[2016-03-30 14:02:43,056][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [delete_repository [*]]: execute
+[2016-03-30 14:02:43,056][DEBUG][org.elasticsearch.cluster.service] [node_t0] processing [delete_repository [*]]: took 0s no change in cluster_state
+[2016-03-30 14:02:43,057][TRACE][org.elasticsearch.cluster.service] [node_t1] will process [local-disco-update]
+[2016-03-30 14:02:43,057][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-update]: execute
+[2016-03-30 14:02:43,058][TRACE][org.elasticsearch.cluster.service] [node_t1] cluster state updated, source [local-disco-update]
+version: 17
+state uuid: Ls4rYuySSmetstn8KTNOWg
+from_diff: false
+meta data version: 13
+nodes: 
+   {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], local, master
+routing_table (version 10):
+routing_nodes:
+-----node_id[u6i2NnmETkGGDNA1NOduEw][V]
+---- unassigned
+
+[2016-03-30 14:02:43,058][INFO ][org.elasticsearch.cluster.service] [node_t1] master {new {node_t1}{u6i2NnmETkGGDNA1NOduEw}{local}{local[374]}[mode=>local], previous {node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local]}, removed {{node_t0}{o2skO7aRRee67QT4LyikiQ}{local}{local[373]}[mode=>local],}, reason: local-disco-update
+[2016-03-30 14:02:43,058][DEBUG][org.elasticsearch.cluster.service] [node_t1] publishing cluster state version [17]
+[2016-03-30 14:02:43,058][DEBUG][org.elasticsearch.cluster.service] [node_t1] set local cluster state to version 17
+[2016-03-30 14:02:43,059][DEBUG][org.elasticsearch.cluster.service] [node_t1] processing [local-disco-update]: took 1ms done applying updated cluster_state (version: 17, uuid: Ls4rYuySSmetstn8KTNOWg)
+[2016-03-30 14:02:43,063][INFO ][org.elasticsearch.action.admin.indices.shards] [IndicesShardStoreRequestIT#testBasic]: cleaned up after test
+]]></system-out>
+   <system-err><![CDATA[]]></system-err>
+</testsuite>

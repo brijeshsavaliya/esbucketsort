@@ -1,0 +1,2446 @@
+[
+ "BOOTSTRAP",
+ {
+  "defaultCharset": "UTF-8",
+  "pidString": "78457@BrijeshS-2.fios-router.home",
+  "systemProperties": {
+   "awt.toolkit": "sun.lwawt.macosx.LWCToolkit",
+   "es.logger.level": "WARN",
+   "file.encoding": "UTF-8",
+   "file.encoding.pkg": "sun.io",
+   "file.separator": "/",
+   "ftp.nonProxyHosts": "local|*.local|169.254/16|*.169.254/16",
+   "gopherProxySet": "false",
+   "http.nonProxyHosts": "local|*.local|169.254/16|*.169.254/16",
+   "java.awt.graphicsenv": "sun.awt.CGraphicsEnvironment",
+   "java.awt.headless": "true",
+   "java.awt.printerjob": "sun.lwawt.macosx.CPrinterJob",
+   "java.class.path": "/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/main:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/main:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.4.0-snapshot-1715952/84685d37a34b4d87e2928566ed266a7f005ca67d/lucene-core-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.4.0-snapshot-1715952/feaf885ed4155fb7202c1f90ac2eb40503961efc/lucene-analyzers-common-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.4.0-snapshot-1715952/5b5b5c950b4fcac38cf48fab911f75da61e780fa/lucene-backward-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/5.4.0-snapshot-1715952/ff92011208ed5c28f041acc37bd77728a89fc6a5/lucene-grouping-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/5.4.0-snapshot-1715952/5d46f26a6cb36aede89b8728b6fcbc427d4f9416/lucene-highlighter-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/5.4.0-snapshot-1715952/726ea07bbfdfbfbee80522353496fc6667dc33c9/lucene-join-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/5.4.0-snapshot-1715952/d8d7a7b573a4cfc54745a126e905ccfd523b7a24/lucene-memory-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/5.4.0-snapshot-1715952/cd9d4fb4492bd2680cea2f038a051311329f6443/lucene-misc-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/5.4.0-snapshot-1715952/a1a04d191443e51f992ed3dd02d0e14fd48493c9/lucene-queries-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.4.0-snapshot-1715952/c4d34b29b8b14ad3deb300a6d699e9d8965a3c2c/lucene-queryparser-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/5.4.0-snapshot-1715952/bf45dbd653d66ce9d2c3f19b69997b8098d8b416/lucene-sandbox-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/5.4.0-snapshot-1715952/2bddfda70f5c657064d12860b03c2cd8a5029bfc/lucene-spatial-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/5.4.0-snapshot-1715952/881b8cd571fb3ccdcc69f1316468d816812513fb/lucene-spatial3d-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/5.4.0-snapshot-1715952/466e2bc02f45f04cbf516e5df78b9c2ebd99e944/lucene-suggest-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.elasticsearch/securesm/1.0/c0c6cf986ba0057390bfcc80c366a0e3157f944b/securesm-1.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.7.1/8b5057f74ea378c0150a1860874a3ebdcb713767/hppc-0.7.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.joda/joda-convert/1.2/35ec554f0cd00c956cc69051514d9488b1374dec/joda-convert-1.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.2/123f29333b2c6b3516b14252b6e93226bfcd6e37/jackson-core-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.6.2/395d18c1a1dd730b8026ee59c4067e5d2b45ba6e/jackson-dataformat-smile-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.6.2/4ae23088dd3fae47c66843f2e4251d7255ee140e/jackson-dataformat-yaml-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.2/1e13c575f914c83761bb8e2aca7dfd9e4c647579/jackson-dataformat-cbor-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.0/84ccf145ac2215e6bfa63baa3101c0af41017cfc/t-digest-3.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.6/7495feb7f71ee124bd2a7e7d83590e296d71d80e/HdrHistogram-2.1.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.5/6e16edaf6b1ba76db7f08c2f3723fce3b358ecc3/spatial4j-0.5.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.2/8619e95939167fb37245b5670135e4feb0ec7d50/slf4j-api-1.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/test-framework/build/libs/test-framework-3.0.0-SNAPSHOT.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.2.0/60de504132241be049564a3a34fd7dcc296e2ef0/randomizedtesting-runner-2.2.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-test-framework/5.4.0-snapshot-1715952/ae3156d5a2526b1b48ca821765cf7cd53faecef5/lucene-test-framework-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.4.0-snapshot-1715952/7b94152f1c9fd7ecb384fc9602318f74a4463a65/lucene-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/junit4-ant/2.2.0/d401c9c729deccd5db8a5df3102eb18793c2224/junit4-ant-2.2.0.jar",
+   "java.class.version": "52.0",
+   "java.endorsed.dirs": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed",
+   "java.ext.dirs": "/Users/brijeshs/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java",
+   "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre",
+   "java.io.tmpdir": "./temp",
+   "java.library.path": "/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/brijeshs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.",
+   "java.runtime.name": "Java(TM) SE Runtime Environment",
+   "java.runtime.version": "1.8.0_40-b25",
+   "java.specification.name": "Java Platform API Specification",
+   "java.specification.vendor": "Oracle Corporation",
+   "java.specification.version": "1.8",
+   "java.vendor": "Oracle Corporation",
+   "java.vendor.url": "http://java.oracle.com/",
+   "java.vendor.url.bug": "http://bugreport.sun.com/bugreport/",
+   "java.version": "1.8.0_40",
+   "java.vm.info": "mixed mode",
+   "java.vm.name": "Java HotSpot(TM) 64-Bit Server VM",
+   "java.vm.specification.name": "Java Virtual Machine Specification",
+   "java.vm.specification.vendor": "Oracle Corporation",
+   "java.vm.specification.version": "1.8",
+   "java.vm.vendor": "Oracle Corporation",
+   "java.vm.version": "25.40-b25",
+   "junit4.childvm.count": "4",
+   "junit4.childvm.cwd": "/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J1",
+   "junit4.childvm.id": "1",
+   "junit4.memory.total": "514850816",
+   "junit4.pidString": "78457@BrijeshS-2.fios-router.home",
+   "junit4.processors": "8",
+   "line.separator": "\n",
+   "os.arch": "x86_64",
+   "os.name": "Mac OS X",
+   "os.version": "10.10.5",
+   "path.separator": ":",
+   "socksNonProxyHosts": "local|*.local|169.254/16|*.169.254/16",
+   "sun.arch.data.model": "64",
+   "sun.boot.class.path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes",
+   "sun.boot.library.path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib",
+   "sun.cpu.endian": "little",
+   "sun.cpu.isalist": "",
+   "sun.io.unicode.encoding": "UnicodeBig",
+   "sun.java.command": "com.carrotsearch.ant.tasks.junit4.slave.SlaveMainSafe -eventsfile /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/temp/junit4-J1-20160330_161459_524.events @/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/temp/junit4-J1-20160330_161459_524.suites -stdin",
+   "sun.java.launcher": "SUN_STANDARD",
+   "sun.jnu.encoding": "UTF-8",
+   "sun.management.compiler": "HotSpot 64-Bit Tiered Compilers",
+   "sun.os.patch.level": "unknown",
+   "tests.artifact": "core",
+   "tests.ifNoTests": "fail",
+   "tests.maven": "true",
+   "tests.prefix": "tests",
+   "tests.security.manager": "true",
+   "tests.seed": "DE8E7BF5E9626C72",
+   "tests.task": ":core:test",
+   "user.country": "US",
+   "user.dir": "/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J1",
+   "user.home": "/Users/brijeshs",
+   "user.language": "en",
+   "user.name": "brijeshs",
+   "user.timezone": "America/Los_Angeles"
+  }
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.common.lucene.uid.VersionsTests",
+   "displayName": "org.elasticsearch.common.lucene.uid.VersionsTests",
+   "methodName": null,
+   "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+   "children": [
+    {
+     "id": "ID#testMergingOldIndices(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "displayName": "testMergingOldIndices(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "methodName": "testMergingOldIndices",
+     "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCache(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "displayName": "testCache(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "methodName": "testCache",
+     "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+     "children": []
+    },
+    {
+     "id": "ID#testBackwardCompatibility(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "displayName": "testBackwardCompatibility(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "methodName": "testBackwardCompatibility",
+     "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVersions(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "displayName": "testVersions(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "methodName": "testVersions",
+     "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCacheFilterReader(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "displayName": "testCacheFilterReader(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "methodName": "testCacheFilterReader",
+     "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+     "children": []
+    },
+    {
+     "id": "ID#testNestedDocuments(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "displayName": "testNestedDocuments(org.elasticsearch.common.lucene.uid.VersionsTests)",
+     "methodName": "testNestedDocuments",
+     "className": "org.elasticsearch.common.lucene.uid.VersionsTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379700410
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 16:15:01,021][WARN ][org.elasticsearch.bootstrap] Unable to lock JVM Memory: error=78,reason=Function not implemented%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 16:15:01,022][WARN ][org.elasticsearch.bootstrap] This can result in part of the JVM being swapped out.%0A"
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testMergingOldIndices(org.elasticsearch.common.lucene.uid.VersionsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testMergingOldIndices(org.elasticsearch.common.lucene.uid.VersionsTests)",
+  "startTimestamp": 1459379705461,
+  "executionTime": 4573
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCache(org.elasticsearch.common.lucene.uid.VersionsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCache(org.elasticsearch.common.lucene.uid.VersionsTests)",
+  "startTimestamp": 1459379710035,
+  "executionTime": 552
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testBackwardCompatibility(org.elasticsearch.common.lucene.uid.VersionsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testBackwardCompatibility(org.elasticsearch.common.lucene.uid.VersionsTests)",
+  "startTimestamp": 1459379710587,
+  "executionTime": 478
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVersions(org.elasticsearch.common.lucene.uid.VersionsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVersions(org.elasticsearch.common.lucene.uid.VersionsTests)",
+  "startTimestamp": 1459379711066,
+  "executionTime": 817
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCacheFilterReader(org.elasticsearch.common.lucene.uid.VersionsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCacheFilterReader(org.elasticsearch.common.lucene.uid.VersionsTests)",
+  "startTimestamp": 1459379711884,
+  "executionTime": 170
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testNestedDocuments(org.elasticsearch.common.lucene.uid.VersionsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testNestedDocuments(org.elasticsearch.common.lucene.uid.VersionsTests)",
+  "startTimestamp": 1459379712054,
+  "executionTime": 178
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.common.lucene.uid.VersionsTests",
+  "startTimestamp": 1459379700410,
+  "executionTime": 11905
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.transport.local.SimpleLocalTransportTests",
+   "displayName": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+   "methodName": null,
+   "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+   "children": [
+    {
+     "id": "ID#testVersionFrom0to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testVersionFrom0to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testVersionFrom0to0",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testMockFailToSendNoConnectRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testMockFailToSendNoConnectRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testMockFailToSendNoConnectRule",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testHelloWorldCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testHelloWorldCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testHelloWorldCompressed",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testMockUnresponsiveRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testMockUnresponsiveRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testMockUnresponsiveRule",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testErrorMessage(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testErrorMessage(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testErrorMessage",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVoidMessageCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testVoidMessageCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testVoidMessageCompressed",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVersionFrom1to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testVersionFrom1to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testVersionFrom1to0",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testHostOnMessages(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testHostOnMessages(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testHostOnMessages",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVersionFrom0to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testVersionFrom0to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testVersionFrom0to1",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testLocalNodeConnection(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testLocalNodeConnection(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testLocalNodeConnection",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testDisconnectListener(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testDisconnectListener(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testDisconnectListener",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testTimeoutSendExceptionWithNeverSendingBackResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testTimeoutSendExceptionWithNeverSendingBackResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testTimeoutSendExceptionWithNeverSendingBackResponse",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testTracerLog(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testTracerLog(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testTracerLog",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testNotifyOnShutdown(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testNotifyOnShutdown(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testNotifyOnShutdown",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testTimeoutSendExceptionWithDelayedResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testTimeoutSendExceptionWithDelayedResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testTimeoutSendExceptionWithDelayedResponse",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testHelloWorld(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testHelloWorld(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testHelloWorld",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVersionFrom1to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "displayName": "testVersionFrom1to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+     "methodName": "testVersionFrom1to1",
+     "className": "org.elasticsearch.transport.local.SimpleLocalTransportTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379712387
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVersionFrom0to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVersionFrom0to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379712624,
+  "executionTime": 680
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testMockFailToSendNoConnectRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testMockFailToSendNoConnectRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379713305,
+  "executionTime": 891
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testHelloWorldCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testHelloWorldCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714197,
+  "executionTime": 33
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testMockUnresponsiveRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testMockUnresponsiveRule(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714231,
+  "executionTime": 139
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testErrorMessage(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testErrorMessage(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714371,
+  "executionTime": 35
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVoidMessageCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVoidMessageCompressed(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714407,
+  "executionTime": 15
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVersionFrom1to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVersionFrom1to0(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714422,
+  "executionTime": 18
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testHostOnMessages(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testHostOnMessages(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714441,
+  "executionTime": 32
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVersionFrom0to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVersionFrom0to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714473,
+  "executionTime": 13
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testLocalNodeConnection(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testLocalNodeConnection(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714486,
+  "executionTime": 27
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testDisconnectListener(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testDisconnectListener(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714514,
+  "executionTime": 14
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testTimeoutSendExceptionWithNeverSendingBackResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testTimeoutSendExceptionWithNeverSendingBackResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714528,
+  "executionTime": 134
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testTracerLog(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testTracerLog(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714662,
+  "executionTime": 24
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testNotifyOnShutdown(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testNotifyOnShutdown(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714686,
+  "executionTime": 16
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testTimeoutSendExceptionWithDelayedResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testTimeoutSendExceptionWithDelayedResponse(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379714703,
+  "executionTime": 310
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testHelloWorld(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testHelloWorld(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379715014,
+  "executionTime": 12
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVersionFrom1to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVersionFrom1to1(org.elasticsearch.transport.local.SimpleLocalTransportTests)",
+  "startTimestamp": 1459379715027,
+  "executionTime": 9
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.transport.local.SimpleLocalTransportTests",
+  "startTimestamp": 1459379712387,
+  "executionTime": 2652
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests",
+   "displayName": "org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests",
+   "children": [
+    {
+     "id": "ID#testSimple(org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests)",
+     "displayName": "testSimple(org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests)",
+     "methodName": "testSimple",
+     "className": "org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379715087
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSimple(org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSimple(org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests)",
+  "startTimestamp": 1459379731099,
+  "executionTime": 2831
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.mapper.dynamictemplate.genericstore.GenericStoreDynamicTemplateTests",
+  "startTimestamp": 1459379715087,
+  "executionTime": 18891
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.watcher.ResourceWatcherServiceTests",
+   "displayName": "org.elasticsearch.watcher.ResourceWatcherServiceTests",
+   "methodName": null,
+   "className": "org.elasticsearch.watcher.ResourceWatcherServiceTests",
+   "children": [
+    {
+     "id": "ID#testSettings(org.elasticsearch.watcher.ResourceWatcherServiceTests)",
+     "displayName": "testSettings(org.elasticsearch.watcher.ResourceWatcherServiceTests)",
+     "methodName": "testSettings",
+     "className": "org.elasticsearch.watcher.ResourceWatcherServiceTests",
+     "children": []
+    },
+    {
+     "id": "ID#testHandle(org.elasticsearch.watcher.ResourceWatcherServiceTests)",
+     "displayName": "testHandle(org.elasticsearch.watcher.ResourceWatcherServiceTests)",
+     "methodName": "testHandle",
+     "className": "org.elasticsearch.watcher.ResourceWatcherServiceTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379733989
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSettings(org.elasticsearch.watcher.ResourceWatcherServiceTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSettings(org.elasticsearch.watcher.ResourceWatcherServiceTests)",
+  "startTimestamp": 1459379734010,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testHandle(org.elasticsearch.watcher.ResourceWatcherServiceTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testHandle(org.elasticsearch.watcher.ResourceWatcherServiceTests)",
+  "startTimestamp": 1459379734016,
+  "executionTime": 6
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.watcher.ResourceWatcherServiceTests",
+  "startTimestamp": 1459379733989,
+  "executionTime": 36
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.query.IndicesQueryBuilderTests",
+   "displayName": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+   "children": [
+    {
+     "id": "ID#testIllegalArguments(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testIllegalArguments(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testIllegalArguments",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testUnknownObjectException(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testUnknownObjectException(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testUnknownObjectException",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFromXContent(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testFromXContent(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testFromXContent",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testUnknownField(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testUnknownField(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testUnknownField",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSerialization(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testSerialization(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testSerialization",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFromJson(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testFromJson(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testFromJson",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testToQuery(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testToQuery(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testToQuery",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testEqualsAndHashcode(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "displayName": "testEqualsAndHashcode(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+     "methodName": "testEqualsAndHashcode",
+     "className": "org.elasticsearch.index.query.IndicesQueryBuilderTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379734052
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIllegalArguments(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIllegalArguments(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379734198,
+  "executionTime": 8
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testUnknownObjectException(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testUnknownObjectException(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379734206,
+  "executionTime": 27
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFromXContent(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testFromXContent(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379734233,
+  "executionTime": 1512
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testUnknownField(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testUnknownField(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379735745,
+  "executionTime": 4
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSerialization(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSerialization(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379735749,
+  "executionTime": 9
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFromJson(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testFromJson(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379735759,
+  "executionTime": 5
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testToQuery(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testToQuery(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379735765,
+  "executionTime": 609
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testEqualsAndHashcode(org.elasticsearch.index.query.IndicesQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testEqualsAndHashcode(org.elasticsearch.index.query.IndicesQueryBuilderTests)",
+  "startTimestamp": 1459379736374,
+  "executionTime": 11
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.query.IndicesQueryBuilderTests",
+  "startTimestamp": 1459379734052,
+  "executionTime": 2430
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+   "displayName": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+   "methodName": null,
+   "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+   "children": [
+    {
+     "id": "ID#testIndexingWithNoContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testIndexingWithNoContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testIndexingWithNoContexts",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testIndexingWithSimpleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testIndexingWithSimpleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testIndexingWithSimpleContexts",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testParsingQueryContextObjectArray(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testParsingQueryContextObjectArray(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testParsingQueryContextObjectArray",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testParsingQueryContextGeoPoint(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testParsingQueryContextGeoPoint(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testParsingQueryContextGeoPoint",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testParsingQueryContextBasic(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testParsingQueryContextBasic(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testParsingQueryContextBasic",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testParsingQueryContextMixed(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testParsingQueryContextMixed(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testParsingQueryContextMixed",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testIndexingWithContextList(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testIndexingWithContextList(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testIndexingWithContextList",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testIndexingWithMultipleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testIndexingWithMultipleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testIndexingWithMultipleContexts",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    },
+    {
+     "id": "ID#testParsingQueryContextObject(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "displayName": "testParsingQueryContextObject(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+     "methodName": "testParsingQueryContextObject",
+     "className": "org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379736492
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIndexingWithNoContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIndexingWithNoContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379736727,
+  "executionTime": 303
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIndexingWithSimpleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIndexingWithSimpleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737031,
+  "executionTime": 112
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testParsingQueryContextObjectArray(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testParsingQueryContextObjectArray(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737144,
+  "executionTime": 100
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testParsingQueryContextGeoPoint(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testParsingQueryContextGeoPoint(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737245,
+  "executionTime": 25
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testParsingQueryContextBasic(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testParsingQueryContextBasic(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737271,
+  "executionTime": 23
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testParsingQueryContextMixed(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testParsingQueryContextMixed(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737294,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIndexingWithContextList(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIndexingWithContextList(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737301,
+  "executionTime": 96
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIndexingWithMultipleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIndexingWithMultipleContexts(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737398,
+  "executionTime": 64
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testParsingQueryContextObject(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testParsingQueryContextObject(org.elasticsearch.search.suggest.completion.GeoContextMappingTests)",
+  "startTimestamp": 1459379737463,
+  "executionTime": 6
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.search.suggest.completion.GeoContextMappingTests",
+  "startTimestamp": 1459379736492,
+  "executionTime": 989
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.query.IdsQueryBuilderTests",
+   "displayName": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+   "children": [
+    {
+     "id": "ID#testIdsNotProvided(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testIdsNotProvided(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testIdsNotProvided",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testEqualsAndHashcode(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testEqualsAndHashcode(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testEqualsAndHashcode",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFromJson(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testFromJson(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testFromJson",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testIllegalArguments(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testIllegalArguments(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testIllegalArguments",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSerialization(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testSerialization(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testSerialization",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testToQuery(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testToQuery(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testToQuery",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testIdsQueryWithInvalidValues(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testIdsQueryWithInvalidValues(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testIdsQueryWithInvalidValues",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testUnknownObjectException(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testUnknownObjectException(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testUnknownObjectException",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFromXContent(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testFromXContent(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testFromXContent",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    },
+    {
+     "id": "ID#testUnknownField(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "displayName": "testUnknownField(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+     "methodName": "testUnknownField",
+     "className": "org.elasticsearch.index.query.IdsQueryBuilderTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379737489
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIdsNotProvided(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIdsNotProvided(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738569,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testEqualsAndHashcode(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testEqualsAndHashcode(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738572,
+  "executionTime": 36
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFromJson(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testFromJson(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738608,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIllegalArguments(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIllegalArguments(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738614,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSerialization(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSerialization(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738620,
+  "executionTime": 5
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testToQuery(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testToQuery(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738626,
+  "executionTime": 43
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testIdsQueryWithInvalidValues(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testIdsQueryWithInvalidValues(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738670,
+  "executionTime": 4
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testUnknownObjectException(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testUnknownObjectException(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738674,
+  "executionTime": 5
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFromXContent(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testFromXContent(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738679,
+  "executionTime": 16
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testUnknownField(org.elasticsearch.index.query.IdsQueryBuilderTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testUnknownField(org.elasticsearch.index.query.IdsQueryBuilderTests)",
+  "startTimestamp": 1459379738696,
+  "executionTime": 13
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.query.IdsQueryBuilderTests",
+  "startTimestamp": 1459379737489,
+  "executionTime": 1228
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+   "displayName": "org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+   "children": [
+    {
+     "id": "ID#testWeightOnlyCreatesBoostFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "displayName": "testWeightOnlyCreatesBoostFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "methodName": "testWeightOnlyCreatesBoostFunction",
+     "className": "org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSimpleWeightedFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "displayName": "testSimpleWeightedFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "methodName": "testSimpleWeightedFunction",
+     "className": "org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testExplainFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "displayName": "testExplainFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "methodName": "testExplainFunctionScoreQuery",
+     "className": "org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testExplainFiltersFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "displayName": "testExplainFiltersFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+     "methodName": "testExplainFiltersFunctionScoreQuery",
+     "className": "org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379738740
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testWeightOnlyCreatesBoostFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testWeightOnlyCreatesBoostFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+  "startTimestamp": 1459379738795,
+  "executionTime": 424
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSimpleWeightedFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSimpleWeightedFunction(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+  "startTimestamp": 1459379739219,
+  "executionTime": 578
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testExplainFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testExplainFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+  "startTimestamp": 1459379739798,
+  "executionTime": 584
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testExplainFiltersFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testExplainFiltersFunctionScoreQuery(org.elasticsearch.index.query.functionscore.FunctionScoreTests)",
+  "startTimestamp": 1459379740382,
+  "executionTime": 417
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.query.functionscore.FunctionScoreTests",
+  "startTimestamp": 1459379738740,
+  "executionTime": 2062
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.fielddata.FieldDataTests",
+   "displayName": "org.elasticsearch.index.fielddata.FieldDataTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.fielddata.FieldDataTests",
+   "children": [
+    {
+     "id": "ID#testSortableLongBitsToDoubles(org.elasticsearch.index.fielddata.FieldDataTests)",
+     "displayName": "testSortableLongBitsToDoubles(org.elasticsearch.index.fielddata.FieldDataTests)",
+     "methodName": "testSortableLongBitsToDoubles",
+     "className": "org.elasticsearch.index.fielddata.FieldDataTests",
+     "children": []
+    },
+    {
+     "id": "ID#testDoublesToSortableLongBits(org.elasticsearch.index.fielddata.FieldDataTests)",
+     "displayName": "testDoublesToSortableLongBits(org.elasticsearch.index.fielddata.FieldDataTests)",
+     "methodName": "testDoublesToSortableLongBits",
+     "className": "org.elasticsearch.index.fielddata.FieldDataTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379740813
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSortableLongBitsToDoubles(org.elasticsearch.index.fielddata.FieldDataTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSortableLongBitsToDoubles(org.elasticsearch.index.fielddata.FieldDataTests)",
+  "startTimestamp": 1459379740832,
+  "executionTime": 45
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testDoublesToSortableLongBits(org.elasticsearch.index.fielddata.FieldDataTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testDoublesToSortableLongBits(org.elasticsearch.index.fielddata.FieldDataTests)",
+  "startTimestamp": 1459379740877,
+  "executionTime": 3
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.fielddata.FieldDataTests",
+  "startTimestamp": 1459379740813,
+  "executionTime": 69
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.rest.RestRequestTests",
+   "displayName": "org.elasticsearch.rest.RestRequestTests",
+   "methodName": null,
+   "className": "org.elasticsearch.rest.RestRequestTests",
+   "children": [
+    {
+     "id": "ID#testContext(org.elasticsearch.rest.RestRequestTests)",
+     "displayName": "testContext(org.elasticsearch.rest.RestRequestTests)",
+     "methodName": "testContext",
+     "className": "org.elasticsearch.rest.RestRequestTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379740889
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testContext(org.elasticsearch.rest.RestRequestTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testContext(org.elasticsearch.rest.RestRequestTests)",
+  "startTimestamp": 1459379740905,
+  "executionTime": 4
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.rest.RestRequestTests",
+  "startTimestamp": 1459379740889,
+  "executionTime": 22
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests",
+   "displayName": "org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests",
+   "children": [
+    {
+     "id": "ID#testKeepTypes(org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests)",
+     "displayName": "testKeepTypes(org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests)",
+     "methodName": "testKeepTypes",
+     "className": "org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379740954
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testKeepTypes(org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testKeepTypes(org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests)",
+  "startTimestamp": 1459379740968,
+  "executionTime": 22
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.analysis.KeepTypesFilterFactoryTests",
+  "startTimestamp": 1459379740954,
+  "executionTime": 38
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.store.StoreTests",
+   "displayName": "org.elasticsearch.index.store.StoreTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.store.StoreTests",
+   "children": [
+    {
+     "id": "ID#testMetadataSnapshotStreaming(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testMetadataSnapshotStreaming(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testMetadataSnapshotStreaming",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testRefCount(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testRefCount(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testRefCount",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVerifyingIndexInput(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testVerifyingIndexInput(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testVerifyingIndexInput",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testDeserializeCorruptionException(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testDeserializeCorruptionException(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testDeserializeCorruptionException",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testRecoveryDiffWithLegacyCommit(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testRecoveryDiffWithLegacyCommit(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testRecoveryDiffWithLegacyCommit",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCanReadOldCorruptionMarker(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testCanReadOldCorruptionMarker(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testCanReadOldCorruptionMarker",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testRenameFile(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testRenameFile(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testRenameFile",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testMarkCorruptedOnTruncatedSegmentsFile(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testMarkCorruptedOnTruncatedSegmentsFile(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testMarkCorruptedOnTruncatedSegmentsFile",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testNewChecksums(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testNewChecksums(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testNewChecksums",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testStoreStats(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testStoreStats(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testStoreStats",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testMixedChecksums(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testMixedChecksums(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testMixedChecksums",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCheckIntegrity(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testCheckIntegrity(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testCheckIntegrity",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testOnCloseCallback(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testOnCloseCallback(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testOnCloseCallback",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testWriteLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testWriteLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testWriteLegacyChecksums",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCleanupFromSnapshot(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testCleanupFromSnapshot(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testCleanupFromSnapshot",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testChecksumCorrupted(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testChecksumCorrupted(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testChecksumCorrupted",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testStreamStoreFilesMetaData(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testStreamStoreFilesMetaData(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testStreamStoreFilesMetaData",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testUserDataRead(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testUserDataRead(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testUserDataRead",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCleanUpWithLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testCleanUpWithLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testCleanUpWithLegacyChecksums",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testRecoveryDiff(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testRecoveryDiff(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testRecoveryDiff",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVerifyingIndexOutputWithBogusInput(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testVerifyingIndexOutputWithBogusInput(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testVerifyingIndexOutputWithBogusInput",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCanOpenIndex(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testCanOpenIndex(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testCanOpenIndex",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVerifyingIndexOutput(org.elasticsearch.index.store.StoreTests)",
+     "displayName": "testVerifyingIndexOutput(org.elasticsearch.index.store.StoreTests)",
+     "methodName": "testVerifyingIndexOutput",
+     "className": "org.elasticsearch.index.store.StoreTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379741054
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testMetadataSnapshotStreaming(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testMetadataSnapshotStreaming(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741094,
+  "executionTime": 11
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testRefCount(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testRefCount(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741105,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVerifyingIndexInput(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVerifyingIndexInput(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741111,
+  "executionTime": 57
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testDeserializeCorruptionException(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testDeserializeCorruptionException(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741168,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testRecoveryDiffWithLegacyCommit(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testRecoveryDiffWithLegacyCommit(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741174,
+  "executionTime": 5
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCanReadOldCorruptionMarker(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCanReadOldCorruptionMarker(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741180,
+  "executionTime": 5
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testRenameFile(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testRenameFile(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741186,
+  "executionTime": 89
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testMarkCorruptedOnTruncatedSegmentsFile(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testMarkCorruptedOnTruncatedSegmentsFile(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379741275,
+  "executionTime": 816
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testNewChecksums(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testNewChecksums(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379742092,
+  "executionTime": 502
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testStoreStats(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testStoreStats(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379742594,
+  "executionTime": 79
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testMixedChecksums(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testMixedChecksums(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379742673,
+  "executionTime": 982
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCheckIntegrity(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCheckIntegrity(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379743655,
+  "executionTime": 38
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testOnCloseCallback(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testOnCloseCallback(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379743694,
+  "executionTime": 11
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testWriteLegacyChecksums(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_IGNORED",
+ {
+  "description": "ID#testWriteLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379743714,
+  "cause": "Unknown reason for ignore status."
+ }
+]
+
+[
+ "TEST_IGNORED_ASSUMPTION",
+ {
+  "description": "ID#testWriteLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+  "message": "'awaitsfix' test group is disabled (@AwaitsFix(bugUrl=Fails with seed E1394B038144F6E))",
+  "trace": "com.carrotsearch.randomizedtesting.InternalAssumptionViolatedException: 'awaitsfix' test group is disabled (@AwaitsFix(bugUrl=Fails with seed E1394B038144F6E))\n\tat com.carrotsearch.randomizedtesting.RandomizedRunner.isTestIgnored(RandomizedRunner.java:1231)\n\tat com.carrotsearch.randomizedtesting.RandomizedRunner.access$400(RandomizedRunner.java:141)\n\tat com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:763)\n\tat com.carrotsearch.randomizedtesting.RandomizedRunner$6.evaluate(RandomizedRunner.java:811)\n\tat com.carrotsearch.randomizedtesting.RandomizedRunner$7.evaluate(RandomizedRunner.java:822)\n\tat org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)\n\tat com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)\n\tat org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:42)\n\tat com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)\n\tat com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)\n\tat com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)\n\tat com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)\n\tat com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)\n\tat org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:54)\n\tat org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)\n\tat org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)\n\tat org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:55)\n\tat com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)\n\tat com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)\n\tat java.lang.Thread.run(Thread.java:745)\n",
+  "throwableString": "com.carrotsearch.randomizedtesting.InternalAssumptionViolatedException: 'awaitsfix' test group is disabled (@AwaitsFix(bugUrl=Fails with seed E1394B038144F6E))",
+  "throwableClass": "com.carrotsearch.randomizedtesting.InternalAssumptionViolatedException",
+  "assertionViolation": false,
+  "assumptionViolation": true
+ }
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testWriteLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379743705,
+  "executionTime": 47
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCleanupFromSnapshot(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCleanupFromSnapshot(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379743752,
+  "executionTime": 1472
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testChecksumCorrupted(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testChecksumCorrupted(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379745224,
+  "executionTime": 71
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testStreamStoreFilesMetaData(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testStreamStoreFilesMetaData(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379745295,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testUserDataRead(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testUserDataRead(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379745299,
+  "executionTime": 520
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCleanUpWithLegacyChecksums(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCleanUpWithLegacyChecksums(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379745819,
+  "executionTime": 41
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testRecoveryDiff(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testRecoveryDiff(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379745860,
+  "executionTime": 1803
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVerifyingIndexOutputWithBogusInput(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVerifyingIndexOutputWithBogusInput(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379747664,
+  "executionTime": 13
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testCanOpenIndex(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testCanOpenIndex(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379747677,
+  "executionTime": 410
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVerifyingIndexOutput(org.elasticsearch.index.store.StoreTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVerifyingIndexOutput(org.elasticsearch.index.store.StoreTests)",
+  "startTimestamp": 1459379748087,
+  "executionTime": 78
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.index.store.StoreTests",
+  "startTimestamp": 1459379741054,
+  "executionTime": 7116
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.common.util.ArrayUtilsTests",
+   "displayName": "org.elasticsearch.common.util.ArrayUtilsTests",
+   "methodName": null,
+   "className": "org.elasticsearch.common.util.ArrayUtilsTests",
+   "children": [
+    {
+     "id": "ID#testConcat(org.elasticsearch.common.util.ArrayUtilsTests)",
+     "displayName": "testConcat(org.elasticsearch.common.util.ArrayUtilsTests)",
+     "methodName": "testConcat",
+     "className": "org.elasticsearch.common.util.ArrayUtilsTests",
+     "children": []
+    },
+    {
+     "id": "ID#testBinarySearch(org.elasticsearch.common.util.ArrayUtilsTests)",
+     "displayName": "testBinarySearch(org.elasticsearch.common.util.ArrayUtilsTests)",
+     "methodName": "testBinarySearch",
+     "className": "org.elasticsearch.common.util.ArrayUtilsTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379748177
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testConcat(org.elasticsearch.common.util.ArrayUtilsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testConcat(org.elasticsearch.common.util.ArrayUtilsTests)",
+  "startTimestamp": 1459379748195,
+  "executionTime": 11
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testBinarySearch(org.elasticsearch.common.util.ArrayUtilsTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testBinarySearch(org.elasticsearch.common.util.ArrayUtilsTests)",
+  "startTimestamp": 1459379748206,
+  "executionTime": 5
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.common.util.ArrayUtilsTests",
+  "startTimestamp": 1459379748177,
+  "executionTime": 36
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests",
+   "displayName": "org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests",
+   "methodName": null,
+   "className": "org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests",
+   "children": [
+    {
+     "id": "ID#testSimpleJsonFromAndTo(org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests)",
+     "displayName": "testSimpleJsonFromAndTo(org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests)",
+     "methodName": "testSimpleJsonFromAndTo",
+     "className": "org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379748221
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSimpleJsonFromAndTo(org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSimpleJsonFromAndTo(org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests)",
+  "startTimestamp": 1459379748238,
+  "executionTime": 43
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.cluster.metadata.ToAndFromJsonMetaDataTests",
+  "startTimestamp": 1459379748221,
+  "executionTime": 63
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.index.engine.ShadowEngineTests",
+   "displayName": "org.elasticsearch.index.engine.ShadowEngineTests",
+   "methodName": null,
+   "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+   "children": [
+    {
+     "id": "ID#testFailEngineOnCorruption(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testFailEngineOnCorruption(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testFailEngineOnCorruption",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testShadowEngineCreationRetry(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testShadowEngineCreationRetry(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testShadowEngineCreationRetry",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSettings(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testSettings(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testSettings",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testNoTranslog(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testNoTranslog(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testNoTranslog",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSegments(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testSegments(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testSegments",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testExtractShardId(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testExtractShardId(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testExtractShardId",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVerboseSegments(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testVerboseSegments(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testVerboseSegments",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSearchResultRelease(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testSearchResultRelease(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testSearchResultRelease",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFailStart(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testFailStart(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testFailStart",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testShadowEngineIgnoresWriteOperations(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testShadowEngineIgnoresWriteOperations(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testShadowEngineIgnoresWriteOperations",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testCommitStats(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testCommitStats(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testCommitStats",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSimpleOperations(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "displayName": "testSimpleOperations(org.elasticsearch.index.engine.ShadowEngineTests)",
+     "methodName": "testSimpleOperations",
+     "className": "org.elasticsearch.index.engine.ShadowEngineTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459379748298
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFailEngineOnCorruption(org.elasticsearch.index.engine.ShadowEngineTests)"
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 16:15:49,148][WARN ][org.elasticsearch.index.engine]  [index][1] failed engine [refresh failed]%0Ajava.io.IOException: a random IOException (segments_3)%0A%09at org.apache.lucene.store.MockDirectoryWrapper.maybeThrowIOExceptionOnOpen(MockDirectoryWrapper.java:456)%0A%09at org.apache.lucene.store.MockDirectoryWrapper.openInput(MockDirectoryWrapper.java:635)%0A%09at org.apache.lucene.store.FilterDirectory.openInput(FilterDirectory.java:89)%0A%09at org.apache.lucene.store.Directory.openChecksumInput(Directory.java:109)%0A%09at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:294)%0A%09at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:493)%0A%09at org.apache.lucene.index.SegmentInfos$1.doBody(SegmentInfos.java:490)%0A%09at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:731)%0A%09at org.apache.lucene.index.SegmentInfos$FindSegmentsFile.run(SegmentInfos.java:683)%0A%09at org.apache.lucene.index.SegmentInfos.readLatestCommit(SegmentInfos.java:495)%0A%09at org.apache.lucene.index.StandardDirectoryReader.isCurrent(StandardDirectoryReader.java:344)%0A%09at org.apache.lucene.index.StandardDirectoryReader.doOpenNoWriter(StandardDirectoryReader.java:300)%0A%09at org.apache.lucene.index.StandardDirectoryReader.doOpenIfChanged(StandardDirectoryReader.java:263)%0A%09at org.apache.lucene.index.StandardDirectoryReader.doOpenIfChanged(StandardDirectoryReader.java:251)%0A%09at org.apache.lucene.index.FilterDirectoryReader.doOpenIfChanged(FilterDirectoryReader.java:104)%0A%09at org.apache.lucene.index.DirectoryReader.openIfChanged(DirectoryReader.java:123)%0A%09at org.apache.lucene.search.SearcherManager.refreshIfNeeded(SearcherManager.java:137)%0A%09at org.apache.lucene.search.SearcherManager.refreshIfNeeded(SearcherManager.java:58)%0A%09at org.apache.lucene.search.ReferenceManager.doMaybeRefresh(ReferenceManager.java:176)%0A%09at org.apache.lucene.search.ReferenceManager.maybeRefreshBlocking(ReferenceManager.java:253)%0A%09at org.elasticsearch.index.engine.ShadowEngine.refresh(ShadowEngine.java:189)%0A%09at org.elasticsearch.index.engine.ShadowEngineTests.testFailEngineOnCorruption(ShadowEngineTests.java:836)%0A%09at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)%0A%09at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)%0A%09at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)%0A%09at java.lang.reflect.Method.invoke(Method.java:497)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner.invoke(RandomizedRunner.java:1660)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner$8.evaluate(RandomizedRunner.java:866)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner$9.evaluate(RandomizedRunner.java:902)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner$10.evaluate(RandomizedRunner.java:916)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at org.apache.lucene.util.TestRuleSetupTeardownChained$1.evaluate(TestRuleSetupTeardownChained.java:50)%0A%09at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)%0A%09at org.apache.lucene.util.TestRuleThreadAndTestName$1.evaluate(TestRuleThreadAndTestName.java:49)%0A%09at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)%0A%09at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)%0A%09at com.carrotsearch.randomizedtesting.ThreadLeakControl.forkTimeoutingTask(ThreadLeakControl.java:809)%0A%09at com.carrotsearch.randomizedtesting.ThreadLeakControl$3.evaluate(ThreadLeakControl.java:460)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner.runSingleTest(RandomizedRunner.java:875)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:777)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner$6.evaluate(RandomizedRunner.java:811)%0A%09at com.carrotsearch.randomizedtesting.RandomizedRunner$7.evaluate(RandomizedRunner.java:822)%0A%09at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:42)%0A%09at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)%0A%09at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:54)%0A%09at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)%0A%09at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)%0A%09at org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:55)%0A%09at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)%0A%09at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)%0A%09at java.lang.Thread.run(Thread.java:745)%0A"
+ }
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testFailEngineOnCorruption(org.elasticsearch.index.engine.ShadowEngineTests)",
+  "startTimestamp": 1459379748316,
+  "executionTime": 1172
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testShadowEngineCreationRetry(org.elasticsearch.index.engine.ShadowEngineTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testShadowEngineCreationRetry(org.elasticsearch.index.engine.ShadowEngineTests)",
+  "startTimestamp": 1459379749488,
+  "executionTime": 1623
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSettings(org.elasticsearch.index.engine.ShadowEngineTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSettings(org.elasticsearch.index.engine.ShadowEngineTests)",
+  "startTimestamp": 1459379751111,
+  "executionTime": 280
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testNoTranslog(org.elasticsearch.index.engine.ShadowEngineTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testNoTranslog(org.elasticsearch.index.engine.ShadowEngineTests)",
+  "startTimestamp": 1459379751391,
+  "executionTime": 283
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSegments(org.elasticsearch.index.engine.ShadowEngineTests)"
+]
+

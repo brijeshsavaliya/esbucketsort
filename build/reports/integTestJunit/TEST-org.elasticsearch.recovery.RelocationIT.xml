@@ -1,0 +1,785 @@
+<testsuite errors="0" failures="0" tests="4" skipped="0" name="org.elasticsearch.recovery.RelocationIT" hostname="nohost.nodomain" time="16.665" timestamp="2016-03-30T14:05:08">
+   <properties class="java.util.ArrayList">
+      <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+      <property name="es.logger.level" value="WARN"/>
+      <property name="file.encoding" value="UTF-8"/>
+      <property name="file.encoding.pkg" value="sun.io"/>
+      <property name="file.separator" value="/"/>
+      <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="gopherProxySet" value="false"/>
+      <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+      <property name="java.awt.headless" value="true"/>
+      <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+      <property name="java.class.path" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/main:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/main:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.4.0-snapshot-1715952/84685d37a34b4d87e2928566ed266a7f005ca67d/lucene-core-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.4.0-snapshot-1715952/feaf885ed4155fb7202c1f90ac2eb40503961efc/lucene-analyzers-common-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.4.0-snapshot-1715952/5b5b5c950b4fcac38cf48fab911f75da61e780fa/lucene-backward-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/5.4.0-snapshot-1715952/ff92011208ed5c28f041acc37bd77728a89fc6a5/lucene-grouping-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/5.4.0-snapshot-1715952/5d46f26a6cb36aede89b8728b6fcbc427d4f9416/lucene-highlighter-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/5.4.0-snapshot-1715952/726ea07bbfdfbfbee80522353496fc6667dc33c9/lucene-join-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/5.4.0-snapshot-1715952/d8d7a7b573a4cfc54745a126e905ccfd523b7a24/lucene-memory-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/5.4.0-snapshot-1715952/cd9d4fb4492bd2680cea2f038a051311329f6443/lucene-misc-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/5.4.0-snapshot-1715952/a1a04d191443e51f992ed3dd02d0e14fd48493c9/lucene-queries-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.4.0-snapshot-1715952/c4d34b29b8b14ad3deb300a6d699e9d8965a3c2c/lucene-queryparser-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/5.4.0-snapshot-1715952/bf45dbd653d66ce9d2c3f19b69997b8098d8b416/lucene-sandbox-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/5.4.0-snapshot-1715952/2bddfda70f5c657064d12860b03c2cd8a5029bfc/lucene-spatial-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/5.4.0-snapshot-1715952/881b8cd571fb3ccdcc69f1316468d816812513fb/lucene-spatial3d-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/5.4.0-snapshot-1715952/466e2bc02f45f04cbf516e5df78b9c2ebd99e944/lucene-suggest-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.elasticsearch/securesm/1.0/c0c6cf986ba0057390bfcc80c366a0e3157f944b/securesm-1.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.7.1/8b5057f74ea378c0150a1860874a3ebdcb713767/hppc-0.7.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.joda/joda-convert/1.2/35ec554f0cd00c956cc69051514d9488b1374dec/joda-convert-1.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.2/123f29333b2c6b3516b14252b6e93226bfcd6e37/jackson-core-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.6.2/395d18c1a1dd730b8026ee59c4067e5d2b45ba6e/jackson-dataformat-smile-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.6.2/4ae23088dd3fae47c66843f2e4251d7255ee140e/jackson-dataformat-yaml-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.2/1e13c575f914c83761bb8e2aca7dfd9e4c647579/jackson-dataformat-cbor-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.0/84ccf145ac2215e6bfa63baa3101c0af41017cfc/t-digest-3.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.6/7495feb7f71ee124bd2a7e7d83590e296d71d80e/HdrHistogram-2.1.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.5/6e16edaf6b1ba76db7f08c2f3723fce3b358ecc3/spatial4j-0.5.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.2/8619e95939167fb37245b5670135e4feb0ec7d50/slf4j-api-1.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/test-framework/build/libs/test-framework-3.0.0-SNAPSHOT.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.2.0/60de504132241be049564a3a34fd7dcc296e2ef0/randomizedtesting-runner-2.2.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-test-framework/5.4.0-snapshot-1715952/ae3156d5a2526b1b48ca821765cf7cd53faecef5/lucene-test-framework-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.4.0-snapshot-1715952/7b94152f1c9fd7ecb384fc9602318f74a4463a65/lucene-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/junit4-ant/2.2.0/d401c9c729deccd5db8a5df3102eb18793c2224/junit4-ant-2.2.0.jar"/>
+      <property name="java.class.version" value="52.0"/>
+      <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+      <property name="java.ext.dirs" value="/Users/brijeshs/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+      <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre"/>
+      <property name="java.io.tmpdir" value="./temp"/>
+      <property name="java.library.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/brijeshs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+      <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+      <property name="java.runtime.version" value="1.8.0_40-b25"/>
+      <property name="java.specification.name" value="Java Platform API Specification"/>
+      <property name="java.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.specification.version" value="1.8"/>
+      <property name="java.vendor" value="Oracle Corporation"/>
+      <property name="java.vendor.url" value="http://java.oracle.com/"/>
+      <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+      <property name="java.version" value="1.8.0_40"/>
+      <property name="java.vm.info" value="mixed mode"/>
+      <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+      <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+      <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.specification.version" value="1.8"/>
+      <property name="java.vm.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.version" value="25.40-b25"/>
+      <property name="junit4.childvm.count" value="4"/>
+      <property name="junit4.childvm.cwd" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J0"/>
+      <property name="junit4.childvm.id" value="0"/>
+      <property name="junit4.memory.total" value="514850816"/>
+      <property name="junit4.pidString" value="66624@BrijeshS-2.fios-router.home"/>
+      <property name="junit4.processors" value="8"/>
+      <property name="line.separator" value="
+"/>
+      <property name="os.arch" value="x86_64"/>
+      <property name="os.name" value="Mac OS X"/>
+      <property name="os.version" value="10.10.5"/>
+      <property name="path.separator" value=":"/>
+      <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="sun.arch.data.model" value="64"/>
+      <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes"/>
+      <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
+      <property name="sun.cpu.endian" value="little"/>
+      <property name="sun.cpu.isalist" value=""/>
+      <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+      <property name="sun.java.command" value="com.carrotsearch.ant.tasks.junit4.slave.SlaveMainSafe -eventsfile /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/temp/junit4-J0-20160330_135253_694.events @/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/temp/junit4-J0-20160330_135253_694.suites -stdin"/>
+      <property name="sun.java.launcher" value="SUN_STANDARD"/>
+      <property name="sun.jnu.encoding" value="UTF-8"/>
+      <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+      <property name="sun.os.patch.level" value="unknown"/>
+      <property name="tests.artifact" value="core"/>
+      <property name="tests.ifNoTests" value="fail"/>
+      <property name="tests.maven" value="true"/>
+      <property name="tests.prefix" value="tests"/>
+      <property name="tests.security.manager" value="true"/>
+      <property name="tests.seed" value="F7928424F380CF7C"/>
+      <property name="tests.task" value=":core:integTest"/>
+      <property name="user.country" value="US"/>
+      <property name="user.dir" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J0"/>
+      <property name="user.home" value="/Users/brijeshs"/>
+      <property name="user.language" value="en"/>
+      <property name="user.name" value="brijeshs"/>
+      <property name="user.timezone" value="America/Los_Angeles"/>
+   </properties>
+   <testcase classname="org.elasticsearch.recovery.RelocationIT" name="testSimpleRelocationNoIndexing" time="1.473"/>
+   <testcase classname="org.elasticsearch.recovery.RelocationIT" name="testRelocationWhileIndexingRandom" time="8.745"/>
+   <testcase classname="org.elasticsearch.recovery.RelocationIT" name="testCancellationCleansTempFiles" time="2.857"/>
+   <testcase classname="org.elasticsearch.recovery.RelocationIT" name="testRelocationWhileRefreshing" time="3.47"/>
+   <system-out><![CDATA[[2016-03-30 14:05:08,640][DEBUG][org.elasticsearch.indices.recovery] [node_t0] using max_bytes_per_sec[40mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [false]
+[2016-03-30 14:05:09,328][DEBUG][org.elasticsearch.indices.recovery] [node_t1] using max_bytes_per_sec[62mb], concurrent_streams [3], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:09,380][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] started recovery from {node_t0}{mvNcgmepQTebkA1i0WTA-g}{local}{local[466]}[mode=>local], id [443]
+[2016-03-30 14:05:09,380][TRACE][org.elasticsearch.indices.recovery] [node_t1] collecting local files for [test][0] [443]
+[2016-03-30 14:05:09,384][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] starting recovery from {node_t0}{mvNcgmepQTebkA1i0WTA-g}{local}{local[466]}[mode=>local]
+[2016-03-30 14:05:09,384][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:09,384][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [2] for recovery
+[2016-03-30 14:05:09,391][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: recovering [_0.cfe], does not exists in remote
+[2016-03-30 14:05:09,391][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: recovering [_0.si], does not exists in remote
+[2016-03-30 14:05:09,391][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: recovering [_0.cfs], does not exists in remote
+[2016-03-30 14:05:09,391][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: recovering [segments_2], does not exists in remote
+[2016-03-30 14:05:09,391][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: recovering_files [4] with total_size [3.4kb], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:09,492][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: prepare remote engine for translog
+[2016-03-30 14:05:09,637][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: remote engine start took [145.7ms]
+[2016-03-30 14:05:09,637][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: took [0s]
+[2016-03-30 14:05:09,638][TRACE][org.elasticsearch.indices.recovery] [node_t0] snapshot translog for recovery. current size is [10]
+[2016-03-30 14:05:09,638][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: sending transaction log operations
+[2016-03-30 14:05:09,650][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] sent final batch of [10][440b] (total: [10]) translog operations to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]
+[2016-03-30 14:05:09,650][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: took [12.4ms]
+[2016-03-30 14:05:09,650][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]
+[2016-03-30 14:05:09,859][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t1}{2Gscg4nlQTKisTfpKICeWA}{local}{local[468]}[mode=>local]: took [209.1ms]
+[2016-03-30 14:05:09,860][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] marking recovery from {node_t0}{mvNcgmepQTebkA1i0WTA-g}{local}{local[466]}[mode=>local] as done, id [443]
+[2016-03-30 14:05:09,860][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] recovery completed from {node_t0}{mvNcgmepQTebkA1i0WTA-g}{local}{local[466]}[mode=>local], took[480ms]
+   phase1: recovered_files [4] with total_size of [3.4kb], took [0s], throttling_wait [0s]
+         : reusing_files   [0] with total_size of [0b]
+   phase2: start took [145ms]
+         : recovered [10] transaction log operations, took [12ms]
+
+[2016-03-30 14:05:10,114][DEBUG][org.elasticsearch.indices.recovery] [node_t0] using max_bytes_per_sec[113mb], concurrent_streams [4], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:10,220][DEBUG][org.elasticsearch.indices.recovery] [node_t1] using max_bytes_per_sec[55mb], concurrent_streams [4], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:10,271][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] started recovery from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local], id [444]
+[2016-03-30 14:05:10,272][TRACE][org.elasticsearch.indices.recovery] [node_t1] collecting local files for [test][0] [444]
+[2016-03-30 14:05:10,273][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] starting recovery from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local]
+[2016-03-30 14:05:10,274][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:10,274][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [1] for recovery
+[2016-03-30 14:05:10,278][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: recovering [segments_1], does not exists in remote
+[2016-03-30 14:05:10,278][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: recovering_files [1] with total_size [130b], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:10,333][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: prepare remote engine for translog
+[2016-03-30 14:05:10,383][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: remote engine start took [50.1ms]
+[2016-03-30 14:05:10,383][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: took [0s]
+[2016-03-30 14:05:10,383][TRACE][org.elasticsearch.indices.recovery] [node_t0] snapshot translog for recovery. current size is [0]
+[2016-03-30 14:05:10,383][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: sending transaction log operations
+[2016-03-30 14:05:10,383][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] no translog operations to send to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]
+[2016-03-30 14:05:10,383][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] sent final batch of [0][0b] (total: [0]) translog operations to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]
+[2016-03-30 14:05:10,384][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: took [229.7micros]
+[2016-03-30 14:05:10,384][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]
+[2016-03-30 14:05:10,384][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t1}{CHV_XTyTTtuYOhKI0z0tiQ}{local}{local[472]}[mode=>local]: took [387.4micros]
+[2016-03-30 14:05:10,384][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] marking recovery from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local] as done, id [444]
+[2016-03-30 14:05:10,384][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] recovery completed from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local], took[112ms]
+   phase1: recovered_files [1] with total_size of [130b], took [0s], throttling_wait [0s]
+         : reusing_files   [0] with total_size of [0b]
+   phase2: start took [50ms]
+         : recovered [0] transaction log operations, took [0s]
+
+[2016-03-30 14:05:10,472][DEBUG][org.elasticsearch.indices.recovery] [node_t2] using max_bytes_per_sec[40mb], concurrent_streams [4], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:14,596][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] started recovery from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local], id [445]
+[2016-03-30 14:05:14,596][TRACE][org.elasticsearch.indices.recovery] [node_t2] collecting local files for [test][0] [445]
+[2016-03-30 14:05:14,602][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] starting recovery from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local]
+[2016-03-30 14:05:14,602][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:14,602][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [1] for recovery
+[2016-03-30 14:05:14,607][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: recovering [segments_1], does not exists in remote
+[2016-03-30 14:05:14,607][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: recovering_files [1] with total_size [130b], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:14,625][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: prepare remote engine for translog
+[2016-03-30 14:05:14,682][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: remote engine start took [56.9ms]
+[2016-03-30 14:05:14,682][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: took [0s]
+[2016-03-30 14:05:14,682][TRACE][org.elasticsearch.indices.recovery] [node_t0] snapshot translog for recovery. current size is [364]
+[2016-03-30 14:05:14,682][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: sending transaction log operations
+[2016-03-30 14:05:14,888][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] sent final batch of [364][83.5kb] (total: [364]) translog operations to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]
+[2016-03-30 14:05:14,888][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: took [205.6ms]
+[2016-03-30 14:05:14,888][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]
+[2016-03-30 14:05:15,266][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t2}{9CeYdMzPT2yacT4OzdRsPw}{local}{local[473]}[mode=>local]: took [377.8ms]
+[2016-03-30 14:05:15,266][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] marking recovery from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local] as done, id [445]
+[2016-03-30 14:05:15,266][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] recovery completed from {node_t0}{oKHhyPeyTda9QQB8GOlFXQ}{local}{local[470]}[mode=>local], took[670ms]
+   phase1: recovered_files [1] with total_size of [130b], took [0s], throttling_wait [0s]
+         : reusing_files   [0] with total_size of [0b]
+   phase2: start took [56ms]
+         : recovered [364] transaction log operations, took [205ms]
+
+[2016-03-30 14:05:18,769][WARN ][org.elasticsearch.test.transport] [node_t1] Transport response handler not found of id [14]
+[2016-03-30 14:05:18,863][DEBUG][org.elasticsearch.indices.recovery] [node_t0] using max_bytes_per_sec[40mb], concurrent_streams [4], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:19,031][DEBUG][org.elasticsearch.indices.recovery] [node_t1] using max_bytes_per_sec[15mb], concurrent_streams [4], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:19,159][DEBUG][org.elasticsearch.indices.recovery] [node_t2] using max_bytes_per_sec[40mb], concurrent_streams [4], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:20,221][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] started recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [446]
+[2016-03-30 14:05:20,221][TRACE][org.elasticsearch.indices.recovery] [node_t2] collecting local files for [test][0] [446]
+[2016-03-30 14:05:20,222][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] starting recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local]
+[2016-03-30 14:05:20,223][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:20,223][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [2] for recovery
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0.cfe], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0.si], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0.cfs], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_1.cfs], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_1.cfe], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_1.si], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [segments_2], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0_1.liv], does not exists in remote
+[2016-03-30 14:05:20,234][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering_files [8] with total_size [8.3kb], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:20,427][DEBUG][org.elasticsearch.indices.recovery] [node_t0] Failed to transfer file [name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]] on recovery
+[2016-03-30 14:05:20,437][WARN ][org.elasticsearch.indices.recovery] [node_t0] 0 Remote file corruption on node {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local], recovering name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]. local checksum OK
+org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,440][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] Got exception on recovery
+RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,442][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] failing recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [446]. Send shard failure: [true]
+[2016-03-30 14:05:20,443][WARN ][org.elasticsearch.indices.cluster] [node_t2] [[test][0]] marking and sending shard failed due to [failed recovery]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,446][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] closing IndexOutput file [VerifyingIndexOutput(out=MockIndexOutputWrapper(FSIndexOutput(path="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J0/temp/org.elasticsearch.recovery.RelocationIT_F7928424F380CF7C-001/tempDir-003/data/TEST-CHILD_VM=[0]-CLUSTER_SEED=[-1872730973068554045]-HASH=[462EFF59DD44D]-cluster/nodes/2/indices/test/0/index/recovery.1459371920220.segments_2")))]
+[2016-03-30 14:05:20,446][WARN ][org.elasticsearch.cluster.action.shard] [node_t0] [test][0] received shard failed for [test][0], node[KiCL2q9sQbOOLvzo3MxWkw], [R], v[3], s[INITIALIZING], a[id=wK4EWq8jRqK-JQARDfJQ-Q], unassigned_info[[reason=REPLICA_ADDED], at[2016-03-30T21:05:20.190Z]], indexUUID [ViysPQ8tQsijUsp5c1zZHQ], message [failed recovery], failure [RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,446][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220.segments_2]
+[2016-03-30 14:05:20,449][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._0_1.liv]
+[2016-03-30 14:05:20,450][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._0.si]
+[2016-03-30 14:05:20,452][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._1.cfs]
+[2016-03-30 14:05:20,459][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._1.si]
+[2016-03-30 14:05:20,470][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._0.cfe]
+[2016-03-30 14:05:20,472][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._1.cfe]
+[2016-03-30 14:05:20,482][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920220._0.cfs]
+[2016-03-30 14:05:20,495][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] started recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [447]
+[2016-03-30 14:05:20,503][TRACE][org.elasticsearch.indices.recovery] [node_t1] collecting local files for [test][0] [447]
+[2016-03-30 14:05:20,515][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] starting recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local]
+[2016-03-30 14:05:20,516][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:20,516][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [2] for recovery
+[2016-03-30 14:05:20,556][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0.cfe], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0.si], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0.cfs], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_1.cfs], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_1.cfe], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_1.si], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [segments_2], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0_1.liv], does not exists in remote
+[2016-03-30 14:05:20,557][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering_files [8] with total_size [8.3kb], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:20,739][DEBUG][org.elasticsearch.indices.recovery] [node_t0] Failed to transfer file [name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]] on recovery
+[2016-03-30 14:05:20,750][WARN ][org.elasticsearch.indices.recovery] [node_t0] 0 Remote file corruption on node {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local], recovering name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]. local checksum OK
+org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,752][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] Got exception on recovery
+RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,753][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] failing recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [447]. Send shard failure: [true]
+[2016-03-30 14:05:20,753][WARN ][org.elasticsearch.indices.cluster] [node_t1] [[test][0]] marking and sending shard failed due to [failed recovery]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,758][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] closing IndexOutput file [VerifyingIndexOutput(out=MockIndexOutputWrapper(FSIndexOutput(path="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J0/temp/org.elasticsearch.recovery.RelocationIT_F7928424F380CF7C-001/tempDir-003/data/TEST-CHILD_VM=[0]-CLUSTER_SEED=[-1872730973068554045]-HASH=[462EFF59DD44D]-cluster/nodes/1/indices/test/0/index/recovery.1459371920495.segments_2")))]
+[2016-03-30 14:05:20,758][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._0.si]
+[2016-03-30 14:05:20,758][WARN ][org.elasticsearch.cluster.action.shard] [node_t0] [test][0] received shard failed for [test][0], node[NjZvErxCTE6AtwBObgLE5w], [R], v[5], s[INITIALIZING], a[id=A6fRhUccRpWFNV2LoKnPQA], unassigned_info[[reason=ALLOCATION_FAILED], at[2016-03-30T21:05:20.448Z], details[failed recovery, failure RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]], indexUUID [ViysPQ8tQsijUsp5c1zZHQ], message [failed recovery], failure [RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:20,759][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._1.si]
+[2016-03-30 14:05:20,761][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._1.cfs]
+[2016-03-30 14:05:20,761][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._0.cfe]
+[2016-03-30 14:05:20,773][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._1.cfe]
+[2016-03-30 14:05:20,784][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._0.cfs]
+[2016-03-30 14:05:20,786][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495.segments_2]
+[2016-03-30 14:05:20,787][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371920495._0_1.liv]
+[2016-03-30 14:05:20,828][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] started recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [448]
+[2016-03-30 14:05:20,829][TRACE][org.elasticsearch.indices.recovery] [node_t2] collecting local files for [test][0] [448]
+[2016-03-30 14:05:20,850][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] starting recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local]
+[2016-03-30 14:05:20,850][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:20,850][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [2] for recovery
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0.cfe], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0.si], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0.cfs], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_1.cfs], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_1.cfe], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_1.si], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [segments_2], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering [_0_1.liv], does not exists in remote
+[2016-03-30 14:05:20,946][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]: recovering_files [8] with total_size [8.3kb], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:21,013][DEBUG][org.elasticsearch.indices.recovery] [node_t0] Failed to transfer file [name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]] on recovery
+[2016-03-30 14:05:21,013][WARN ][org.elasticsearch.indices.recovery] [node_t0] 0 Remote file corruption on node {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local], recovering name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]. local checksum OK
+org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,025][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] Got exception on recovery
+RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,026][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] failing recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [448]. Send shard failure: [true]
+[2016-03-30 14:05:21,026][WARN ][org.elasticsearch.indices.cluster] [node_t2] [[test][0]] marking and sending shard failed due to [failed recovery]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,030][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] closing IndexOutput file [VerifyingIndexOutput(out=MockIndexOutputWrapper(FSIndexOutput(path="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J0/temp/org.elasticsearch.recovery.RelocationIT_F7928424F380CF7C-001/tempDir-003/data/TEST-CHILD_VM=[0]-CLUSTER_SEED=[-1872730973068554045]-HASH=[462EFF59DD44D]-cluster/nodes/2/indices/test/0/index/recovery.1459371920828.segments_2")))]
+[2016-03-30 14:05:21,031][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._1.cfs]
+[2016-03-30 14:05:21,031][WARN ][org.elasticsearch.cluster.action.shard] [node_t0] [test][0] received shard failed for [test][0], node[KiCL2q9sQbOOLvzo3MxWkw], [R], v[7], s[INITIALIZING], a[id=FshlN7D4Tl6zFyb4wQzAGQ], unassigned_info[[reason=ALLOCATION_FAILED], at[2016-03-30T21:05:20.760Z], details[failed recovery, failure RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]], indexUUID [ViysPQ8tQsijUsp5c1zZHQ], message [failed recovery], failure [RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,042][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._0_1.liv]
+[2016-03-30 14:05:21,043][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828.segments_2]
+[2016-03-30 14:05:21,053][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._0.cfs]
+[2016-03-30 14:05:21,074][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._0.si]
+[2016-03-30 14:05:21,085][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._0.cfe]
+[2016-03-30 14:05:21,086][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._1.cfe]
+[2016-03-30 14:05:21,090][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] cleaning temporary file [recovery.1459371920828._1.si]
+[2016-03-30 14:05:21,121][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] started recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [449]
+[2016-03-30 14:05:21,122][TRACE][org.elasticsearch.indices.recovery] [node_t1] collecting local files for [test][0] [449]
+[2016-03-30 14:05:21,143][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] starting recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local]
+[2016-03-30 14:05:21,143][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:21,144][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [2] for recovery
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0.cfe], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0.si], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0.cfs], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_1.cfs], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_1.cfe], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_1.si], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [segments_2], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering [_0_1.liv], does not exists in remote
+[2016-03-30 14:05:21,178][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]: recovering_files [8] with total_size [8.3kb], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:21,344][DEBUG][org.elasticsearch.indices.recovery] [node_t0] Failed to transfer file [name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]] on recovery
+[2016-03-30 14:05:21,344][WARN ][org.elasticsearch.indices.recovery] [node_t0] 0 Remote file corruption on node {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local], recovering name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]. local checksum OK
+org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+	at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,346][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] Got exception on recovery
+RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,348][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] failing recovery from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local], id [449]. Send shard failure: [true]
+[2016-03-30 14:05:21,349][WARN ][org.elasticsearch.indices.cluster] [node_t1] [[test][0]] marking and sending shard failed due to [failed recovery]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,352][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] closing IndexOutput file [VerifyingIndexOutput(out=MockIndexOutputWrapper(FSIndexOutput(path="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/integTest/J0/temp/org.elasticsearch.recovery.RelocationIT_F7928424F380CF7C-001/tempDir-003/data/TEST-CHILD_VM=[0]-CLUSTER_SEED=[-1872730973068554045]-HASH=[462EFF59DD44D]-cluster/nodes/1/indices/test/0/index/recovery.1459371921121.segments_2")))]
+[2016-03-30 14:05:21,352][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._0.cfs]
+[2016-03-30 14:05:21,352][WARN ][org.elasticsearch.cluster.action.shard] [node_t0] [test][0] received shard failed for [test][0], node[NjZvErxCTE6AtwBObgLE5w], [R], v[9], s[INITIALIZING], a[id=6n4gOekwTbeGP_v75VplFg], unassigned_info[[reason=ALLOCATION_FAILED], at[2016-03-30T21:05:21.042Z], details[failed recovery, failure RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t2}{KiCL2q9sQbOOLvzo3MxWkw}{local}{local[479]}[mode=>local]]; nested: RemoteTransportException[[node_t2][local[479]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]], indexUUID [ViysPQ8tQsijUsp5c1zZHQ], message [failed recovery], failure [RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]; ]
+RecoveryFailedException[[test][0]: Recovery failed from {node_t0}{KfmlrJoySiaNnFA0Pe6FTQ}{local}{local[476]}[mode=>local] into {node_t1}{NjZvErxCTE6AtwBObgLE5w}{local}{local[478]}[mode=>local]]; nested: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoveryTarget.doRecovery(RecoveryTarget.java:260)
+	at org.elasticsearch.indices.recovery.RecoveryTarget.access$1100(RecoveryTarget.java:68)
+	at org.elasticsearch.indices.recovery.RecoveryTarget$RecoveryRunner.doRun(RecoveryTarget.java:510)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: RemoteTransportException[[node_t1][local[478]][internal:index/shard/recovery/start_recovery]]; nested: RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+Caused by: [test][[test][0]] RecoveryEngineException[Phase[1] phase1 failed]; nested: RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:136)
+	at org.elasticsearch.indices.recovery.RecoverySource.recover(RecoverySource.java:117)
+	at org.elasticsearch.indices.recovery.RecoverySource.access$100(RecoverySource.java:46)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:126)
+	at org.elasticsearch.indices.recovery.RecoverySource$StartRecoveryTransportRequestHandler.messageReceived(RecoverySource.java:123)
+	at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: [test][[test][0]] RecoverFilesRecoveryException[Failed to transfer [8] files with total size of [8.3kb]]; nested: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]];
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.phase1(RecoverySourceHandler.java:315)
+	at org.elasticsearch.indices.recovery.RecoverySourceHandler.recoverToTarget(RecoverySourceHandler.java:134)
+	... 9 more
+Caused by: RemoteTransportException[[File corruption occurred on recovery but checksums are ok]]
+	Suppressed: RemoteTransportException[[node_t0][local[476]][internal:index/shard/recovery/file_chunk]]; nested: CorruptIndexException[checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))];
+	Caused by: org.apache.lucene.index.CorruptIndexException: checksum failed (hardware problem?) : expected=oqm3go actual=1ba9wfk (resource=name [segments_2], length [257], checksum [oqm3go], writtenBy [5.4.0]) (resource=VerifyingIndexOutput(segments_2))
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.readAndCompareChecksum(Store.java:1313)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeByte(Store.java:1292)
+		at org.elasticsearch.index.store.Store$LuceneVerifyingIndexOutput.writeBytes(Store.java:1321)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:457)
+		at org.elasticsearch.indices.recovery.RecoveryTarget$FileChunkTransportRequestHandler.messageReceived(RecoveryTarget.java:421)
+		at org.elasticsearch.transport.local.LocalTransport$2.doRun(LocalTransport.java:296)
+		at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+		at java.lang.Thread.run(Thread.java:745)
+[2016-03-30 14:05:21,353][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._0.cfe]
+[2016-03-30 14:05:21,354][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._1.cfe]
+[2016-03-30 14:05:21,355][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._1.cfs]
+[2016-03-30 14:05:21,358][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121.segments_2]
+[2016-03-30 14:05:21,360][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._0_1.liv]
+[2016-03-30 14:05:21,365][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._0.si]
+[2016-03-30 14:05:21,371][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] cleaning temporary file [recovery.1459371921121._1.si]
+[2016-03-30 14:05:21,716][DEBUG][org.elasticsearch.indices.recovery] [node_t0] using max_bytes_per_sec[40mb], concurrent_streams [6], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:21,980][DEBUG][org.elasticsearch.indices.recovery] [node_t1] using max_bytes_per_sec[40mb], concurrent_streams [6], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [false]
+[2016-03-30 14:05:22,029][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] started recovery from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local], id [450]
+[2016-03-30 14:05:22,029][TRACE][org.elasticsearch.indices.recovery] [node_t1] collecting local files for [test][0] [450]
+[2016-03-30 14:05:22,048][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] starting recovery from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local]
+[2016-03-30 14:05:22,048][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:22,049][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [1] for recovery
+[2016-03-30 14:05:22,069][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: recovering [segments_1], does not exists in remote
+[2016-03-30 14:05:22,069][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: recovering_files [1] with total_size [130b], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:22,135][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: prepare remote engine for translog
+[2016-03-30 14:05:22,188][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: remote engine start took [52.6ms]
+[2016-03-30 14:05:22,188][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: took [0s]
+[2016-03-30 14:05:22,188][TRACE][org.elasticsearch.indices.recovery] [node_t0] snapshot translog for recovery. current size is [0]
+[2016-03-30 14:05:22,188][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: sending transaction log operations
+[2016-03-30 14:05:22,188][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] no translog operations to send to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]
+[2016-03-30 14:05:22,189][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] sent final batch of [0][0b] (total: [0]) translog operations to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]
+[2016-03-30 14:05:22,189][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: took [317.8micros]
+[2016-03-30 14:05:22,189][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]
+[2016-03-30 14:05:22,189][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t1}{H_2DyR3hTtGNtxhp1NXOOw}{local}{local[484]}[mode=>local]: took [437.3micros]
+[2016-03-30 14:05:22,189][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] marking recovery from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local] as done, id [450]
+[2016-03-30 14:05:22,190][TRACE][org.elasticsearch.indices.recovery] [node_t1] [test][0] recovery completed from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local], took[160ms]
+   phase1: recovered_files [1] with total_size of [130b], took [0s], throttling_wait [0s]
+         : reusing_files   [0] with total_size of [0b]
+   phase2: start took [52ms]
+         : recovered [0] transaction log operations, took [0s]
+
+[2016-03-30 14:05:22,276][DEBUG][org.elasticsearch.indices.recovery] [node_t2] using max_bytes_per_sec[158mb], concurrent_streams [6], file_chunk_size [512kb], translog_size [512kb], translog_ops [1000], and compress [true]
+[2016-03-30 14:05:22,349][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] started recovery from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local], id [451]
+[2016-03-30 14:05:22,350][TRACE][org.elasticsearch.indices.recovery] [node_t2] collecting local files for [test][0] [451]
+[2016-03-30 14:05:22,364][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] starting recovery from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local]
+[2016-03-30 14:05:22,365][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] starting recovery to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local], mark_as_relocated false
+[2016-03-30 14:05:22,366][TRACE][org.elasticsearch.indices.recovery] [node_t0] captured translog id [1] for recovery
+[2016-03-30 14:05:22,423][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: recovering [segments_1], does not exists in remote
+[2016-03-30 14:05:22,423][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: recovering_files [1] with total_size [130b], reusing_files [0] with total_size [0b]
+[2016-03-30 14:05:22,496][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: prepare remote engine for translog
+[2016-03-30 14:05:22,560][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: remote engine start took [63.9ms]
+[2016-03-30 14:05:22,560][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase1] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: took [0s]
+[2016-03-30 14:05:22,560][TRACE][org.elasticsearch.indices.recovery] [node_t0] snapshot translog for recovery. current size is [25]
+[2016-03-30 14:05:22,561][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: sending transaction log operations
+[2016-03-30 14:05:22,572][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] sent final batch of [25][1.5kb] (total: [25]) translog operations to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]
+[2016-03-30 14:05:22,572][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] recovery [phase2] to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: took [11.9ms]
+[2016-03-30 14:05:22,573][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]
+[2016-03-30 14:05:23,037][TRACE][org.elasticsearch.indices.recovery] [node_t0] [test][0] finalizing recovery to {node_t2}{owtMUNQWQ4imlb1EPr7UYg}{local}{local[485]}[mode=>local]: took [464.7ms]
+[2016-03-30 14:05:23,038][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] marking recovery from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local] as done, id [451]
+[2016-03-30 14:05:23,038][TRACE][org.elasticsearch.indices.recovery] [node_t2] [test][0] recovery completed from {node_t0}{Uj5uMn0ETSCCG26ClNuOUQ}{local}{local[482]}[mode=>local], took[688ms]
+   phase1: recovered_files [1] with total_size of [130b], took [0s], throttling_wait [0s]
+         : reusing_files   [0] with total_size of [0b]
+   phase2: start took [63ms]
+         : recovered [25] transaction log operations, took [11ms]
+
+]]></system-out>
+   <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+[2016-03-30 16:15:00,992][WARN ][org.elasticsearch.bootstrap] Unable to lock JVM Memory: error=78,reason=Function not implemented
+[2016-03-30 16:15:00,994][WARN ][org.elasticsearch.bootstrap] This can result in part of the JVM being swapped out.
+márc. 30, 2016 6:15:06 DU org.elasticsearch.common.logging.jdk.JDKESLoggerTests testLocationInfoTest
+SEVERE: This is an error
+márc. 30, 2016 6:15:06 DU org.elasticsearch.common.logging.jdk.JDKESLoggerTests testLocationInfoTest
+WARNING: This is a warning
+márc. 30, 2016 6:15:06 DU org.elasticsearch.common.logging.jdk.JDKESLoggerTests testLocationInfoTest
+INFO: This is an info
+[2016-03-30 16:15:39,519][WARN ][org.elasticsearch.plugins] file:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J2/temp/org.elasticsearch.plugins.PluginManagerCliTests_DE8E7BF5E9626C72-001/tempDir-002/foo%20deps

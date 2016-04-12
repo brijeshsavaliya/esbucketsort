@@ -1,0 +1,784 @@
+[
+ "BOOTSTRAP",
+ {
+  "defaultCharset": "UTF-8",
+  "pidString": "97248@BrijeshS-2.fios-router.home",
+  "systemProperties": {
+   "awt.toolkit": "sun.lwawt.macosx.LWCToolkit",
+   "es.logger.level": "WARN",
+   "file.encoding": "UTF-8",
+   "file.encoding.pkg": "sun.io",
+   "file.separator": "/",
+   "ftp.nonProxyHosts": "local|*.local|169.254/16|*.169.254/16",
+   "gopherProxySet": "false",
+   "http.nonProxyHosts": "local|*.local|169.254/16|*.169.254/16",
+   "java.awt.graphicsenv": "sun.awt.CGraphicsEnvironment",
+   "java.awt.headless": "true",
+   "java.awt.printerjob": "sun.lwawt.macosx.CPrinterJob",
+   "java.class.path": "/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/main:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/main:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.4.0-snapshot-1715952/84685d37a34b4d87e2928566ed266a7f005ca67d/lucene-core-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.4.0-snapshot-1715952/feaf885ed4155fb7202c1f90ac2eb40503961efc/lucene-analyzers-common-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.4.0-snapshot-1715952/5b5b5c950b4fcac38cf48fab911f75da61e780fa/lucene-backward-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/5.4.0-snapshot-1715952/ff92011208ed5c28f041acc37bd77728a89fc6a5/lucene-grouping-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/5.4.0-snapshot-1715952/5d46f26a6cb36aede89b8728b6fcbc427d4f9416/lucene-highlighter-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/5.4.0-snapshot-1715952/726ea07bbfdfbfbee80522353496fc6667dc33c9/lucene-join-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/5.4.0-snapshot-1715952/d8d7a7b573a4cfc54745a126e905ccfd523b7a24/lucene-memory-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/5.4.0-snapshot-1715952/cd9d4fb4492bd2680cea2f038a051311329f6443/lucene-misc-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/5.4.0-snapshot-1715952/a1a04d191443e51f992ed3dd02d0e14fd48493c9/lucene-queries-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.4.0-snapshot-1715952/c4d34b29b8b14ad3deb300a6d699e9d8965a3c2c/lucene-queryparser-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/5.4.0-snapshot-1715952/bf45dbd653d66ce9d2c3f19b69997b8098d8b416/lucene-sandbox-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/5.4.0-snapshot-1715952/2bddfda70f5c657064d12860b03c2cd8a5029bfc/lucene-spatial-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/5.4.0-snapshot-1715952/881b8cd571fb3ccdcc69f1316468d816812513fb/lucene-spatial3d-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/5.4.0-snapshot-1715952/466e2bc02f45f04cbf516e5df78b9c2ebd99e944/lucene-suggest-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.elasticsearch/securesm/1.0/c0c6cf986ba0057390bfcc80c366a0e3157f944b/securesm-1.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.7.1/8b5057f74ea378c0150a1860874a3ebdcb713767/hppc-0.7.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.joda/joda-convert/1.2/35ec554f0cd00c956cc69051514d9488b1374dec/joda-convert-1.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.2/123f29333b2c6b3516b14252b6e93226bfcd6e37/jackson-core-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.6.2/395d18c1a1dd730b8026ee59c4067e5d2b45ba6e/jackson-dataformat-smile-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.6.2/4ae23088dd3fae47c66843f2e4251d7255ee140e/jackson-dataformat-yaml-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.2/1e13c575f914c83761bb8e2aca7dfd9e4c647579/jackson-dataformat-cbor-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.0/84ccf145ac2215e6bfa63baa3101c0af41017cfc/t-digest-3.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.6/7495feb7f71ee124bd2a7e7d83590e296d71d80e/HdrHistogram-2.1.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.5/6e16edaf6b1ba76db7f08c2f3723fce3b358ecc3/spatial4j-0.5.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.2/8619e95939167fb37245b5670135e4feb0ec7d50/slf4j-api-1.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/test-framework/build/libs/test-framework-3.0.0-SNAPSHOT.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.2.0/60de504132241be049564a3a34fd7dcc296e2ef0/randomizedtesting-runner-2.2.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-test-framework/5.4.0-snapshot-1715952/ae3156d5a2526b1b48ca821765cf7cd53faecef5/lucene-test-framework-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.4.0-snapshot-1715952/7b94152f1c9fd7ecb384fc9602318f74a4463a65/lucene-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/junit4-ant/2.2.0/d401c9c729deccd5db8a5df3102eb18793c2224/junit4-ant-2.2.0.jar",
+   "java.class.version": "52.0",
+   "java.endorsed.dirs": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed",
+   "java.ext.dirs": "/Users/brijeshs/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java",
+   "java.home": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre",
+   "java.io.tmpdir": "./temp",
+   "java.library.path": "/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/brijeshs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.",
+   "java.runtime.name": "Java(TM) SE Runtime Environment",
+   "java.runtime.version": "1.8.0_40-b25",
+   "java.specification.name": "Java Platform API Specification",
+   "java.specification.vendor": "Oracle Corporation",
+   "java.specification.version": "1.8",
+   "java.vendor": "Oracle Corporation",
+   "java.vendor.url": "http://java.oracle.com/",
+   "java.vendor.url.bug": "http://bugreport.sun.com/bugreport/",
+   "java.version": "1.8.0_40",
+   "java.vm.info": "mixed mode",
+   "java.vm.name": "Java HotSpot(TM) 64-Bit Server VM",
+   "java.vm.specification.name": "Java Virtual Machine Specification",
+   "java.vm.specification.vendor": "Oracle Corporation",
+   "java.vm.specification.version": "1.8",
+   "java.vm.vendor": "Oracle Corporation",
+   "java.vm.version": "25.40-b25",
+   "junit4.childvm.count": "4",
+   "junit4.childvm.cwd": "/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J3",
+   "junit4.childvm.id": "3",
+   "junit4.memory.total": "514850816",
+   "junit4.pidString": "97248@BrijeshS-2.fios-router.home",
+   "junit4.processors": "8",
+   "line.separator": "\n",
+   "os.arch": "x86_64",
+   "os.name": "Mac OS X",
+   "os.version": "10.10.5",
+   "path.separator": ":",
+   "socksNonProxyHosts": "local|*.local|169.254/16|*.169.254/16",
+   "sun.arch.data.model": "64",
+   "sun.boot.class.path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes",
+   "sun.boot.library.path": "/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib",
+   "sun.cpu.endian": "little",
+   "sun.cpu.isalist": "",
+   "sun.io.unicode.encoding": "UnicodeBig",
+   "sun.java.command": "com.carrotsearch.ant.tasks.junit4.slave.SlaveMainSafe -eventsfile /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/temp/junit4-J3-20160330_214107_946.events @/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/temp/junit4-J3-20160330_214107_946.suites -stdin",
+   "sun.java.launcher": "SUN_STANDARD",
+   "sun.jnu.encoding": "UTF-8",
+   "sun.management.compiler": "HotSpot 64-Bit Tiered Compilers",
+   "sun.os.patch.level": "unknown",
+   "tests.artifact": "core",
+   "tests.ifNoTests": "fail",
+   "tests.maven": "true",
+   "tests.prefix": "tests",
+   "tests.security.manager": "true",
+   "tests.seed": "E15516FD688C6463",
+   "tests.task": ":core:test",
+   "user.country": "US",
+   "user.dir": "/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J3",
+   "user.home": "/Users/brijeshs",
+   "user.language": "en",
+   "user.name": "brijeshs",
+   "user.timezone": "America/Los_Angeles"
+  }
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.gateway.GatewayMetaStateTests",
+   "displayName": "org.elasticsearch.gateway.GatewayMetaStateTests",
+   "methodName": null,
+   "className": "org.elasticsearch.gateway.GatewayMetaStateTests",
+   "children": [
+    {
+     "id": "ID#testNewShardsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "displayName": "testNewShardsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "methodName": "testNewShardsAlwaysWritten",
+     "className": "org.elasticsearch.gateway.GatewayMetaStateTests",
+     "children": []
+    },
+    {
+     "id": "ID#testAllUpToDateNothingWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "displayName": "testAllUpToDateNothingWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "methodName": "testAllUpToDateNothingWritten",
+     "className": "org.elasticsearch.gateway.GatewayMetaStateTests",
+     "children": []
+    },
+    {
+     "id": "ID#testNoWriteIfNothingChanged(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "displayName": "testNoWriteIfNothingChanged(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "methodName": "testNoWriteIfNothingChanged",
+     "className": "org.elasticsearch.gateway.GatewayMetaStateTests",
+     "children": []
+    },
+    {
+     "id": "ID#testVersionChangeIsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "displayName": "testVersionChangeIsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "methodName": "testVersionChangeIsAlwaysWritten",
+     "className": "org.elasticsearch.gateway.GatewayMetaStateTests",
+     "children": []
+    },
+    {
+     "id": "ID#testWriteClosedIndex(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "displayName": "testWriteClosedIndex(org.elasticsearch.gateway.GatewayMetaStateTests)",
+     "methodName": "testWriteClosedIndex",
+     "className": "org.elasticsearch.gateway.GatewayMetaStateTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459399268811
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:09,333][WARN ][org.elasticsearch.bootstrap] Unable to lock JVM Memory: error=78,reason=Function not implemented%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:09,334][WARN ][org.elasticsearch.bootstrap] This can result in part of the JVM being swapped out.%0A"
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testNewShardsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testNewShardsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+  "startTimestamp": 1459399273202,
+  "executionTime": 2946
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testAllUpToDateNothingWritten(org.elasticsearch.gateway.GatewayMetaStateTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testAllUpToDateNothingWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+  "startTimestamp": 1459399276149,
+  "executionTime": 36
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testNoWriteIfNothingChanged(org.elasticsearch.gateway.GatewayMetaStateTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testNoWriteIfNothingChanged(org.elasticsearch.gateway.GatewayMetaStateTests)",
+  "startTimestamp": 1459399276186,
+  "executionTime": 29
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testVersionChangeIsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testVersionChangeIsAlwaysWritten(org.elasticsearch.gateway.GatewayMetaStateTests)",
+  "startTimestamp": 1459399276216,
+  "executionTime": 24
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testWriteClosedIndex(org.elasticsearch.gateway.GatewayMetaStateTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testWriteClosedIndex(org.elasticsearch.gateway.GatewayMetaStateTests)",
+  "startTimestamp": 1459399276240,
+  "executionTime": 15
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.gateway.GatewayMetaStateTests",
+  "startTimestamp": 1459399268811,
+  "executionTime": 7593
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.common.recycler.QueueRecyclerTests",
+   "displayName": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+   "methodName": null,
+   "className": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+   "children": [
+    {
+     "id": "ID#testDestroyWhenOverCapacity(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "displayName": "testDestroyWhenOverCapacity(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "methodName": "testDestroyWhenOverCapacity",
+     "className": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+     "children": []
+    },
+    {
+     "id": "ID#testClose(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "displayName": "testClose(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "methodName": "testClose",
+     "className": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+     "children": []
+    },
+    {
+     "id": "ID#testDoubleRelease(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "displayName": "testDoubleRelease(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "methodName": "testDoubleRelease",
+     "className": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+     "children": []
+    },
+    {
+     "id": "ID#testRecycle(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "displayName": "testRecycle(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "methodName": "testRecycle",
+     "className": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+     "children": []
+    },
+    {
+     "id": "ID#testReuse(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "displayName": "testReuse(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+     "methodName": "testReuse",
+     "className": "org.elasticsearch.common.recycler.QueueRecyclerTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459399276419
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testDestroyWhenOverCapacity(org.elasticsearch.common.recycler.QueueRecyclerTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testDestroyWhenOverCapacity(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+  "startTimestamp": 1459399276652,
+  "executionTime": 25
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testClose(org.elasticsearch.common.recycler.QueueRecyclerTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testClose(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+  "startTimestamp": 1459399276677,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testDoubleRelease(org.elasticsearch.common.recycler.QueueRecyclerTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testDoubleRelease(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+  "startTimestamp": 1459399276681,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testRecycle(org.elasticsearch.common.recycler.QueueRecyclerTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testRecycle(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+  "startTimestamp": 1459399276684,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testReuse(org.elasticsearch.common.recycler.QueueRecyclerTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testReuse(org.elasticsearch.common.recycler.QueueRecyclerTests)",
+  "startTimestamp": 1459399276687,
+  "executionTime": 4
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.common.recycler.QueueRecyclerTests",
+  "startTimestamp": 1459399276419,
+  "executionTime": 274
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.script.ClassPermissionTests",
+   "displayName": "org.elasticsearch.script.ClassPermissionTests",
+   "methodName": null,
+   "className": "org.elasticsearch.script.ClassPermissionTests",
+   "children": [
+    {
+     "id": "ID#testWildcards(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testWildcards(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testWildcards",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    },
+    {
+     "id": "ID#testPermissionCollectionWildcards(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testPermissionCollectionWildcards(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testPermissionCollectionWildcards",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    },
+    {
+     "id": "ID#testEquals(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testEquals(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testEquals",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    },
+    {
+     "id": "ID#testImplies(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testImplies(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testImplies",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    },
+    {
+     "id": "ID#testPermissionCollection(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testPermissionCollection(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testPermissionCollection",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    },
+    {
+     "id": "ID#testStandard(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testStandard(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testStandard",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    },
+    {
+     "id": "ID#testPermissionCollectionStandard(org.elasticsearch.script.ClassPermissionTests)",
+     "displayName": "testPermissionCollectionStandard(org.elasticsearch.script.ClassPermissionTests)",
+     "methodName": "testPermissionCollectionStandard",
+     "className": "org.elasticsearch.script.ClassPermissionTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459399276705
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testWildcards(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testWildcards(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276731,
+  "executionTime": 54
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testPermissionCollectionWildcards(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testPermissionCollectionWildcards(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276786,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testEquals(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testEquals(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276789,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testImplies(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testImplies(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276793,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testPermissionCollection(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testPermissionCollection(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276796,
+  "executionTime": 3
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testStandard(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testStandard(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276799,
+  "executionTime": 6
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testPermissionCollectionStandard(org.elasticsearch.script.ClassPermissionTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testPermissionCollectionStandard(org.elasticsearch.script.ClassPermissionTests)",
+  "startTimestamp": 1459399276806,
+  "executionTime": 3
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.script.ClassPermissionTests",
+  "startTimestamp": 1459399276705,
+  "executionTime": 107
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.common.geo.GeoHashTests",
+   "displayName": "org.elasticsearch.common.geo.GeoHashTests",
+   "methodName": null,
+   "className": "org.elasticsearch.common.geo.GeoHashTests",
+   "children": [
+    {
+     "id": "ID#testGeohashAsLongRoutines(org.elasticsearch.common.geo.GeoHashTests)",
+     "displayName": "testGeohashAsLongRoutines(org.elasticsearch.common.geo.GeoHashTests)",
+     "methodName": "testGeohashAsLongRoutines",
+     "className": "org.elasticsearch.common.geo.GeoHashTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459399276820
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testGeohashAsLongRoutines(org.elasticsearch.common.geo.GeoHashTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testGeohashAsLongRoutines(org.elasticsearch.common.geo.GeoHashTests)",
+  "startTimestamp": 1459399276842,
+  "executionTime": 695
+ }
+]
+
+[
+ "SUITE_COMPLETED",
+ {
+  "description": "ID#org.elasticsearch.common.geo.GeoHashTests",
+  "startTimestamp": 1459399276820,
+  "executionTime": 719
+ }
+]
+
+[
+ "SUITE_STARTED",
+ {
+  "description": {
+   "id": "ID#org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+   "displayName": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+   "methodName": null,
+   "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+   "children": [
+    {
+     "id": "ID#testSimpleQueueSameMaster(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testSimpleQueueSameMaster(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testSimpleQueueSameMaster",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    },
+    {
+     "id": "ID#testQueueStats(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testQueueStats(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testQueueStats",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    },
+    {
+     "id": "ID#testDroppingStatesAtCapacity(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testDroppingStatesAtCapacity(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testDroppingStatesAtCapacity",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFailAllAndClear(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testFailAllAndClear(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testFailAllAndClear",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    },
+    {
+     "id": "ID#testFailedStateCleansSupersededStatesOnly(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testFailedStateCleansSupersededStatesOnly(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testFailedStateCleansSupersededStatesOnly",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    },
+    {
+     "id": "ID#testSelectNextStateToProcess_empty(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testSelectNextStateToProcess_empty(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testSelectNextStateToProcess_empty",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    },
+    {
+     "id": "ID#testProcessedStateCleansStatesFromOtherMasters(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "displayName": "testProcessedStateCleansStatesFromOtherMasters(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+     "methodName": "testProcessedStateCleansStatesFromOtherMasters",
+     "className": "org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests",
+     "children": []
+    }
+   ]
+  },
+  "startTimestamp": 1459399277561
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testSimpleQueueSameMaster(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testSimpleQueueSameMaster(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+  "startTimestamp": 1459399277584,
+  "executionTime": 22
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testQueueStats(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testQueueStats(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+  "startTimestamp": 1459399277607,
+  "executionTime": 10
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testDroppingStatesAtCapacity(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)"
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,621][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[5kd3NQkMR2a9MElxy_K4MQ], v[4], m[master2]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,622][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[u4hRDQFiRfeJREs5Ow_phw], v[1], m[master2]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,622][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[GDN_wk41Rh2ffJ5CywuqyA], v[4], m[master3]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,622][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[pxL2hmtpRiGeneAAKd797g], v[5], m[master4]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,623][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[-fC7d8ZkRBmuY9TI1ZURcQ], v[2], m[master4]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,623][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[bAjVdrfKQ2e8Ac7XCN5tsQ], v[3], m[master4]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,623][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[v856i0XSRy2ga80A51yb6A], v[1], m[master3]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[Cv07yOJdQbK5I-sGMSgQSA], v[0], m[master3]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[tg9yJPzNSc6drY7WtpDN5w], v[0], m[master2]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[Pp7GJFnYQeGX1vab-MBzhQ], v[3], m[master2]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,624][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[qoDo58U6TxizD5_StggPdg], v[2], m[master1]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,625][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[LX37Tzi_S9eqLajTwVIUoQ], v[6], m[master3]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "APPEND_STDOUT",
+ {
+  "chunk": "[2016-03-30 21:41:17,625][WARN ][org.elasticsearch.discovery.zen.publish] dropping pending state [[uuid[TFEqx6S5QsWzz2-BCyi-CQ], v[3], m[master3]]]. more than [13] pending states.%0A"
+ }
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testDroppingStatesAtCapacity(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+  "startTimestamp": 1459399277617,
+  "executionTime": 13
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFailAllAndClear(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)"
+]
+
+[
+ "TEST_FINISHED",
+ {
+  "description": "ID#testFailAllAndClear(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)",
+  "startTimestamp": 1459399277631,
+  "executionTime": 22
+ }
+]
+
+[
+ "TEST_STARTED",
+ "ID#testFailedStateCleansSupersededStatesOnly(org.elasticsearch.discovery.zen.publish.PendingClusterStatesQueueTests)"
+]
+

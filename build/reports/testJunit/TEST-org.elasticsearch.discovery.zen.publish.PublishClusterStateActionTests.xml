@@ -1,0 +1,528 @@
+<testsuite errors="0" failures="0" tests="10" skipped="0" name="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" hostname="nohost.nodomain" time="0.424" timestamp="2016-03-30T22:56:24">
+   <properties class="java.util.ArrayList">
+      <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+      <property name="es.logger.level" value="WARN"/>
+      <property name="file.encoding" value="UTF-8"/>
+      <property name="file.encoding.pkg" value="sun.io"/>
+      <property name="file.separator" value="/"/>
+      <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="gopherProxySet" value="false"/>
+      <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+      <property name="java.awt.headless" value="true"/>
+      <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+      <property name="java.class.path" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/test:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/classes/main:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/resources/main:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/5.4.0-snapshot-1715952/84685d37a34b4d87e2928566ed266a7f005ca67d/lucene-core-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/5.4.0-snapshot-1715952/feaf885ed4155fb7202c1f90ac2eb40503961efc/lucene-analyzers-common-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-backward-codecs/5.4.0-snapshot-1715952/5b5b5c950b4fcac38cf48fab911f75da61e780fa/lucene-backward-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/5.4.0-snapshot-1715952/ff92011208ed5c28f041acc37bd77728a89fc6a5/lucene-grouping-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/5.4.0-snapshot-1715952/5d46f26a6cb36aede89b8728b6fcbc427d4f9416/lucene-highlighter-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/5.4.0-snapshot-1715952/726ea07bbfdfbfbee80522353496fc6667dc33c9/lucene-join-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/5.4.0-snapshot-1715952/d8d7a7b573a4cfc54745a126e905ccfd523b7a24/lucene-memory-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/5.4.0-snapshot-1715952/cd9d4fb4492bd2680cea2f038a051311329f6443/lucene-misc-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/5.4.0-snapshot-1715952/a1a04d191443e51f992ed3dd02d0e14fd48493c9/lucene-queries-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/5.4.0-snapshot-1715952/c4d34b29b8b14ad3deb300a6d699e9d8965a3c2c/lucene-queryparser-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/5.4.0-snapshot-1715952/bf45dbd653d66ce9d2c3f19b69997b8098d8b416/lucene-sandbox-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/5.4.0-snapshot-1715952/2bddfda70f5c657064d12860b03c2cd8a5029bfc/lucene-spatial-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial3d/5.4.0-snapshot-1715952/881b8cd571fb3ccdcc69f1316468d816812513fb/lucene-spatial3d-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/5.4.0-snapshot-1715952/466e2bc02f45f04cbf516e5df78b9c2ebd99e944/lucene-suggest-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.elasticsearch/securesm/1.0/c0c6cf986ba0057390bfcc80c366a0e3157f944b/securesm-1.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.3.1/1303efbc4b181e5a58bf2e967dc156a3132b97c0/commons-cli-1.3.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch/hppc/0.7.1/8b5057f74ea378c0150a1860874a3ebdcb713767/hppc-0.7.1.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/joda-time/joda-time/2.8.2/d27c24204c5e507b16fec01006b3d0f1ec42aed4/joda-time-2.8.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.joda/joda-convert/1.2/35ec554f0cd00c956cc69051514d9488b1374dec/joda-convert-1.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.6.2/123f29333b2c6b3516b14252b6e93226bfcd6e37/jackson-core-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-smile/2.6.2/395d18c1a1dd730b8026ee59c4067e5d2b45ba6e/jackson-dataformat-smile-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-yaml/2.6.2/4ae23088dd3fae47c66843f2e4251d7255ee140e/jackson-dataformat-yaml-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.dataformat/jackson-dataformat-cbor/2.6.2/1e13c575f914c83761bb8e2aca7dfd9e4c647579/jackson-dataformat-cbor-2.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/io.netty/netty/3.10.5.Final/9ca7d55d246092bddd29b867706e2f6c7db701a0/netty-3.10.5.Final.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.tdunning/t-digest/3.0/84ccf145ac2215e6bfa63baa3101c0af41017cfc/t-digest-3.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hdrhistogram/HdrHistogram/2.1.6/7495feb7f71ee124bd2a7e7d83590e296d71d80e/HdrHistogram-2.1.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.5/6e16edaf6b1ba76db7f08c2f3723fce3b358ecc3/spatial4j-0.5.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.vividsolutions/jts/1.13/3ccfb9b60f04d71add996a666ceb8902904fd805/jts-1.13.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/log4j/apache-log4j-extras/1.2.17/85863614d82185d7e51fe21c00aa9117a523a8b6/apache-log4j-extras-1.2.17.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.2/8619e95939167fb37245b5670135e4feb0ec7d50/slf4j-api-1.6.2.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/4.1.0/1c12d070e602efd8021891cdd7fd18bc129372d4/jna-4.1.0.jar:/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/test-framework/build/libs/test-framework-3.0.0-SNAPSHOT.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/randomizedtesting-runner/2.2.0/60de504132241be049564a3a34fd7dcc296e2ef0/randomizedtesting-runner-2.2.0.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/junit/junit/4.11/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-all/1.3/63a21ebc981131004ad02e0434e799fd7f3a8d5a/hamcrest-all-1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-test-framework/5.4.0-snapshot-1715952/ae3156d5a2526b1b48ca821765cf7cd53faecef5/lucene-test-framework-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-codecs/5.4.0-snapshot-1715952/7b94152f1c9fd7ecb384fc9602318f74a4463a65/lucene-codecs-5.4.0-snapshot-1715952.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpclient/4.3.6/4c47155e3e6c9a41a28db36680b828ced53b8af4/httpclient-4.3.6.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.3.3/f91b7a4aadc5cf486df6e4634748d7dd7a73f06d/httpcore-4.3.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.1.3/f6f66e966c70a83ffbdb6f17a0919eaf7c8aca7f/commons-logging-1.1.3.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar:/Users/brijeshs/.gradle/caches/modules-2/files-2.1/com.carrotsearch.randomizedtesting/junit4-ant/2.2.0/d401c9c729deccd5db8a5df3102eb18793c2224/junit4-ant-2.2.0.jar"/>
+      <property name="java.class.version" value="52.0"/>
+      <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/endorsed"/>
+      <property name="java.ext.dirs" value="/Users/brijeshs/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+      <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre"/>
+      <property name="java.io.tmpdir" value="./temp"/>
+      <property name="java.library.path" value="/Applications/NetBeans/NetBeans 8.1.app/Contents/Resources/NetBeans/webcommon/bin::/Users/brijeshs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+      <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+      <property name="java.runtime.version" value="1.8.0_40-b25"/>
+      <property name="java.specification.name" value="Java Platform API Specification"/>
+      <property name="java.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.specification.version" value="1.8"/>
+      <property name="java.vendor" value="Oracle Corporation"/>
+      <property name="java.vendor.url" value="http://java.oracle.com/"/>
+      <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+      <property name="java.version" value="1.8.0_40"/>
+      <property name="java.vm.info" value="mixed mode"/>
+      <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+      <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+      <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.specification.version" value="1.8"/>
+      <property name="java.vm.vendor" value="Oracle Corporation"/>
+      <property name="java.vm.version" value="25.40-b25"/>
+      <property name="junit4.childvm.count" value="4"/>
+      <property name="junit4.childvm.cwd" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J0"/>
+      <property name="junit4.childvm.id" value="0"/>
+      <property name="junit4.memory.total" value="514850816"/>
+      <property name="junit4.pidString" value="3193@BrijeshS-2.fios-router.home"/>
+      <property name="junit4.processors" value="8"/>
+      <property name="line.separator" value="
+"/>
+      <property name="os.arch" value="x86_64"/>
+      <property name="os.name" value="Mac OS X"/>
+      <property name="os.version" value="10.10.5"/>
+      <property name="path.separator" value=":"/>
+      <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+      <property name="sun.arch.data.model" value="64"/>
+      <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/classes"/>
+      <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_40.jdk/Contents/Home/jre/lib"/>
+      <property name="sun.cpu.endian" value="little"/>
+      <property name="sun.cpu.isalist" value=""/>
+      <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+      <property name="sun.java.command" value="com.carrotsearch.ant.tasks.junit4.slave.SlaveMainSafe -eventsfile /Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/temp/junit4-J0-20160330_225540_825.events @/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/temp/junit4-J0-20160330_225540_825.suites -stdin"/>
+      <property name="sun.java.launcher" value="SUN_STANDARD"/>
+      <property name="sun.jnu.encoding" value="UTF-8"/>
+      <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+      <property name="sun.os.patch.level" value="unknown"/>
+      <property name="tests.artifact" value="core"/>
+      <property name="tests.ifNoTests" value="fail"/>
+      <property name="tests.maven" value="true"/>
+      <property name="tests.prefix" value="tests"/>
+      <property name="tests.security.manager" value="true"/>
+      <property name="tests.seed" value="E3B47AB8E36E9209"/>
+      <property name="tests.task" value=":core:test"/>
+      <property name="user.country" value="US"/>
+      <property name="user.dir" value="/Users/brijeshs/Documents/elasticsearch_sort_netbeans/elasticsearch/core/build/testrun/test/J0"/>
+      <property name="user.home" value="/Users/brijeshs"/>
+      <property name="user.language" value="en"/>
+      <property name="user.name" value="brijeshs"/>
+      <property name="user.timezone" value="America/Los_Angeles"/>
+   </properties>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testDisablingDiffPublishing" time="0.123"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testFailToPublishWithLessThanMinMasterNodes" time="0.019"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testInterleavedPublishCommit" time="0.012"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testSimultaneousClusterStatePublishing" time="0.121"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testSerializationFailureDuringDiffPublishing" time="0.018"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testSimpleClusterStatePublishing" time="0.025"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testUnexpectedDiffPublishing" time="0.021"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testIncomingClusterStateValidation" time="0.008"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testPublishingWithSendingErrors" time="0.031"/>
+   <testcase classname="org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests" name="testTimeoutOrCommit" time="0.03"/>
+   <system-out><![CDATA[[2016-03-31 06:56:24,616][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received full cluster state version [1] with size [106]
+[2016-03-31 06:56:24,662][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [KqjzeUH6QI-rxglpbXjJKQ], version [1]) to [{nodeB}{nodeB}{local}{local[8]}]
+[2016-03-31 06:56:24,670][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [1], uuid [KqjzeUH6QI-rxglpbXjJKQ]
+[2016-03-31 06:56:24,674][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received full cluster state version [2] with size [148]
+[2016-03-31 06:56:24,674][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [jl18LZXuT6yBq97dA9qoZQ], version [2]) to [{nodeB}{nodeB}{local}{local[8]}]
+[2016-03-31 06:56:24,674][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [2], uuid [jl18LZXuT6yBq97dA9qoZQ]
+[2016-03-31 06:56:24,691][DEBUG][org.elasticsearch.discovery.zen.publish] failed to publish as expected
+FailedToCommitClusterStateException[unexpected error while preparing to publish]; nested: FailedToCommitClusterStateException[not enough masters to ack sent cluster state. [12] needed , have [9]];
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction.publish(PublishClusterStateAction.java:134)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests.publishState(PublishClusterStateActionTests.java:757)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests.testFailToPublishWithLessThanMinMasterNodes(PublishClusterStateActionTests.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.invoke(RandomizedRunner.java:1660)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$8.evaluate(RandomizedRunner.java:866)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$9.evaluate(RandomizedRunner.java:902)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$10.evaluate(RandomizedRunner.java:916)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleSetupTeardownChained$1.evaluate(TestRuleSetupTeardownChained.java:50)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)
+	at org.apache.lucene.util.TestRuleThreadAndTestName$1.evaluate(TestRuleThreadAndTestName.java:49)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl.forkTimeoutingTask(ThreadLeakControl.java:809)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$3.evaluate(ThreadLeakControl.java:460)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.runSingleTest(RandomizedRunner.java:875)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:777)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$6.evaluate(RandomizedRunner.java:811)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$7.evaluate(RandomizedRunner.java:822)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:42)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:54)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)
+	at org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:55)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: FailedToCommitClusterStateException[not enough masters to ack sent cluster state. [12] needed , have [9]]
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendingController.<init>(PublishClusterStateAction.java:490)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendingController.<init>(PublishClusterStateAction.java:464)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction.publish(PublishClusterStateAction.java:132)
+	... 39 more
+[2016-03-31 06:56:24,702][INFO ][org.elasticsearch.discovery.zen.publish] --> publishing states
+[2016-03-31 06:56:24,703][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [1] with size [97]
+[2016-03-31 06:56:24,703][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [3] with size [97]
+[2016-03-31 06:56:24,703][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [6] with size [97]
+[2016-03-31 06:56:24,704][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [5] with size [97]
+[2016-03-31 06:56:24,704][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [2] with size [97]
+[2016-03-31 06:56:24,704][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [4] with size [97]
+[2016-03-31 06:56:24,704][INFO ][org.elasticsearch.discovery.zen.publish] --> committing states
+[2016-03-31 06:56:24,704][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [5], uuid [b8wKXhb_TDGseeFO6cO1Fg]
+[2016-03-31 06:56:24,704][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [6], uuid [JYKcNVLCTgyXl1kKrmoi6Q]
+[2016-03-31 06:56:24,705][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [4], uuid [67TQyi4ARy2mi7-clVluQw]
+[2016-03-31 06:56:24,705][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [3], uuid [tOrfGjD6Q-G5j9oUo7DH0A]
+[2016-03-31 06:56:24,705][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [2], uuid [73gryzw8QZGkCD3ee7-JVA]
+[2016-03-31 06:56:24,705][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [1], uuid [SJIt4bvYShiXYbVLPCJYCw]
+[2016-03-31 06:56:24,725][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,725][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,725][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,725][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,726][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,726][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,726][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,726][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received full cluster state version [1] with size [243]
+[2016-03-31 06:56:24,727][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node4}{node4}{local}{local[26]}]
+[2016-03-31 06:56:24,727][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node3}{node3}{local}{local[25]}]
+[2016-03-31 06:56:24,728][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,728][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node5}{node5}{local}{local[27]}]
+[2016-03-31 06:56:24,728][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,728][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node2}{node2}{local}{local[24]}]
+[2016-03-31 06:56:24,729][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,729][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node6}{node6}{local}{local[28]}]
+[2016-03-31 06:56:24,729][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node7}{node7}{local}{local[29]}]
+[2016-03-31 06:56:24,730][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,730][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node1}{node1}{local}{local[23]}]
+[2016-03-31 06:56:24,731][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,731][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,731][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [X9TYSBjUThSqQovjY70Vsg], version [1]) to [{node8}{node8}{local}{local[30]}]
+[2016-03-31 06:56:24,732][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,732][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received version [1], uuid [X9TYSBjUThSqQovjY70Vsg]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node2}{node2}{local}{local[24]} acked cluster state version [2]. processing ... (current pending [8], needed [1])
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received diff cluster state version [2] with uuid [t2eQRft2SdyhsxI_JnDXrA], diff size [174]
+[2016-03-31 06:56:24,778][TRACE][org.elasticsearch.discovery.zen.publish] [node0] committing version [2]
+[2016-03-31 06:56:24,779][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node2}{node2}{local}{local[24]}]
+[2016-03-31 06:56:24,779][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node4}{node4}{local}{local[26]}]
+[2016-03-31 06:56:24,779][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,779][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,779][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node6}{node6}{local}{local[28]}]
+[2016-03-31 06:56:24,779][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node8}{node8}{local}{local[30]}]
+[2016-03-31 06:56:24,780][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,780][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node3}{node3}{local}{local[25]}]
+[2016-03-31 06:56:24,780][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,780][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node5}{node5}{local}{local[27]}]
+[2016-03-31 06:56:24,780][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node1}{node1}{local}{local[23]}]
+[2016-03-31 06:56:24,781][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,780][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,781][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,781][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [t2eQRft2SdyhsxI_JnDXrA], version [2]) to [{node7}{node7}{local}{local[29]}]
+[2016-03-31 06:56:24,782][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received version [2], uuid [t2eQRft2SdyhsxI_JnDXrA]
+[2016-03-31 06:56:24,786][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,786][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,786][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,786][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,787][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,786][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,787][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,787][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node4}{node4}{local}{local[26]} acked cluster state version [3]. processing ... (current pending [8], needed [7])
+[2016-03-31 06:56:24,786][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received diff cluster state version [3] with uuid [LibrNKMPSDuT9wcRSbP90w], diff size [175]
+[2016-03-31 06:56:24,787][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node8}{node8}{local}{local[30]} acked cluster state version [3]. processing ... (current pending [7], needed [6])
+[2016-03-31 06:56:24,787][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node6}{node6}{local}{local[28]} acked cluster state version [3]. processing ... (current pending [6], needed [5])
+[2016-03-31 06:56:24,787][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node7}{node7}{local}{local[29]} acked cluster state version [3]. processing ... (current pending [5], needed [4])
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node1}{node1}{local}{local[23]} acked cluster state version [3]. processing ... (current pending [4], needed [3])
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node3}{node3}{local}{local[25]} acked cluster state version [3]. processing ... (current pending [3], needed [2])
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node2}{node2}{local}{local[24]} acked cluster state version [3]. processing ... (current pending [2], needed [1])
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] committing version [3]
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node4}{node4}{local}{local[26]}]
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node8}{node8}{local}{local[30]}]
+[2016-03-31 06:56:24,788][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node6}{node6}{local}{local[28]}]
+[2016-03-31 06:56:24,788][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,788][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,788][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node7}{node7}{local}{local[29]}]
+[2016-03-31 06:56:24,789][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node1}{node1}{local}{local[23]}]
+[2016-03-31 06:56:24,789][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,789][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node3}{node3}{local}{local[25]}]
+[2016-03-31 06:56:24,789][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node2}{node2}{local}{local[24]}]
+[2016-03-31 06:56:24,789][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [LibrNKMPSDuT9wcRSbP90w], version [3]) to [{node5}{node5}{local}{local[27]}]
+[2016-03-31 06:56:24,789][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,790][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,789][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,790][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received version [3], uuid [LibrNKMPSDuT9wcRSbP90w]
+[2016-03-31 06:56:24,792][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,793][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received diff cluster state version [4] with uuid [V2Y51hs9Qxqlme8iDC0JvQ], diff size [178]
+[2016-03-31 06:56:24,794][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node4}{node4}{local}{local[26]}]
+[2016-03-31 06:56:24,798][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node2}{node2}{local}{local[24]}]
+[2016-03-31 06:56:24,798][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node8}{node8}{local}{local[30]}]
+[2016-03-31 06:56:24,798][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node7}{node7}{local}{local[29]}]
+[2016-03-31 06:56:24,798][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node1}{node1}{local}{local[23]}]
+[2016-03-31 06:56:24,798][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node3}{node3}{local}{local[25]}]
+[2016-03-31 06:56:24,798][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node6}{node6}{local}{local[28]}]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,799][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [V2Y51hs9Qxqlme8iDC0JvQ], version [4]) to [{node5}{node5}{local}{local[27]}]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,799][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,800][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received version [4], uuid [V2Y51hs9Qxqlme8iDC0JvQ]
+[2016-03-31 06:56:24,805][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,805][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,805][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,806][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,806][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,806][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,806][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,805][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received diff cluster state version [5] with uuid [kz-oHDJzTlSduBXGJo9tcQ], diff size [180]
+[2016-03-31 06:56:24,806][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node5}{node5}{local}{local[27]} acked cluster state version [5]. processing ... (current pending [8], needed [1])
+[2016-03-31 06:56:24,806][TRACE][org.elasticsearch.discovery.zen.publish] [node0] committing version [5]
+[2016-03-31 06:56:24,806][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node5}{node5}{local}{local[27]}]
+[2016-03-31 06:56:24,807][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node2}{node2}{local}{local[24]}]
+[2016-03-31 06:56:24,807][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node8}{node8}{local}{local[30]}]
+[2016-03-31 06:56:24,807][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node6}{node6}{local}{local[28]}]
+[2016-03-31 06:56:24,807][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node7}{node7}{local}{local[29]}]
+[2016-03-31 06:56:24,807][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node1}{node1}{local}{local[23]}]
+[2016-03-31 06:56:24,807][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node3}{node3}{local}{local[25]}]
+[2016-03-31 06:56:24,812][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,812][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,812][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,812][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,812][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,812][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,813][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,813][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [kz-oHDJzTlSduBXGJo9tcQ], version [5]) to [{node4}{node4}{local}{local[26]}]
+[2016-03-31 06:56:24,814][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received version [5], uuid [kz-oHDJzTlSduBXGJo9tcQ]
+[2016-03-31 06:56:24,815][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,815][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,815][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,816][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,816][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,816][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,816][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node5}{node5}{local}{local[27]} acked cluster state version [6]. processing ... (current pending [8], needed [4])
+[2016-03-31 06:56:24,816][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node3}{node3}{local}{local[25]} acked cluster state version [6]. processing ... (current pending [7], needed [3])
+[2016-03-31 06:56:24,816][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node8}{node8}{local}{local[30]} acked cluster state version [6]. processing ... (current pending [6], needed [2])
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] master node {node6}{node6}{local}{local[28]} acked cluster state version [6]. processing ... (current pending [5], needed [1])
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] committing version [6]
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node5}{node5}{local}{local[27]}]
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node3}{node3}{local}{local[25]}]
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node8}{node8}{local}{local[30]}]
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node6}{node6}{local}{local[28]}]
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node7}{node7}{local}{local[29]}]
+[2016-03-31 06:56:24,817][DEBUG][org.elasticsearch.discovery.zen.publish] [node5] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,817][DEBUG][org.elasticsearch.discovery.zen.publish] [node6] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,817][DEBUG][org.elasticsearch.discovery.zen.publish] [node7] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,817][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node2}{node2}{local}{local[24]}]
+[2016-03-31 06:56:24,815][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,818][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,817][DEBUG][org.elasticsearch.discovery.zen.publish] [node8] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,817][DEBUG][org.elasticsearch.discovery.zen.publish] [node3] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,816][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received diff cluster state version [6] with uuid [6RXSlITSSoCBDW0BNT_pGw], diff size [182]
+[2016-03-31 06:56:24,818][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node1}{node1}{local}{local[23]}]
+[2016-03-31 06:56:24,818][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,819][TRACE][org.elasticsearch.discovery.zen.publish] [node0] sending commit for cluster state (uuid: [6RXSlITSSoCBDW0BNT_pGw], version [6]) to [{node4}{node4}{local}{local[26]}]
+[2016-03-31 06:56:24,819][DEBUG][org.elasticsearch.discovery.zen.publish] [node4] received version [6], uuid [6RXSlITSSoCBDW0BNT_pGw]
+[2016-03-31 06:56:24,839][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff for but don't have any local cluster state - requesting full state
+[2016-03-31 06:56:24,841][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] resending full cluster state to node {nodeB}{nodeB}{local}{local[32]} reason RemoteTransportException[[nodeA][local[31]][internal:discovery/zen/publish/send]]; nested: IncompatibleClusterStateVersionException[have no local cluster state];; org.elasticsearch.cluster.IncompatibleClusterStateVersionException: have no local cluster state
+[2016-03-31 06:56:24,842][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received full cluster state version [1] with size [107]
+[2016-03-31 06:56:24,842][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [IXbJ5crxTu6rUiFVDYIgxA], version [1]) to [{nodeB}{nodeB}{local}{local[32]}]
+[2016-03-31 06:56:24,843][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [1], uuid [IXbJ5crxTu6rUiFVDYIgxA]
+[2016-03-31 06:56:24,851][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received full cluster state version [1] with size [107]
+[2016-03-31 06:56:24,852][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [t8UHTIDgTvejhaM6ZBRL5Q], version [1]) to [{nodeB}{nodeB}{local}{local[34]}]
+[2016-03-31 06:56:24,853][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [1], uuid [t8UHTIDgTvejhaM6ZBRL5Q]
+[2016-03-31 06:56:24,854][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff cluster state version [2] with uuid [rsyk3e6uSnuiaGQxoBdxTA], diff size [133]
+[2016-03-31 06:56:24,855][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [rsyk3e6uSnuiaGQxoBdxTA], version [2]) to [{nodeB}{nodeB}{local}{local[34]}]
+[2016-03-31 06:56:24,855][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [2], uuid [rsyk3e6uSnuiaGQxoBdxTA]
+[2016-03-31 06:56:24,856][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff cluster state version [3] with uuid [bz-nluW3S8-JKTggw_h2Aw], diff size [91]
+[2016-03-31 06:56:24,856][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] master node {nodeB}{nodeB}{local}{local[34]} acked cluster state version [3]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,856][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] committing version [3]
+[2016-03-31 06:56:24,856][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [bz-nluW3S8-JKTggw_h2Aw], version [3]) to [{nodeB}{nodeB}{local}{local[34]}]
+[2016-03-31 06:56:24,856][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [3], uuid [bz-nluW3S8-JKTggw_h2Aw]
+[2016-03-31 06:56:24,858][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff cluster state version [4] with uuid [8nXZ6MAGQVWhxfswCsBM3A], diff size [140]
+[2016-03-31 06:56:24,858][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [8nXZ6MAGQVWhxfswCsBM3A], version [4]) to [{nodeB}{nodeB}{local}{local[34]}]
+[2016-03-31 06:56:24,858][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received full cluster state version [4] with size [117]
+[2016-03-31 06:56:24,858][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [4], uuid [8nXZ6MAGQVWhxfswCsBM3A]
+[2016-03-31 06:56:24,858][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [8nXZ6MAGQVWhxfswCsBM3A], version [4]) to [{nodeC}{nodeC}{local}{local[35]}]
+[2016-03-31 06:56:24,859][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received version [4], uuid [8nXZ6MAGQVWhxfswCsBM3A]
+[2016-03-31 06:56:24,860][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff cluster state version [5] with uuid [f01Q7YXLQ_q1MpSH9rEWEQ], diff size [100]
+[2016-03-31 06:56:24,860][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received diff cluster state version [5] with uuid [f01Q7YXLQ_q1MpSH9rEWEQ], diff size [100]
+[2016-03-31 06:56:24,860][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [f01Q7YXLQ_q1MpSH9rEWEQ], version [5]) to [{nodeB}{nodeB}{local}{local[34]}]
+[2016-03-31 06:56:24,861][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [f01Q7YXLQ_q1MpSH9rEWEQ], version [5]) to [{nodeC}{nodeC}{local}{local[35]}]
+[2016-03-31 06:56:24,861][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [5], uuid [f01Q7YXLQ_q1MpSH9rEWEQ]
+[2016-03-31 06:56:24,861][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received version [5], uuid [f01Q7YXLQ_q1MpSH9rEWEQ]
+[2016-03-31 06:56:24,862][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] resending full cluster state to node {nodeC}{nodeC}{local}{local[35]} reason RemoteTransportException[[nodeA][local[33]][internal:discovery/zen/publish/send]]; nested: IncompatibleClusterStateVersionException[Expected diff for version 5 with uuid f01Q7YXLQ_q1MpSH9rEWEQ got version 6 and uuid 6dzFTFnPQhKe4dOSxZIX8A];; org.elasticsearch.cluster.IncompatibleClusterStateVersionException: Expected diff for version 5 with uuid f01Q7YXLQ_q1MpSH9rEWEQ got version 6 and uuid 6dzFTFnPQhKe4dOSxZIX8A
+[2016-03-31 06:56:24,862][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] resending full cluster state to node {nodeB}{nodeB}{local}{local[34]} reason RemoteTransportException[[nodeA][local[33]][internal:discovery/zen/publish/send]]; nested: IncompatibleClusterStateVersionException[Expected diff for version 5 with uuid f01Q7YXLQ_q1MpSH9rEWEQ got version 6 and uuid 6dzFTFnPQhKe4dOSxZIX8A];; org.elasticsearch.cluster.IncompatibleClusterStateVersionException: Expected diff for version 5 with uuid f01Q7YXLQ_q1MpSH9rEWEQ got version 6 and uuid 6dzFTFnPQhKe4dOSxZIX8A
+[2016-03-31 06:56:24,863][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received full cluster state version [6] with size [126]
+[2016-03-31 06:56:24,863][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received full cluster state version [6] with size [126]
+[2016-03-31 06:56:24,864][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [o6IHLGBjT6enMFd7okHsbA], version [6]) to [{nodeC}{nodeC}{local}{local[35]}]
+[2016-03-31 06:56:24,864][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [o6IHLGBjT6enMFd7okHsbA], version [6]) to [{nodeB}{nodeB}{local}{local[34]}]
+[2016-03-31 06:56:24,864][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received version [6], uuid [o6IHLGBjT6enMFd7okHsbA]
+[2016-03-31 06:56:24,864][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [6], uuid [o6IHLGBjT6enMFd7okHsbA]
+[2016-03-31 06:56:24,865][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] received diff for but don't have any local cluster state - requesting full state
+[2016-03-31 06:56:24,865][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] resending full cluster state to node {nodeA}{nodeA}{local}{local[33]} reason RemoteTransportException[[nodeB][local[34]][internal:discovery/zen/publish/send]]; nested: IncompatibleClusterStateVersionException[have no local cluster state];; org.elasticsearch.cluster.IncompatibleClusterStateVersionException: have no local cluster state
+[2016-03-31 06:56:24,865][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] resending full cluster state to node {nodeC}{nodeC}{local}{local[35]} reason RemoteTransportException[[nodeB][local[34]][internal:discovery/zen/publish/send]]; nested: IncompatibleClusterStateVersionException[Expected diff for version 6 with uuid o6IHLGBjT6enMFd7okHsbA got version 7 and uuid Haca94RXTWqp48O5MX2tnQ];; org.elasticsearch.cluster.IncompatibleClusterStateVersionException: Expected diff for version 6 with uuid o6IHLGBjT6enMFd7okHsbA got version 7 and uuid Haca94RXTWqp48O5MX2tnQ
+[2016-03-31 06:56:24,866][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received full cluster state version [7] with size [126]
+[2016-03-31 06:56:24,866][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] received full cluster state version [7] with size [126]
+[2016-03-31 06:56:24,869][TRACE][org.elasticsearch.discovery.zen.publish] [nodeB] sending commit for cluster state (uuid: [l8OAVcWvQzWe4f4iKWkzqw], version [7]) to [{nodeC}{nodeC}{local}{local[35]}]
+[2016-03-31 06:56:24,869][TRACE][org.elasticsearch.discovery.zen.publish] [nodeB] sending commit for cluster state (uuid: [l8OAVcWvQzWe4f4iKWkzqw], version [7]) to [{nodeA}{nodeA}{local}{local[33]}]
+[2016-03-31 06:56:24,869][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeC] received version [7], uuid [l8OAVcWvQzWe4f4iKWkzqw]
+[2016-03-31 06:56:24,870][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] received version [7], uuid [l8OAVcWvQzWe4f4iKWkzqw]
+[2016-03-31 06:56:24,882][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff for but don't have any local cluster state - requesting full state
+[2016-03-31 06:56:24,883][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeA] resending full cluster state to node {nodeB}{nodeB}{local}{local[37]} reason RemoteTransportException[[nodeA][local[36]][internal:discovery/zen/publish/send]]; nested: IncompatibleClusterStateVersionException[have no local cluster state];; org.elasticsearch.cluster.IncompatibleClusterStateVersionException: have no local cluster state
+[2016-03-31 06:56:24,888][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received full cluster state version [1] with size [107]
+[2016-03-31 06:56:24,889][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [sEVb2qobSSGdx9xpKm_gnQ], version [1]) to [{nodeB}{nodeB}{local}{local[37]}]
+[2016-03-31 06:56:24,890][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [1], uuid [sEVb2qobSSGdx9xpKm_gnQ]
+[2016-03-31 06:56:24,891][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received diff cluster state version [2] with uuid [qfxsRO8HQOqBUqbc7alxCw], diff size [133]
+[2016-03-31 06:56:24,891][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] master node {nodeB}{nodeB}{local}{local[37]} acked cluster state version [2]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,891][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] committing version [2]
+[2016-03-31 06:56:24,891][TRACE][org.elasticsearch.discovery.zen.publish] [nodeA] sending commit for cluster state (uuid: [qfxsRO8HQOqBUqbc7alxCw], version [2]) to [{nodeB}{nodeB}{local}{local[37]}]
+[2016-03-31 06:56:24,891][DEBUG][org.elasticsearch.discovery.zen.publish] [nodeB] received version [2], uuid [qfxsRO8HQOqBUqbc7alxCw]
+[2016-03-31 06:56:24,897][INFO ][org.elasticsearch.discovery.zen.publish] --> testing acceptances of any master when having no master
+[2016-03-31 06:56:24,897][INFO ][org.elasticsearch.discovery.zen.publish] --> testing rejection of another master
+[2016-03-31 06:56:24,897][WARN ][org.elasticsearch.discovery.zen.publish] [node] received a cluster state from a different master than the current one, rejecting (received null, current null)
+[2016-03-31 06:56:24,897][INFO ][org.elasticsearch.discovery.zen.publish] --> test state from the current master is accepted
+[2016-03-31 06:56:24,897][INFO ][org.elasticsearch.discovery.zen.publish] --> testing rejection of another cluster name
+[2016-03-31 06:56:24,898][WARN ][org.elasticsearch.discovery.zen.publish] [node] received cluster state from [null] which is also master but with a different cluster name [Cluster [TDMJOSBAIq]]
+[2016-03-31 06:56:24,898][INFO ][org.elasticsearch.discovery.zen.publish] --> testing rejection of a cluster state with wrong local node
+[2016-03-31 06:56:24,898][WARN ][org.elasticsearch.discovery.zen.publish] [node] received a cluster state from [null] and not part of the cluster, should not happen
+[2016-03-31 06:56:24,901][WARN ][org.elasticsearch.discovery.zen.publish] [node] received a cluster state from [null] and not part of the cluster, should not happen
+[2016-03-31 06:56:24,901][INFO ][org.elasticsearch.discovery.zen.publish] --> testing acceptance of an old cluster state
+[2016-03-31 06:56:24,914][INFO ][org.elasticsearch.discovery.zen.publish] --> expecting commit to fail. good nodes [4], errors [2], timeouts [0]. min_master_nodes [5]
+[2016-03-31 06:56:24,916][DEBUG][org.elasticsearch.discovery.zen.publish] [master] failed to send cluster state to {node4}{node4}{local}{local[45]}
+RemoteTransportException[[master][local[40]][internal:discovery/zen/publish/send]]; nested: ElasticsearchException[forced error on incoming cluster state];
+Caused by: ElasticsearchException[forced error on incoming cluster state]
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests$MockPublishAction.handleIncomingClusterStateRequest(PublishClusterStateActionTests.java:831)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendClusterStateRequestHandler.messageReceived(PublishClusterStateAction.java:422)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendClusterStateRequestHandler.messageReceived(PublishClusterStateAction.java:418)
+	at org.elasticsearch.transport.local.LocalTransport.handleRequest(LocalTransport.java:290)
+	at org.elasticsearch.transport.local.LocalTransport.messageReceived(LocalTransport.java:251)
+	at org.elasticsearch.transport.local.LocalTransport$1.run(LocalTransport.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-31 06:56:24,916][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node4}{node4}{local}{local[45]} failed to ack cluster state version [0]. processing ... (current pending [5], needed [4])
+[2016-03-31 06:56:24,917][DEBUG][org.elasticsearch.discovery.zen.publish] [node2] received full cluster state version [0] with size [148]
+[2016-03-31 06:56:24,917][DEBUG][org.elasticsearch.discovery.zen.publish] [node0] received full cluster state version [0] with size [148]
+[2016-03-31 06:56:24,917][DEBUG][org.elasticsearch.discovery.zen.publish] [master] failed to send cluster state to {node3}{node3}{local}{local[44]}
+RemoteTransportException[[master][local[40]][internal:discovery/zen/publish/send]]; nested: ElasticsearchException[forced error on incoming cluster state];
+Caused by: ElasticsearchException[forced error on incoming cluster state]
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests$MockPublishAction.handleIncomingClusterStateRequest(PublishClusterStateActionTests.java:831)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendClusterStateRequestHandler.messageReceived(PublishClusterStateAction.java:422)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendClusterStateRequestHandler.messageReceived(PublishClusterStateAction.java:418)
+	at org.elasticsearch.transport.local.LocalTransport.handleRequest(LocalTransport.java:290)
+	at org.elasticsearch.transport.local.LocalTransport.messageReceived(LocalTransport.java:251)
+	at org.elasticsearch.transport.local.LocalTransport$1.run(LocalTransport.java:229)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-31 06:56:24,918][DEBUG][org.elasticsearch.discovery.zen.publish] [node1] received full cluster state version [0] with size [148]
+[2016-03-31 06:56:24,918][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node3}{node3}{local}{local[44]} failed to ack cluster state version [0]. processing ... (current pending [4], needed [4])
+[2016-03-31 06:56:24,929][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node2}{node2}{local}{local[43]} acked cluster state version [0]. processing ... (current pending [3], needed [4])
+[2016-03-31 06:56:24,929][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node0}{node0}{local}{local[41]} acked cluster state version [0]. processing ... (current pending [2], needed [3])
+[2016-03-31 06:56:24,929][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node1}{node1}{local}{local[42]} acked cluster state version [0]. processing ... (current pending [1], needed [2])
+[2016-03-31 06:56:24,929][TRACE][org.elasticsearch.discovery.zen.publish] [master] failed to commit version [0]. no more pending master nodes, but failed to reach needed acks ([1] left)
+[2016-03-31 06:56:24,930][DEBUG][org.elasticsearch.discovery.zen.publish] failed to publish as expected
+FailedToCommitClusterStateException[failed to get enough masters to ack sent cluster state. [1] left]
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction$SendingController.waitForCommit(PublishClusterStateAction.java:509)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction.innerPublish(PublishClusterStateAction.java:173)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateAction.publish(PublishClusterStateAction.java:138)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests.publishState(PublishClusterStateActionTests.java:757)
+	at org.elasticsearch.discovery.zen.publish.PublishClusterStateActionTests.testPublishingWithSendingErrors(PublishClusterStateActionTests.java:575)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.invoke(RandomizedRunner.java:1660)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$8.evaluate(RandomizedRunner.java:866)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$9.evaluate(RandomizedRunner.java:902)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$10.evaluate(RandomizedRunner.java:916)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleSetupTeardownChained$1.evaluate(TestRuleSetupTeardownChained.java:50)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)
+	at org.apache.lucene.util.TestRuleThreadAndTestName$1.evaluate(TestRuleThreadAndTestName.java:49)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl.forkTimeoutingTask(ThreadLeakControl.java:809)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$3.evaluate(ThreadLeakControl.java:460)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner.runSingleTest(RandomizedRunner.java:875)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$5.evaluate(RandomizedRunner.java:777)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$6.evaluate(RandomizedRunner.java:811)
+	at com.carrotsearch.randomizedtesting.RandomizedRunner$7.evaluate(RandomizedRunner.java:822)
+	at org.apache.lucene.util.AbstractBeforeAfterRule$1.evaluate(AbstractBeforeAfterRule.java:46)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleStoreClassName$1.evaluate(TestRuleStoreClassName.java:42)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.NoShadowingOrOverridesOnMethodsRule$1.evaluate(NoShadowingOrOverridesOnMethodsRule.java:40)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at org.apache.lucene.util.TestRuleAssertionsRequired$1.evaluate(TestRuleAssertionsRequired.java:54)
+	at org.apache.lucene.util.TestRuleMarkFailure$1.evaluate(TestRuleMarkFailure.java:48)
+	at org.apache.lucene.util.TestRuleIgnoreAfterMaxFailures$1.evaluate(TestRuleIgnoreAfterMaxFailures.java:65)
+	at org.apache.lucene.util.TestRuleIgnoreTestSuites$1.evaluate(TestRuleIgnoreTestSuites.java:55)
+	at com.carrotsearch.randomizedtesting.rules.StatementAdapter.evaluate(StatementAdapter.java:36)
+	at com.carrotsearch.randomizedtesting.ThreadLeakControl$StatementRunner.run(ThreadLeakControl.java:367)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-03-31 06:56:24,942][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [1], UUID [2YLxzZnmQNyKEqLMna7Fgg]
+[2016-03-31 06:56:24,943][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [1] with size [111]
+[2016-03-31 06:56:24,944][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [1]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,944][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [1]
+[2016-03-31 06:56:24,944][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [2YLxzZnmQNyKEqLMna7Fgg], version [1]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,946][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [1], uuid [2YLxzZnmQNyKEqLMna7Fgg]
+[2016-03-31 06:56:24,947][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,947][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [2], UUID [UG3GtjskRHi_kbZWU9N44Q]
+[2016-03-31 06:56:24,948][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [2] with size [111]
+[2016-03-31 06:56:24,948][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [2]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,948][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [2]
+[2016-03-31 06:56:24,948][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [UG3GtjskRHi_kbZWU9N44Q], version [2]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,948][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [2], uuid [UG3GtjskRHi_kbZWU9N44Q]
+[2016-03-31 06:56:24,949][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,949][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [3], UUID [qvsIqbnGQciiBXLalSnv1w]
+[2016-03-31 06:56:24,950][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [3] with size [111]
+[2016-03-31 06:56:24,950][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [3]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,950][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [3]
+[2016-03-31 06:56:24,950][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [qvsIqbnGQciiBXLalSnv1w], version [3]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,950][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [3], uuid [qvsIqbnGQciiBXLalSnv1w]
+[2016-03-31 06:56:24,951][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,951][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [4], UUID [tXMfGQqjQymSIYXPw_BEcA]
+[2016-03-31 06:56:24,952][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [4] with size [111]
+[2016-03-31 06:56:24,953][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [4]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,953][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [4]
+[2016-03-31 06:56:24,953][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [tXMfGQqjQymSIYXPw_BEcA], version [4]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,953][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [4], uuid [tXMfGQqjQymSIYXPw_BEcA]
+[2016-03-31 06:56:24,953][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,953][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [5], UUID [m5Lebey3RgaWDYrXVPUORQ]
+[2016-03-31 06:56:24,954][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [5] with size [111]
+[2016-03-31 06:56:24,954][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [5]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,954][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [5]
+[2016-03-31 06:56:24,954][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [m5Lebey3RgaWDYrXVPUORQ], version [5]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,955][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [5], uuid [m5Lebey3RgaWDYrXVPUORQ]
+[2016-03-31 06:56:24,955][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,955][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [6], UUID [XoAfvi0QR7WgZ5SwDLsy8g]
+[2016-03-31 06:56:24,955][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [6] with size [111]
+[2016-03-31 06:56:24,956][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [6]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,956][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [6]
+[2016-03-31 06:56:24,956][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [XoAfvi0QR7WgZ5SwDLsy8g], version [6]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,956][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [6], uuid [XoAfvi0QR7WgZ5SwDLsy8g]
+[2016-03-31 06:56:24,956][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,956][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [7], UUID [uBz__wnKT0GMzojIiJLLyg]
+[2016-03-31 06:56:24,957][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [7] with size [111]
+[2016-03-31 06:56:24,957][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [7]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,957][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [7]
+[2016-03-31 06:56:24,957][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [uBz__wnKT0GMzojIiJLLyg], version [7]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,957][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [7], uuid [uBz__wnKT0GMzojIiJLLyg]
+[2016-03-31 06:56:24,958][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,958][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [8], UUID [r6UwwNTcSiiZPHIRxHyltA]
+[2016-03-31 06:56:24,958][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [8] with size [111]
+[2016-03-31 06:56:24,958][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [8]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,958][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [8]
+[2016-03-31 06:56:24,958][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [r6UwwNTcSiiZPHIRxHyltA], version [8]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,959][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [8], uuid [r6UwwNTcSiiZPHIRxHyltA]
+[2016-03-31 06:56:24,959][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,959][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [9], UUID [HzFOJXX_TJ6j86R0Ep1yQQ]
+[2016-03-31 06:56:24,960][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [9] with size [111]
+[2016-03-31 06:56:24,960][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [9]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,960][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [9]
+[2016-03-31 06:56:24,960][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [HzFOJXX_TJ6j86R0Ep1yQQ], version [9]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,960][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [9], uuid [HzFOJXX_TJ6j86R0Ep1yQQ]
+[2016-03-31 06:56:24,960][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+[2016-03-31 06:56:24,961][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing version [10], UUID [GzD2EEtWQA6Wel0t5yUGYw]
+[2016-03-31 06:56:24,961][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received full cluster state version [10] with size [111]
+[2016-03-31 06:56:24,961][TRACE][org.elasticsearch.discovery.zen.publish] [master] master node {node}{node}{local}{local[47]} acked cluster state version [10]. processing ... (current pending [1], needed [1])
+[2016-03-31 06:56:24,961][TRACE][org.elasticsearch.discovery.zen.publish] [master] committing version [10]
+[2016-03-31 06:56:24,961][TRACE][org.elasticsearch.discovery.zen.publish] [master] sending commit for cluster state (uuid: [GzD2EEtWQA6Wel0t5yUGYw], version [10]) to [{node}{node}{local}{local[47]}]
+[2016-03-31 06:56:24,962][DEBUG][org.elasticsearch.discovery.zen.publish] [node] received version [10], uuid [GzD2EEtWQA6Wel0t5yUGYw]
+[2016-03-31 06:56:24,962][DEBUG][org.elasticsearch.discovery.zen.publish] --> publishing [succeeded], verifying...
+]]></system-out>
+   <system-err><![CDATA[]]></system-err>
+</testsuite>
