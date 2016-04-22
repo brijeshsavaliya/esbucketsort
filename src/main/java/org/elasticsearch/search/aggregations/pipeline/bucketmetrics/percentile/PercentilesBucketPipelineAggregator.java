@@ -116,6 +116,11 @@ public class PercentilesBucketPipelineAggregator extends BucketMetricsPipelineAg
         out.writeDoubleArray(percents);
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregation, InternalAggregation.ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public static class Factory extends PipelineAggregatorFactory {
 
         private final ValueFormatter formatter;

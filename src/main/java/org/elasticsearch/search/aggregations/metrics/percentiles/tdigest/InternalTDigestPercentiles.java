@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import org.elasticsearch.search.aggregations.InternalAggregation;
 
 /**
 *
@@ -88,6 +89,11 @@ public class InternalTDigestPercentiles extends AbstractInternalTDigestPercentil
     @Override
     public Type type() {
         return TYPE;
+    }
+
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public static class Iter implements Iterator<Percentile> {

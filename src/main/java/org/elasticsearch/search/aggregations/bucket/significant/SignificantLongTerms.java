@@ -36,6 +36,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.elasticsearch.search.aggregations.InternalAggregation;
 
 /**
  *
@@ -77,6 +78,11 @@ public class SignificantLongTerms extends InternalSignificantTerms<SignificantLo
     public static void registerStreams() {
         AggregationStreams.registerStream(STREAM, TYPE.stream());
         BucketStreams.registerStream(BUCKET_STREAM, TYPE.stream());
+    }
+
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     static class Bucket extends InternalSignificantTerms.Bucket {
@@ -159,6 +165,11 @@ public class SignificantLongTerms extends InternalSignificantTerms<SignificantLo
             aggregations.toXContentInternal(builder, params);
             builder.endObject();
             return builder;
+        }
+
+        @Override
+        public List<PipelineAggregator> getPipeplineAggregation() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
     private ValueFormatter formatter;

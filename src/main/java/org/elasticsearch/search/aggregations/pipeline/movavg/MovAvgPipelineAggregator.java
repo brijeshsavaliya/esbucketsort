@@ -49,6 +49,7 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
+import org.elasticsearch.search.aggregations.Aggregations;
 
 import static org.elasticsearch.search.aggregations.pipeline.BucketHelpers.resolveBucketValue;
 
@@ -275,6 +276,12 @@ public class MovAvgPipelineAggregator extends PipelineAggregator {
 
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregation, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
     public static class Factory extends PipelineAggregatorFactory {
 
         private final ValueFormatter formatter;

@@ -75,6 +75,11 @@ public class InternalFilters extends InternalMultiBucketAggregation<InternalFilt
         BucketStreams.registerStream(BUCKET_STREAM, TYPE.stream());
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public static class Bucket extends InternalBucket implements Filters.Bucket {
 
         private final boolean keyed;
@@ -154,6 +159,11 @@ public class InternalFilters extends InternalMultiBucketAggregation<InternalFilt
             out.writeOptionalString(key);
             out.writeVLong(docCount);
             aggregations.writeTo(out);
+        }
+
+        @Override
+        public List<PipelineAggregator> getPipeplineAggregation() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
 

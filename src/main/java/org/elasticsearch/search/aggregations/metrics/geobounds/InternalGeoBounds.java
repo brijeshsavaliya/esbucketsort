@@ -198,6 +198,11 @@ public class InternalGeoBounds extends InternalMetricsAggregation implements Geo
     public static void registerStream() {
         AggregationStreams.registerStream(STREAM, TYPE.stream());
     }
+
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     private static class BoundingBox {
         private final GeoPoint topLeft;

@@ -114,4 +114,9 @@ public class InternalAvg extends InternalNumericMetricsAggregation.SingleValue i
         return builder;
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
 }

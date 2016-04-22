@@ -150,6 +150,11 @@ public class LongTerms extends InternalTerms<LongTerms, LongTerms.Bucket> {
             builder.endObject();
             return builder;
         }
+
+        @Override
+        public List<PipelineAggregator> getPipeplineAggregation() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
     }
 
     ValueFormatter formatter;

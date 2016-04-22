@@ -63,7 +63,8 @@ public abstract class InternalSingleBucketAggregation extends InternalAggregatio
     public InternalAggregations getAggregations() {
         return aggregations;
     }
-
+    
+    
     /**
      * Create a new copy of this {@link Aggregation} with the same settings as
      * this {@link Aggregation} and contains the provided sub-aggregations.

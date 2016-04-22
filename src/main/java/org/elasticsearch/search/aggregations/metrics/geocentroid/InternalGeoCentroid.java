@@ -146,6 +146,11 @@ public class InternalGeoCentroid extends InternalMetricsAggregation implements G
         }
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     static class Fields {
         public static final XContentBuilderString CENTROID = new XContentBuilderString("location");
     }

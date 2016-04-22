@@ -19,9 +19,11 @@
 
 package org.elasticsearch.search.aggregations.bucket;
 
+import java.util.List;
 import org.elasticsearch.search.aggregations.Aggregation;
 import org.elasticsearch.search.aggregations.Aggregations;
 import org.elasticsearch.search.aggregations.HasAggregations;
+import org.elasticsearch.search.aggregations.pipeline.PipelineAggregator;
 
 /**
  * A single bucket aggregation
@@ -38,4 +40,7 @@ public interface SingleBucketAggregation extends Aggregation, HasAggregations {
      */
     @Override
     Aggregations getAggregations();
+    
+    @Override
+    public abstract List<PipelineAggregator> getPipeplineAggregation();
 }

@@ -39,13 +39,14 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
+import org.elasticsearch.search.aggregations.pipeline.SiblingPipelineAggregator;
 
 /**
  * An internal implementation of {@link Aggregation}. Serves as a base class for all aggregation implementations.
  */
 public abstract class InternalAggregation implements Aggregation, ToXContent, Streamable {
 
-
+    
     /**
      * The aggregation type that holds all the string types that are associated with an aggregation:
      * <ul>
@@ -158,6 +159,8 @@ public abstract class InternalAggregation implements Aggregation, ToXContent, St
     }
 
     public abstract InternalAggregation doReduce(List<InternalAggregation> aggregations, ReduceContext reduceContext);
+    
+    public abstract InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext);
 
     @Override
     public Object getProperty(String path) {
@@ -193,7 +196,8 @@ public abstract class InternalAggregation implements Aggregation, ToXContent, St
     public List<PipelineAggregator> pipelineAggregators() {
         return pipelineAggregators;
     }
-
+    
+    
     @Override
     public final XContentBuilder toXContent(XContentBuilder builder, Params params) throws IOException {
         builder.startObject(name);

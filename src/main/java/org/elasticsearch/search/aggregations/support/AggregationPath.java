@@ -80,19 +80,19 @@ public class AggregationPath {
                     if (element.charAt(element.length() - 1) != ']') {
                         throw new AggregationExecutionException("Invalid path element [" + element + "] in path [" + path + "]");
                     }
-                    tokens.add(new PathElement(element, element.substring(0, index), element.substring(index + 1, element.length() - 1)));
+                    tokens.add(new PathElement(element, element.substring(0, index), element.substring(index + 1, element.length() - 1), null));
                     continue;
                 }
                 index = element.lastIndexOf('.');
                 if (index < 0) {
-                    tokens.add(new PathElement(element, element, null));
+                    tokens.add(new PathElement(element, element, null, null));
                     continue;
                 }
                 if (index == 0 || index > element.length() - 2) {
                     throw new AggregationExecutionException("Invalid path element [" + element + "] in path [" + path + "]");
                 }
                 tuple = split(element, index, tuple);
-                tokens.add(new PathElement(element, tuple[0], tuple[1]));
+                tokens.add(new PathElement(element, tuple[0], tuple[1], null));
 
             } else {
                 int index = element.lastIndexOf('[');
@@ -103,10 +103,10 @@ public class AggregationPath {
                     if (element.charAt(element.length() - 1) != ']') {
                         throw new AggregationExecutionException("Invalid path element [" + element + "] in path [" + path + "]");
                     }
-                    tokens.add(new PathElement(element, element.substring(0, index), element.substring(index + 1, element.length() - 1)));
+                    tokens.add(new PathElement(element, element.substring(0, index), element.substring(index + 1, element.length() - 1), null));
                     continue;
                 }
-                tokens.add(new PathElement(element, element, null));
+                tokens.add(new PathElement(element, element, null, null));
             }
         }
         return new AggregationPath(tokens);
@@ -117,11 +117,13 @@ public class AggregationPath {
         private final String fullName;
         public final String name;
         public final String key;
+        public final String type; 
 
-        public PathElement(String fullName, String name, String key) {
+        public PathElement(String fullName, String name, String key, String type) {
             this.fullName = fullName;
             this.name = name;
             this.key = key;
+            this.type = type;
         }
 
         @Override
@@ -196,16 +198,20 @@ public class AggregationPath {
      */
     public double resolveValue(HasAggregations root) {
         HasAggregations parent = root;
-        double value = Double.NaN;
+        double value = Double.NaN;             
+        
+        List<PipelineAggregator> pipeAgg = root.getPipeplineAggregation();
         for (int i = 0; i < pathElements.size(); i++) {
             AggregationPath.PathElement token = pathElements.get(i);
             Aggregation agg = parent.getAggregations().get(token.name);
-            /*
+            
             if (agg == null) {
-                throw new IllegalArgumentException("Invalid order path [" + this +
+                if (pipeAgg == null) {
+                    throw new IllegalArgumentException("Invalid order path [" + this +
                         "]. Cannot find aggregation named [" + token.name + "]");
+                }
             }
-            */
+            
             if (agg instanceof SingleBucketAggregation) {
                 if (token.key != null && !token.key.equals("doc_count")) {
                     throw new IllegalArgumentException("Invalid order path [" + this +
@@ -236,8 +242,10 @@ public class AggregationPath {
 
             // we're left with a multi-value metric agg
             if (token.key == null) {
-                throw new IllegalArgumentException("Invalid order path [" + this +
+                if (pipeAgg == null) {
+                    throw new IllegalArgumentException("Invalid order path [" + this +
                         "]. Missing value key in [" + token + "] which refers to a multi-value metric aggregation");
+                }
             }
             parent = null;
             if(agg instanceof InternalNumericMetricsAggregation.MultiValue) {
@@ -255,8 +263,17 @@ public class AggregationPath {
                             "]. Only numeric result are supported.");
                 }
             } else {
-                throw new AggregationExecutionException("Invalid aggregation type for order path ["+this+
+                int pipeAggOrder = 0;
+                for (int j=0; j < pipeAgg.size(); j++) {
+                    if ( token.name == pipeAgg.get(j).name()) {
+                        pipeAggOrder=1;
+                    }
+                }
+                
+                if (pipeAggOrder == 0) {
+                    throw new AggregationExecutionException("Invalid aggregation type for order path ["+this+
                         "]. Only numeric & scripted metric aggregation are supported.");
+                }
             }
         }
 

@@ -27,6 +27,7 @@ import org.elasticsearch.search.aggregations.pipeline.PipelineAggregator;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import org.elasticsearch.search.aggregations.InternalAggregation;
 
 /**
 *
@@ -64,5 +65,15 @@ public class InternalSampler extends InternalSingleBucketAggregation implements 
     protected InternalSingleBucketAggregation newAggregation(String name, long docCount,
             InternalAggregations subAggregations) {
         return new InternalSampler(name, docCount, subAggregations, pipelineAggregators(), metaData);
+    }
+
+    @Override
+    public List<PipelineAggregator> getPipeplineAggregation() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

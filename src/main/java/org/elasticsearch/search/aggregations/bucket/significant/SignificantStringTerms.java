@@ -81,6 +81,11 @@ public class SignificantStringTerms extends InternalSignificantTerms<Significant
         AggregationStreams.registerStream(STREAM, TYPE.stream());
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public static class Bucket extends InternalSignificantTerms.Bucket {
 
         BytesRef termBytes;
@@ -154,6 +159,11 @@ public class SignificantStringTerms extends InternalSignificantTerms<Significant
             aggregations.toXContentInternal(builder, params);
             builder.endObject();
             return builder;
+        }
+
+        @Override
+        public List<PipelineAggregator> getPipeplineAggregation() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
 

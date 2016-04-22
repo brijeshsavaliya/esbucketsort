@@ -42,6 +42,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
+import org.elasticsearch.search.aggregations.Aggregations;
 
 import static org.elasticsearch.search.aggregations.pipeline.BucketHelpers.resolveBucketValue;
 
@@ -105,6 +106,11 @@ public class CumulativeSumPipelineAggregator extends PipelineAggregator {
     @Override
     public void doWriteTo(StreamOutput out) throws IOException {
         ValueFormatterStreams.writeOptional(formatter, out);
+    }
+
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregation, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public static class Factory extends PipelineAggregatorFactory {

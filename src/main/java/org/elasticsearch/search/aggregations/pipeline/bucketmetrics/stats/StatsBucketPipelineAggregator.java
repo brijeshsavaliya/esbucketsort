@@ -92,6 +92,11 @@ public class StatsBucketPipelineAggregator extends BucketMetricsPipelineAggregat
         return new InternalStatsBucket(name(), count, sum, min, max, formatter, pipelineAggregators, metadata);
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregation, InternalAggregation.ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public static class Factory extends PipelineAggregatorFactory {
 
         private final ValueFormatter formatter;

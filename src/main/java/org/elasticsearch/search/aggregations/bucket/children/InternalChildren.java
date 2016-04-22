@@ -28,6 +28,7 @@ import org.elasticsearch.search.aggregations.pipeline.PipelineAggregator;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import org.elasticsearch.search.aggregations.InternalAggregation;
 
 /**
  */
@@ -47,7 +48,7 @@ public class InternalChildren extends InternalSingleBucketAggregation implements
     public static void registerStream() {
         AggregationStreams.registerStream(STREAM, TYPE.stream());
     }
-
+    
     public InternalChildren() {
     }
 
@@ -55,7 +56,7 @@ public class InternalChildren extends InternalSingleBucketAggregation implements
             Map<String, Object> metaData) {
         super(name, docCount, aggregations, pipelineAggregators, metaData);
     }
-
+    
     @Override
     public Type type() {
         return TYPE;
@@ -64,5 +65,15 @@ public class InternalChildren extends InternalSingleBucketAggregation implements
     @Override
     protected InternalSingleBucketAggregation newAggregation(String name, long docCount, InternalAggregations subAggregations) {
         return new InternalChildren(name, docCount, subAggregations, pipelineAggregators(), getMetaData());
+    }
+
+    @Override
+    public List<PipelineAggregator> getPipeplineAggregation() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

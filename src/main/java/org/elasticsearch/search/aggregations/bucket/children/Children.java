@@ -19,10 +19,15 @@
 
 package org.elasticsearch.search.aggregations.bucket.children;
 
+import java.util.List;
 import org.elasticsearch.search.aggregations.bucket.SingleBucketAggregation;
+import org.elasticsearch.search.aggregations.pipeline.PipelineAggregator;
 
 /**
  * An single bucket aggregation that translates parent documents to their children documents.
  */
 public interface Children extends SingleBucketAggregation {
+    
+    
+    
 }

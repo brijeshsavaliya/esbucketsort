@@ -44,6 +44,10 @@ import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
+import org.elasticsearch.search.aggregations.Aggregations;
+import org.elasticsearch.search.aggregations.bucket.terms.InternalTerms;
+import org.elasticsearch.search.aggregations.bucket.terms.Terms;
+import org.elasticsearch.search.aggregations.bucket.terms.support.BucketPriorityQueue;
 
 import static org.elasticsearch.search.aggregations.pipeline.BucketHelpers.resolveBucketValue;
 
@@ -85,11 +89,25 @@ public class BucketScriptPipelineAggregator extends PipelineAggregator {
         return TYPE;
     }
 
+    
+    public InternalAggregation sortOrder(InternalAggregation aggregation, ReduceContext reduceContext) {
+        InternalMultiBucketAggregation<InternalMultiBucketAggregation, InternalMultiBucketAggregation.InternalBucket> originalAgg = (InternalMultiBucketAggregation<InternalMultiBucketAggregation, InternalMultiBucketAggregation.InternalBucket>) aggregation;
+        List<? extends Bucket> buckets = originalAgg.getBuckets();
+
+        Bucket[] list = new Bucket[buckets.size()];
+        //Terms.Order order = null;        
+        
+        InternalAggregation aggSorted = aggregation.sortOrder(aggregation, reduceContext);
+        
+        return aggSorted;
+    }
+    
     @Override
     public InternalAggregation reduce(InternalAggregation aggregation, ReduceContext reduceContext) {
         InternalMultiBucketAggregation<InternalMultiBucketAggregation, InternalMultiBucketAggregation.InternalBucket> originalAgg = (InternalMultiBucketAggregation<InternalMultiBucketAggregation, InternalMultiBucketAggregation.InternalBucket>) aggregation;
         List<? extends Bucket> buckets = originalAgg.getBuckets();
 
+        
         CompiledScript compiledScript = reduceContext.scriptService().compile(script, ScriptContext.Standard.AGGS, reduceContext);
         List newBuckets = new ArrayList<>();
         for (Bucket bucket : buckets) {
@@ -150,6 +168,14 @@ public class BucketScriptPipelineAggregator extends PipelineAggregator {
         gapPolicy = GapPolicy.readFrom(in);
         bucketsPathsMap = (Map<String, String>) in.readGenericValue();
     }
+
+   
+
+    //@Override
+    //public abstract InternalAggregation doReduce(Aggregations aggregations, ReduceContext context);
+   /* public InternalAggregation doReduce(Aggregations aggregations, ReduceContext context) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }*/
 
     public static class Factory extends PipelineAggregatorFactory {
 

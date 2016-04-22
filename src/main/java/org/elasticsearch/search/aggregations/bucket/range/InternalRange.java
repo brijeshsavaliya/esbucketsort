@@ -78,6 +78,11 @@ public class InternalRange<B extends InternalRange.Bucket, R extends InternalRan
         BucketStreams.registerStream(BUCKET_STREAM, TYPE.stream());
     }
 
+    @Override
+    public InternalAggregation sortOrder(InternalAggregation aggregations, ReduceContext reduceContext) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public static class Bucket extends InternalMultiBucketAggregation.InternalBucket implements Range.Bucket {
 
         protected transient final boolean keyed;
@@ -216,6 +221,11 @@ public class InternalRange<B extends InternalRange.Bucket, R extends InternalRan
         @Override
         public void writeTo(StreamOutput out) throws IOException {
 
+        }
+
+        @Override
+        public List<PipelineAggregator> getPipeplineAggregation() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
 

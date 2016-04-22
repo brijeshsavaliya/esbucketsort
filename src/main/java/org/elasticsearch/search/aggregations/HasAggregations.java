@@ -19,11 +19,15 @@
 
 package org.elasticsearch.search.aggregations;
 
+import org.elasticsearch.search.aggregations.pipeline.PipelineAggregator;
+import java.util.List;
+
 /**
  *
  */
 public interface HasAggregations {
 
     Aggregations getAggregations();
-
+    
+    List<PipelineAggregator> getPipeplineAggregation();
 }

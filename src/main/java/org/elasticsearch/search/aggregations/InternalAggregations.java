@@ -46,7 +46,7 @@ public class InternalAggregations implements Aggregations, ToXContent, Streamabl
 
     public final static InternalAggregations EMPTY = new InternalAggregations();
 
-    private List<InternalAggregation> aggregations = Collections.emptyList();
+    public List<InternalAggregation> aggregations = Collections.emptyList();
 
     private Map<String, Aggregation> aggregationsAsMap;
 

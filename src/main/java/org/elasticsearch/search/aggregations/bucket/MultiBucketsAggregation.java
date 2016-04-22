@@ -28,6 +28,7 @@ import org.elasticsearch.search.aggregations.HasAggregations;
 import org.elasticsearch.search.aggregations.support.AggregationPath;
 
 import java.util.List;
+import org.elasticsearch.search.aggregations.pipeline.PipelineAggregator;
 
 /**
  * An aggregation that returns multiple buckets
@@ -61,6 +62,9 @@ public interface MultiBucketsAggregation extends Aggregation {
          */
         @Override
         Aggregations getAggregations();
+        
+        @Override
+        List<PipelineAggregator> getPipeplineAggregation();
 
         Object getProperty(String containingAggName, List<String> path);
 
